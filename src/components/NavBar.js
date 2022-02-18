@@ -1,14 +1,18 @@
 import Image from "next/image";
 import { IoColorPalette } from "react-icons/io5";
+import { useAppContext } from "../Context/appContext.js";
 
 const NavBar = () => {
+  const { spanish, setSpanish, toggleSpanish } = useAppContext();
   return (
     <div>
       <nav className='navbar' role='navigation' aria-label='main navigation'>
         <div className='navbar-brand'>
           <a className='navbar-item' href='https://ometepeartandeducation.org'>
             <IoColorPalette size={64} />
-            <span className='is-size-4 pl-4'>Nicaraguan Art</span>
+            <span className='is-size-4 pl-4'>
+              {spanish ? "Arte Nicaraguense" : "Nicaraguan Art"}
+            </span>
           </a>
           <a
             role='button'

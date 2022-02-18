@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import NavBar from "../components/NavBar.js";
+import NavBar from "../src/components/NavBar.js";
+import { useAppContext } from "../src/Context/appContext.js";
 
 export default function Home() {
+  const { spanish, setSpanish, toggleSpanish } = useAppContext();
   return (
     <div>
       <Head>
@@ -17,7 +19,9 @@ export default function Home() {
       <div className='buttons'>
         <button className='button is-success is-small'>Small</button>
         <button className='button is-warning is-medium'>Medium</button>
-        <button className='button is-danger is-large'>Large</button>
+        <button className='button is-danger is-large' onClick={toggleSpanish}>
+          Large
+        </button>
       </div>
       <div className='buttons'>
         <button className='button is-success is-outlined'>Outlined</button>
