@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Palette from "../public/palette_icon.png";
 import { IoColorPalette } from "react-icons/io5";
 
 const NavBar = () => {
