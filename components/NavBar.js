@@ -1,19 +1,16 @@
 import Image from "next/image";
+import Palette from "../public/palette_icon.png";
+import { IoColorPalette } from "react-icons/io5";
 
 const NavBar = () => {
   return (
     <div>
       <nav className='navbar' role='navigation' aria-label='main navigation'>
         <div className='navbar-brand'>
-          <a className='navbar-item' href='https://bulma.io'>
-            <Image
-              src='https://bulma.io/images/bulma-logo.png'
-              width='112'
-              height='28'
-              alt='logo'
-            />
+          <a className='navbar-item' href='https://ometepeartandeducation.org'>
+            <IoColorPalette size={64} />
+            <span className='is-size-4 pl-4'>Nicaraguan Art</span>
           </a>
-
           <a
             role='button'
             className='navbar-burger'

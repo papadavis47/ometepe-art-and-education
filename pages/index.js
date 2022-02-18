@@ -5,6 +5,11 @@ import NavBar from "../components/NavBar.js";
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Ometepe Art and Education</title>
+        <meta name='description' content='Website for Ometepe Art and Education' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <NavBar />
       <h1 className='is-size-2 has-text-centered mt-5'>
         This is for experimenting with Bulma in Next
