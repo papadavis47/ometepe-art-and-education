@@ -3,7 +3,7 @@ import { IoColorPalette } from "react-icons/io5";
 import { useAppContext } from "../Context/appContext.js";
 
 const NavBar = () => {
-  const { spanish, setSpanish, toggleSpanish } = useAppContext();
+  const { spanish, toggleSpanish } = useAppContext();
   return (
     <div>
       <nav className='navbar' role='navigation' aria-label='main navigation'>

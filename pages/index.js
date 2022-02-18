@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import NavBar from "../src/components/NavBar.js";
 import { useAppContext } from "../src/Context/appContext.js";
 
 export default function Home() {
@@ -12,7 +11,14 @@ export default function Home() {
         <meta name='description' content='Website for Ometepe Art and Education' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <NavBar />
+      <div className='section has-text-centered'>
+        <h1 className='is-size-1 is-size-3-mobile has-text-light has-text-weight-light title mt-6'>
+          Ometepe Art and Education
+        </h1>
+        <h2 className=' is-italic is-size-4 is-size-6-mobile has-text-weight-light has-text-light subtitle'>
+          Adding Our Voices to a Beautifully Diverse World
+        </h2>
+      </div>
       <h1 className='is-size-2 has-text-centered mt-5'>
         This is for experimenting with Bulma in Next
       </h1>
@@ -20,7 +26,7 @@ export default function Home() {
         <button className='button is-success is-small'>Small</button>
         <button className='button is-warning is-medium'>Medium</button>
         <button className='button is-danger is-large' onClick={toggleSpanish}>
-          Large
+          {spanish ? "Grande" : "Large"}
         </button>
       </div>
       <div className='buttons'>
