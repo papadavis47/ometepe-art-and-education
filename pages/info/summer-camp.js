@@ -1,8 +1,13 @@
-import React from "react";
+import Head from "next/head";
 
 const Camp = () => {
   return (
     <div className='has-text-light has-text-weight-light'>
+      <Head>
+        <title>Summer Camps 2022</title>
+        <meta name='description' content='Website for Ometepe Art and Education' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <h1 className='is-size-1 is-size-3-mobile  title mt-6 has-text-light has-text-weight-light has-text-centered'>
         Summer Camps 2022
       </h1>
