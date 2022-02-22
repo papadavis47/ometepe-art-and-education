@@ -275,7 +275,7 @@ th {
     text-align: inherit; }
 
 html {
-  background-color: #fd9644;
+  background-color: #d26914;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -7845,4 +7845,4 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .footer {
   background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem; }
+  padding: 3rem 1.5rem 3rem; }

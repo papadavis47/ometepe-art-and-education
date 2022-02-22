@@ -13,7 +13,7 @@ const NavBar = () => {
         <div className='navbar-brand has-text-weight-medium'>
           <Link href='/'>
             <a className='navbar-item'>
-              <IoColorPalette size={64} />
+              <IoColorPalette size={64} style={{ fontWeight: "bold" }} />
               <span className='is-size-5 pl-4'>
                 {spanish ? "Arte Nicaraguense" : "Nicaraguan Art"}
               </span>
@@ -37,15 +37,21 @@ const NavBar = () => {
             <Link href='#'>
               <a className='navbar-item'>Our Mission |</a>
             </Link>
+            <Link href='#'>
+              <a className='navbar-item'>Programs</a>
+            </Link>
             <Link href='/summer-camp'>
-              <a className='navbar-item'>Summer Camp |</a>
+              <a className='navbar-item'>Summer Camp</a>
+            </Link>
+            <Link href='#'>
+              <a className='navbar-item'>Enrollment &nbsp;|</a>
             </Link>
 
             <div
               className={`navbar-item has-dropdown ${!isActive ? "is-hoverable" : null}`}
               onMouseEnter={() => setIsActive(false)}
             >
-              <a className='navbar-link is-arrowless'>Staff |</a>
+              <a className='navbar-link is-arrowless'>Staff</a>
 
               <div className='navbar-dropdown is-size-6' onClick={() => setIsActive(true)}>
                 <Link href='/sandra'>
@@ -66,10 +72,10 @@ const NavBar = () => {
               </div>
             </div>
             <Link href='#'>
-              <a className='navbar-item'>Location |</a>
+              <a className='navbar-item'>Location</a>
             </Link>
             <Link href='#'>
-              <a className='navbar-item'>Events |</a>
+              <a className='navbar-item'>Events</a>
             </Link>
             <Link href='#'>
               <a className='navbar-item'>Contact</a>
@@ -78,9 +84,9 @@ const NavBar = () => {
 
           <div className='navbar-end mr-4'>
             <div className='navbar-item'>
-              <div className='buttons'>
+              <div className='buttons is-large'>
                 <a className='button is-warning is-light'>
-                  <strong className='is-size-5'>En Español</strong>
+                  <p className='is-size-5'>En Español</p>
                 </a>
               </div>
             </div>
