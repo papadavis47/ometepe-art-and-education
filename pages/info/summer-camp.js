@@ -5,7 +5,7 @@ const Camp = () => {
     <div className='has-text-light has-text-weight-light'>
       <Head>
         <title>Summer Camps 2022</title>
-        <meta name='description' content='Website for Ometepe Art and Education' />
+        <meta name='description' content='Ometepe Art and Education' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h1 className='is-size-1 is-size-3-mobile  title mt-6 has-text-light has-text-weight-light has-text-centered'>
@@ -32,6 +32,62 @@ const Camp = () => {
         activities - we include field trips around TT. Minor Park and Miller Park - for play and
         exercise.
       </p>
+      <section className='block has-text-light has-text-weight-light mt-4 '>
+        <h2 className='subtitle is-size-2 has-text-weight-light has-text-light has-text-centered'>
+          {" "}
+          Schedule for Summer 2022
+        </h2>
+        <ul>
+          <li className='is-size-4'>
+            <p>
+              Session 1: &nbsp;June 20 - June 24{" "}
+              <span className='has-text-weight-bold'>&nbsp;We Are All Amigos</span>
+            </p>
+          </li>
+          <li className='is-size-4'>
+            <p>
+              Session 2: &nbsp;June 27 - July 01{" "}
+              <span className='has-text-weight-bold'>&nbsp;Under the Sea</span>
+            </p>
+          </li>
+          <li className='is-size-4'>
+            <p>
+              Session 3: &nbsp;July 05 - July 08{" "}
+              <span className='has-text-weight-bold'>&nbsp;Dino-Adventure</span>
+            </p>
+          </li>
+          <li className='is-size-4'>
+            <p>
+              Session 4: &nbsp;July 11 - July 15{" "}
+              <span className='has-text-weight-bold'>&nbsp;Crazy Scientist</span>
+            </p>
+          </li>
+          <li className='is-size-4'>
+            <p>
+              Session 5: &nbsp;July 18 - July 22{" "}
+              <span className='has-text-weight-bold'>&nbsp;Under the Stars</span>
+            </p>
+          </li>
+          <li className='is-size-4'>
+            <p>
+              Session 6: &nbsp;July 25 - July 29{" "}
+              <span className='has-text-weight-bold'>&nbsp;The Wildlife</span>
+            </p>
+          </li>
+          <li className='is-size-4'>
+            <p>
+              Session 7: &nbsp;August 01 - August 25{" "}
+              <span className='has-text-weight-bold'>&nbsp;Summer of Fun</span>
+            </p>
+          </li>
+          <li className='is-size-4'>
+            <p>
+              Session 8: &nbsp;August 08 - August 12{" "}
+              <span className='has-text-weight-bold'>&nbsp;DIY Makers</span>
+            </p>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 };
