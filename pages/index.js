@@ -19,19 +19,47 @@ export default function Home() {
           Adding Our Voices to a Beautifully Diverse World
         </h2>
       </div>
-      <div className='buttons'>
-        <button className='button is-success is-small'>Small</button>
-        <button className='button is-warning is-medium'>Medium</button>
-        <button className='button is-danger is-large' onClick={toggleSpanish}>
-          {spanish ? "Grande" : "Large"}
-        </button>
-      </div>
-      <div className='buttons'>
-        <button className='button is-success is-outlined'>Outlined</button>
-        <button className='button is-danger' disabled>
-          Disabled
-        </button>
-      </div>
+      <section className='section'>
+        <div className='columns is-centered has-text-centered is-variable is-7'>
+          <div className='column is-full'>
+            <h3 className='has-text-light is-size-4-desktop is-size-5-mobile is-size-5-tablet block mb-6'>
+              Art Lessons & Dance Lessons
+            </h3>
+            <figure className='is-flex is-justify-content-center block image is-4by3'>
+              <Image
+                className='shadow'
+                src='/linda.jpg'
+                layout='fill'
+                alt='Painting of Nicaraguan Dancers'
+              />
+            </figure>
+            <figure className='is-flex is-justify-content-center image is-4by3'>
+              <Image
+                className='shadow'
+                src='/linda-dress.jpg'
+                layout='fill'
+                alt='A Beautiful Little Girl'
+              />
+            </figure>
+          </div>
+          <div className='column is-full'>
+            <h3 className='has-text-light is-size-4-desktop is-size-5-mobile is-size-5-tablet block mb-6'>
+              Celebrating Nicaraguan Culture
+            </h3>
+            <figure className='is-flex is-justify-content-center block image is-4by3'>
+              <Image
+                className='shadow'
+                src='/dollsgrey.jpg'
+                layout='fill'
+                alt='Houses in Chinandega'
+              />
+            </figure>
+            <figure className='is-flex is-justify-content-center image is-4by3'>
+              <Image className='shadow' src='/artgallery.jpg' layout='fill' alt='Nicaragua Doll' />
+            </figure>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
