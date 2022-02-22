@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
+.is-fullheight-100vh {
+  height: 100vh; }
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,

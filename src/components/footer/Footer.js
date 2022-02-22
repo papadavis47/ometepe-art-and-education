@@ -4,7 +4,7 @@ import { SiNextdotjs } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className='footer has-text-centered is-white'>
+    <footer className='footer has-text-centered is-white column is-narrow'>
       <h2 className='is-size-4'>
         <span>&copy;</span> Ometepe Art & Education 2022
       </h2>

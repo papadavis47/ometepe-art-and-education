@@ -84,9 +84,9 @@ const NavBar = () => {
 
           <div className='navbar-end mr-4'>
             <div className='navbar-item'>
-              <div className='buttons is-large'>
+              <div className='buttons is-large' onClick={toggleSpanish}>
                 <a className='button is-warning is-light'>
-                  <p className='is-size-5'>En Español</p>
+                  <p className='is-size-5 p-3'>{spanish ? "English" : "En Español"}</p>
                 </a>
               </div>
             </div>

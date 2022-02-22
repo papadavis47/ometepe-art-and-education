@@ -4,11 +4,11 @@ import Footer from "./footer/Footer.js";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className='is-flex is-flex-direction-column is-fullheight-100vh'>
       <NavBar />
-      <main>{children}</main>
+      <main className='container column'>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 
