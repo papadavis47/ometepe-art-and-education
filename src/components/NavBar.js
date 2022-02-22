@@ -7,6 +7,14 @@ import { useState } from "react";
 const NavBar = () => {
   const { spanish, toggleSpanish } = useAppContext();
   const [isActive, setIsActive] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const toggleBurgerMenu = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  const closeBurgerMenu = () => {
+    setMobileOpen(false);
+  };
   return (
     <div>
       <nav className='navbar' role='navigation' aria-label='main navigation'>
@@ -21,10 +29,11 @@ const NavBar = () => {
           </Link>
           <a
             role='button'
-            className='navbar-burger'
+            className={`navbar-burger ${mobileOpen ? "is-active" : null}`}
             aria-label='menu'
             aria-expanded='false'
             data-target='navbarBasicExample'
+            onClick={() => toggleBurgerMenu()}
           >
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
@@ -32,19 +41,27 @@ const NavBar = () => {
           </a>
         </div>
 
-        <div className='navbar-menu'>
+        <div className={`navbar-menu ${mobileOpen ? "is-active" : null}`}>
           <div className='navbar-end is-size-4'>
-            <Link href='#'>
-              <a className='navbar-item'>Our Mission |</a>
+            <Link href='/info/mission'>
+              <a className='navbar-item' onClick={closeBurgerMenu}>
+                Our Mission |
+              </a>
+            </Link>
+            <Link href='/info/programs'>
+              <a className='navbar-item' onClick={closeBurgerMenu}>
+                Programs
+              </a>
+            </Link>
+            <Link href='/info/summer-camp'>
+              <a className='navbar-item' onClick={closeBurgerMenu}>
+                Summer Camp
+              </a>
             </Link>
             <Link href='#'>
-              <a className='navbar-item'>Programs</a>
-            </Link>
-            <Link href='/summer-camp'>
-              <a className='navbar-item'>Summer Camp</a>
-            </Link>
-            <Link href='#'>
-              <a className='navbar-item'>Enrollment &nbsp;|</a>
+              <a className='navbar-item' onClick={closeBurgerMenu}>
+                Enrollment &nbsp;|
+              </a>
             </Link>
 
             <div
@@ -54,31 +71,45 @@ const NavBar = () => {
               <a className='navbar-link is-arrowless'>Staff</a>
 
               <div className='navbar-dropdown is-size-6' onClick={() => setIsActive(true)}>
-                <Link href='/sandra'>
-                  <a className='navbar-item'>Maestra Sandra</a>
+                <Link href='/staff/sandra'>
+                  <a className='navbar-item' onClick={closeBurgerMenu}>
+                    Maestra Sandra
+                  </a>
                 </Link>
                 <hr className='navbar-divider' />
-                <Link href='/inma'>
-                  <a className='navbar-item'>Maestra Inma</a>
+                <Link href='/staff/inma'>
+                  <a className='navbar-item' onClick={closeBurgerMenu}>
+                    Maestra Inma
+                  </a>
                 </Link>
                 <hr className='navbar-divider' />
-                <Link href='#'>
-                  <a className='navbar-item'>Inmaculada Cruz</a>
+                <Link href='/staff/inmaculada'>
+                  <a className='navbar-item' onClick={closeBurgerMenu}>
+                    Inmaculada Cruz
+                  </a>
                 </Link>
                 <hr className='navbar-divider' />
-                <Link href='#'>
-                  <a className='navbar-item'>Victor Fuentes</a>
+                <Link href='/staff/victor'>
+                  <a className='navbar-item' onClick={closeBurgerMenu}>
+                    Victor Fuentes
+                  </a>
                 </Link>
               </div>
             </div>
-            <Link href='#'>
-              <a className='navbar-item'>Location</a>
+            <Link href='/info/location'>
+              <a className='navbar-item' onClick={closeBurgerMenu}>
+                Location
+              </a>
             </Link>
-            <Link href='#'>
-              <a className='navbar-item'>Events</a>
+            <Link href='/info/events'>
+              <a className='navbar-item' onClick={closeBurgerMenu}>
+                Events
+              </a>
             </Link>
-            <Link href='#'>
-              <a className='navbar-item'>Contact</a>
+            <Link href='/info/contact'>
+              <a className='navbar-item' onClick={closeBurgerMenu}>
+                Contact
+              </a>
             </Link>
           </div>
 
