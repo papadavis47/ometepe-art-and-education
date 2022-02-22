@@ -20,7 +20,7 @@ const NavBar = () => {
       <nav className='navbar' role='navigation' aria-label='main navigation'>
         <div className='navbar-brand has-text-weight-medium'>
           <Link href='/'>
-            <a className='navbar-item'>
+            <a className='navbar-item' onClick={closeBurgerMenu}>
               <IoColorPalette size={64} style={{ fontWeight: "bold" }} />
               <span className='is-size-5 pl-4'>
                 {spanish ? "Arte Nicaraguense" : "Nicaraguan Art"}
