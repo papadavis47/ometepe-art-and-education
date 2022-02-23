@@ -53,7 +53,7 @@ const Camp = () => {
           <li className='is-size-4 is-size-6-mobile'>
             <p>
               Session 3: &nbsp;July 05 - July 08{" "}
-              <span className='has-text-weight-bold'>&nbsp;Dino-Adventure</span>
+              <span className='has-text-weight-bold'>&nbsp;Central America - Knowing Nicaragua<u/span>
             </p>
           </li>
           <li className='is-size-4 is-size-6-mobile'>
@@ -65,7 +65,7 @@ const Camp = () => {
           <li className='is-size-4 is-size-6-mobile'>
             <p>
               Session 5: &nbsp;July 18 - July 22{" "}
-              <span className='has-text-weight-bold'>&nbsp;Under the Stars</span>
+              <span className='has-text-weight-bold'>&nbsp;Central America - Knowing Guatemala</span>
             </p>
           </li>
           <li className='is-size-4 is-size-6-mobile'>
@@ -77,7 +77,7 @@ const Camp = () => {
           <li className='is-size-4 is-size-6-mobile'>
             <p>
               Session 7: &nbsp;August 01 - August 25{" "}
-              <span className='has-text-weight-bold'>&nbsp;Summer of Fun</span>
+              <span className='has-text-weight-bold'>&nbsp;Central America - Knowing Honduras</span>
             </p>
           </li>
           <li className='is-size-4 is-size-6-mobile'>
