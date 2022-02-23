@@ -1,7 +1,11 @@
-import React from "react";
+import Construction from "../../src/components/Construction";
 
 const Sandra = () => {
-  return <div>This is Sandra page.</div>;
+  return (
+    <div>
+      <Construction title='Maestra Sandra' />
+    </div>
+  );
 };
 
 export default Sandra;

@@ -1,7 +1,11 @@
-import React from "react";
+import Construction from "../../src/components/Construction";
 
 const Inma = () => {
-  return <div>This is Inma page</div>;
+  return (
+    <div>
+      <Construction title='Maestra Inma' />
+    </div>
+  );
 };
 
 export default Inma;
