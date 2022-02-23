@@ -10,6 +10,14 @@ $footer-padding: 3rem 1.5rem 3rem;
   height: 100vh;
 }
 
+.centered-img {
+  margin: auto;
+}
+
+.shadow {
+  box-shadow: 8px 12px 12px 5px rgba(0, 0, 0, 0.8);
+}
+
 @import "../node_modules/bulma/bulma.sass";
 
 // @import "../node_modules/bulma/sass/utilities/_all.sass";
