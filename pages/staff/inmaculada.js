@@ -18,7 +18,7 @@ const Inmaculada = () => {
           <div className='section'>
             <article className='message is-dark is-medium' id='mission'>
               <div className='message-header'>
-                <p>Artist's Biography</p>
+                <p>Artist Biography</p>
               </div>
               <div className='message-body'>
                 <p className='is-size-6-mobile has-text-justified'>

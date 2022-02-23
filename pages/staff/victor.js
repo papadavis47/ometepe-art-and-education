@@ -24,7 +24,7 @@ const Victor = () => {
           <div className='section'>
             <article className='message is-dark is-medium' id='mission'>
               <div className='message-header'>
-                <p>Artist's Statement</p>
+                <p>Artist Statement</p>
               </div>
               <div className='message-body'>
                 <p className='is-size-6-mobile has-text-justified'>
