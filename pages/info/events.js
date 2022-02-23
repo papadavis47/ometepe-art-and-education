@@ -1,9 +1,11 @@
-import React from "react";
+import Construction from "../../src/components/Construction/Construction.js";
+import { useAppContext } from "../../src/Context/appContext.js";
 
 const Events = () => {
+  const { spanish } = useAppContext();
   return (
     <div>
-      <h1>This is my events page.</h1>
+      <Construction title={spanish ? "Eventos" : "Events"} />
     </div>
   );
 };

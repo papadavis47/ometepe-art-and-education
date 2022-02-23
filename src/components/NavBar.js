@@ -71,15 +71,15 @@ const NavBar = () => {
               <a className='navbar-link is-arrowless'>Staff</a>
 
               <div className='navbar-dropdown is-size-6' onClick={() => setIsActive(true)}>
-                <Link href='/staff/sandra'>
-                  <a className='navbar-item' onClick={closeBurgerMenu}>
-                    Maestra Sandra
-                  </a>
-                </Link>
-                <hr className='navbar-divider' />
                 <Link href='/staff/inma'>
                   <a className='navbar-item' onClick={closeBurgerMenu}>
                     Maestra Inma
+                  </a>
+                </Link>
+                <hr className='navbar-divider' />
+                <Link href='/staff/sandra'>
+                  <a className='navbar-item' onClick={closeBurgerMenu}>
+                    Maestra Sandra
                   </a>
                 </Link>
                 <hr className='navbar-divider' />
