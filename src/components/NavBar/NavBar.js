@@ -58,7 +58,7 @@ const NavBar = () => {
                 Summer Camp
               </a>
             </Link>
-            <Link href='#'>
+            <Link href='/info/enrollment'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
                 Enrollment &nbsp;|
               </a>
