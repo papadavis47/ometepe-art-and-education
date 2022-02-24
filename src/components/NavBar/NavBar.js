@@ -45,22 +45,22 @@ const NavBar = () => {
           <div className='navbar-end is-size-4'>
             <Link href='/info/mission'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                Our Mission |
+                {spanish ? "Nuestra misión" : "Our Mission"} |
               </a>
             </Link>
             <Link href='/info/programs'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                Programs
+                {spanish ? "Programas" : "Programs"}
               </a>
             </Link>
             <Link href='/info/summer-camp'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                Summer Camp
+                {spanish ? "Campamento de Verano" : "Summer Camp"}
               </a>
             </Link>
             <Link href='/info/enrollment'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                Enrollment &nbsp;|
+                {spanish ? "Inscripción" : "Enrollment"} &nbsp;|
               </a>
             </Link>
 
@@ -68,7 +68,7 @@ const NavBar = () => {
               className={`navbar-item has-dropdown ${!isActive ? "is-hoverable" : null}`}
               onMouseEnter={() => setIsActive(false)}
             >
-              <a className='navbar-link is-arrowless'>Staff</a>
+              <a className='navbar-link is-arrowless'>{spanish ? "Personal" : "Staff"}</a>
 
               <div className='navbar-dropdown is-size-6' onClick={() => setIsActive(true)}>
                 <Link href='/staff/inma'>
@@ -98,17 +98,17 @@ const NavBar = () => {
             </div>
             <Link href='/info/location'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                Location
+                {spanish ? "Localización" : "Location"}
               </a>
             </Link>
             <Link href='/info/events'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                Events
+                {spanish ? "Eventos" : "Events"}
               </a>
             </Link>
             <Link href='/info/contact'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                Contact
+                {spanish ? "Contactar" : "Contact"}
               </a>
             </Link>
           </div>

@@ -11,8 +11,8 @@ export default function Home() {
         <meta name='description' content='Adding our voices to a beautifully diverse world' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className='section has-text-centered'>
-        <h1 className='is-size-1 is-size-3-mobile has-text-light has-text-weight-light title mt-6'>
+      <div className='has-text-centered'>
+        <h1 className='is-size-1 is-size-4-mobile has-text-light has-text-weight-light title mt-6'>
           Ometepe Art and Education
         </h1>
         <h2 className=' is-italic is-size-4 is-size-6-mobile has-text-weight-light has-text-light subtitle'>
@@ -20,9 +20,9 @@ export default function Home() {
         </h2>
       </div>
       <section className='section'>
-        <div className='columns is-centered has-text-centered is-variable is-7'>
+        <div className='columns is-centered has-text-centered is-variable'>
           <div className='column'>
-            <h3 className='has-text-light is-size-4-desktop is-size-5-mobile is-size-5-tablet block mb-6'>
+            <h3 className='mt-4 has-text-light is-size-4-desktop is-size-5-mobile is-size-5-tablet block mb-6'>
               Art Lessons & Dance Lessons
             </h3>
             <figure className='is-flex is-justify-content-center block image is-4by3 shadow'>
@@ -45,7 +45,7 @@ export default function Home() {
             </figure>
           </div>
           <div className='column'>
-            <h3 className='has-text-light is-size-4-desktop is-size-5-mobile is-size-5-tablet block mb-6'>
+            <h3 className='has-text-light is-size-4-desktop is-size-5-mobile is-size-5-tablet block mb-6 mt-4'>
               Celebrating Nicaraguan Culture
             </h3>
             <figure className=' shadow is-flex is-justify-content-center block image is-4by3'>

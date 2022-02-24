@@ -7,8 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "css-build": "node-sass --omit-source-map-url sass/styles.scss styles/global.css",
-    "css-watch": "yarn run css-build -- --watch",
-    "scss": "yarn run css-watch"
+    "css-watch": "yarn run css-build -- --watch"
   },
   "dependencies": {
     "next": "^12.1.0",
