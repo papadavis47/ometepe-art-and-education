@@ -116,7 +116,7 @@ const NavBar = () => {
           <div className='navbar-end mr-4'>
             <div className='navbar-item'>
               <div className='buttons is-large' onClick={toggleSpanish}>
-                <a className='button is-warning is-light'>
+                <a className='button is-warning is-light' onClick={toggleBurgerMenu}>
                   <p className='is-size-5 p-3'>{spanish ? "English" : "En Español"}</p>
                 </a>
               </div>
