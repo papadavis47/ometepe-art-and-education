@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { SiNextdotjs } from "react-icons/si";
+import { useAppContext } from "../../Context/appContext.js";
 
 const Footer = () => {
+  const { spanish } = useAppContext();
   return (
     <footer className='footer has-text-centered is-white column is-narrow mt-6'>
       <h2 className='is-size-4'>
@@ -17,7 +19,7 @@ const Footer = () => {
       </div>
       <div>
         <p className='is-size-5'>
-          Built with <SiNextdotjs />
+          {spanish ? "Construido con" : "Built with"} <SiNextdotjs />
         </p>
       </div>
       <div className='mt-3'>

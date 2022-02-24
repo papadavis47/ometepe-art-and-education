@@ -16,14 +16,16 @@ export default function Home() {
           Ometepe Art and Education
         </h1>
         <h2 className=' is-italic is-size-4 is-size-6-mobile has-text-weight-light has-text-light subtitle'>
-          Adding Our Voices to a Beautifully Diverse World
+          {spanish
+            ? "Añadiendo nuestras voces a un mundo maravillosamente diverso"
+            : "Adding Our Voices to a Beautifully Diverse World"}
         </h2>
       </div>
       <section className='section'>
         <div className='columns is-centered has-text-centered is-variable'>
           <div className='column'>
             <h3 className='mt-4 has-text-light is-size-4-desktop is-size-5-mobile is-size-5-tablet block mb-6'>
-              Art Lessons & Dance Lessons
+              {spanish ? "Lecciones de arte y clases de baile" : "Art Lessons & Dance Lessons"}
             </h3>
             <figure className='is-flex is-justify-content-center block image is-4by3 shadow'>
               <Image
@@ -46,7 +48,7 @@ export default function Home() {
           </div>
           <div className='column'>
             <h3 className='has-text-light is-size-4-desktop is-size-5-mobile is-size-5-tablet block mb-6 mt-4'>
-              Celebrating Nicaraguan Culture
+              {spanish ? "Celebrando la cultura nicaragüense" : "Celebrating Nicaraguan Culture"}
             </h3>
             <figure className=' shadow is-flex is-justify-content-center block image is-4by3'>
               <Image src='/dollsgrey.jpg' alt='Houses in Chinandega' layout='fill' />
