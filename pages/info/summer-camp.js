@@ -12,7 +12,7 @@ const Camp = () => {
         Summer Camps 2022
       </h1>
       <p className='is-size-6-mobile has-text-justified is-size-4-desktop'>
-        Summer Camps are open to students from 5-12 years olds.{" "}
+        Summer Camps are open to students from ages 5-12 years old.{" "}
       </p>
       <p className='is-size-6-mobile has-text-justified is-size-4-desktop mt-3'>
         <strong className='has-text-light'>No prior Spanish language required.</strong>
@@ -78,7 +78,7 @@ const Camp = () => {
           </li>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 7: &nbsp;August 01 - August 25{" "}
+              Session 7: &nbsp;August 01 - August 05{" "}
               <span className='has-text-weight-bold'>&nbsp;Central America - Knowing Honduras</span>
             </p>
           </li>
