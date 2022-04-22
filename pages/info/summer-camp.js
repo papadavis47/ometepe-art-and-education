@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 const Camp = () => {
   return (
@@ -8,7 +9,7 @@ const Camp = () => {
         <meta name='description' content='Ometepe Art and Education' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h1 className='is-size-1 is-size-3-mobile  title mt-6 has-text-light has-text-weight-light has-text-centered'>
+      <h1 className='is-size-1 is-size-4-mobile  title mt-6 has-text-light has-text-weight-light has-text-centered'>
         Summer Camps 2022
       </h1>
       <p className='is-size-6-mobile has-text-justified is-size-4-desktop'>
@@ -17,6 +18,16 @@ const Camp = () => {
       <p className='is-size-6-mobile has-text-justified is-size-4-desktop mt-3'>
         <strong className='has-text-light'>No prior Spanish language required.</strong>
       </p>
+      <div className='columns is-flex is-centered my-6'>
+        <figure className='image'>
+          <Image
+            src='/summer-camp-flyer.png'
+            width={700}
+            height={700}
+            alt='Flyer for summer camp information'
+          />
+        </figure>
+      </div>
       <p className='is-size-6-mobile has-text-justified is-size-4-desktop mt-3'>
         Our Ometepe summer camp has been designed to accommodate your family’s schedule, offering
         weekly camps.
