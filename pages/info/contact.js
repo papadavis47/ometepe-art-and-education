@@ -5,12 +5,21 @@ const Contact = () => {
   return (
     <div className='has-text-light has-textweight-light has-text-centered mt-6'>
       <h2 className='is-size-3 is-size-5-mobile'>
-        {spanish ? "Correo electrónico" : "Email"}:&nbsp;{" "}
+        {spanish ? "Llena nuestro formulario haciendo clic " : "Fill out our form by clicking "}
+        <a
+          className='has-text-light has-text-weight-bold is-underlined'
+          href='https://form.jotform.com/221110567022137'
+        >
+          {spanish ? "aqui" : "here"}
+        </a>{" "}
+        {spanish ? "o:" : "or:"}
       </h2>
-      <span className='has-text-weight-bold is-size-5-mobile is-size-3'>
-        {" "}
-        ometepeartandeducation@gmail.com
-      </span>
+      <h2 className='is-size-3 is-size-5-mobile'>
+        {spanish ? "Correo electrónico" : "Send an Email"}:&nbsp;{" "}
+      </h2>
+      <p>
+        <span className='is-size-5-mobile is-size-3'> ometepeartandeducation@gmail.com</span>
+      </p>
     </div>
   );
 };
