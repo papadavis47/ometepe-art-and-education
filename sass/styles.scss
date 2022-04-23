@@ -23,6 +23,10 @@ $footer-padding: 2rem 1.5rem 2rem;
   background-attachment: fixed;
 }
 
+.bottomBorder {
+  border-bottom: 2px solid white;
+}
+
 @import "../node_modules/bulma/bulma.sass";
 
 // @import "../node_modules/bulma/sass/utilities/_all.sass";

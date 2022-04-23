@@ -13,6 +13,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
+.bottomBorder {
+  border-bottom: 2px solid white; }
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
