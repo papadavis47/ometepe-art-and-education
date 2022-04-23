@@ -20,7 +20,7 @@ const Victor = () => {
         </h2>
       </div>
       <div className='columns is-centered has-text-centered section pt-0'>
-        <div className='column is-four-fifths'>
+        <div className='column is-four-fifths-desktop'>
           <figure className='image is-16by9 shadow'>
             <Image
               className='shadow'
@@ -29,13 +29,13 @@ const Victor = () => {
               alt='Victor Fuentes, painter'
             />
           </figure>
-          <div className='section'>
-            <article className='message is-dark is-medium' id='mission'>
-              <div className='message-header'>
-                <p>{spanish ? "Declaración del artista" : "Artist Statement"}</p>
+          <div>
+            <article>
+              <div className='has-text-centered has-text-white my-3 is-size-3'>
+                <p className='p-2'>{spanish ? "Declaración del artista" : "Artist Statement"}</p>
               </div>
-              <div className='message-body'>
-                <p className='is-size-6-mobile has-text-justified'>
+              <div>
+                <p className='has-text-justified has-text-white is-size-5-mobile is-size-4'>
                   {spanish ? spanishStatement : englishStatement}
                 </p>
               </div>
