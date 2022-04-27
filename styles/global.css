@@ -16,6 +16,10 @@
 .bottomBorder {
   border-bottom: 2px solid white; }
 
+@media screen and (min-width: 1025px) {
+  nav {
+    padding: 0.75rem 0; } }
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
