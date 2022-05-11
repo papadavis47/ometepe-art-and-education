@@ -23,7 +23,7 @@ const Camp = () => {
       <div className='columns is-flex is-centered my-6'>
         <figure className='image'>
           <Image
-            src='/summer-camp-flyer.png'
+            src='/new-flyer.jpeg'
             width={700}
             height={700}
             alt='Flyer for summer camp information'
@@ -51,19 +51,27 @@ const Camp = () => {
         <ul>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 1: &nbsp;June 20 - June 24{" "}
+              Session 1: &nbsp;June 13 - June 17{" "}
               <span className='has-text-weight-bold'>&nbsp;We Are All Amigos</span>
             </p>
           </li>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 2: &nbsp;June 27 - July 01{" "}
+              Session 2: &nbsp;June 20 - June 24{" "}
+              <span className='has-text-weight-bold'>
+                &nbsp;Central America - Knowing El Salvador
+              </span>
+            </p>
+          </li>
+          <li className='is-size-4 is-size-6-mobile'>
+            <p>
+              Session 3: &nbsp;June 27 - July 01{" "}
               <span className='has-text-weight-bold'>&nbsp;Under the Sea</span>
             </p>
           </li>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 3: &nbsp;July 05 - July 08{" "}
+              Session 4: &nbsp;July 05 - July 08{" "}
               <span className='has-text-weight-bold'>
                 &nbsp;Central America - Knowing Nicaragua
               </span>
@@ -71,13 +79,13 @@ const Camp = () => {
           </li>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 4: &nbsp;July 11 - July 15{" "}
+              Session 5: &nbsp;July 11 - July 15{" "}
               <span className='has-text-weight-bold'>&nbsp;Crazy Scientist</span>
             </p>
           </li>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 5: &nbsp;July 18 - July 22{" "}
+              Session 6: &nbsp;July 18 - July 22{" "}
               <span className='has-text-weight-bold'>
                 &nbsp;Central America - Knowing Guatemala
               </span>
@@ -85,19 +93,19 @@ const Camp = () => {
           </li>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 6: &nbsp;July 25 - July 29{" "}
+              Session 7: &nbsp;July 25 - July 29{" "}
               <span className='has-text-weight-bold'>&nbsp;The Wildlife</span>
             </p>
           </li>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 7: &nbsp;August 01 - August 05{" "}
+              Session 8: &nbsp;August 01 - August 05{" "}
               <span className='has-text-weight-bold'>&nbsp;Central America - Knowing Honduras</span>
             </p>
           </li>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 8: &nbsp;August 08 - August 12{" "}
+              Session 9: &nbsp;August 08 - August 12{" "}
               <span className='has-text-weight-bold'>&nbsp;DIY Makers</span>
             </p>
           </li>
