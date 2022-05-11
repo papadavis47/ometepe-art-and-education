@@ -58,11 +58,13 @@ const NavBar = () => {
                 {spanish ? "Campamento de Verano" : "Summer Camp"}
               </a>
             </Link>
-            <Link href='/info/enrollment'>
-              <a className='navbar-item' onClick={closeBurgerMenu}>
-                {spanish ? "Inscripción" : "Enrollment"} &nbsp;|
-              </a>
-            </Link>
+            <a
+              href='https://form.jotform.com/221290155777156'
+              className='navbar-item'
+              onClick={closeBurgerMenu}
+            >
+              {spanish ? "Inscripción" : "Enrollment"} &nbsp;|
+            </a>
 
             <div
               className={`navbar-item has-dropdown ${!isActive ? "is-hoverable" : null}`}
