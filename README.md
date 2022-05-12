@@ -12,7 +12,7 @@ organization based in Seattle with the following mission statement:
 ---
 
 <p align="center">
-<img src="./public/painting.jpg" width="800" height="400" />
+<img src="./public/painting.jpg" width="600" height="300" />
 </p>
 
 The founders of OAE are from Nicaragua. They teach Nicaraguan dance and culinary arts - as well as
