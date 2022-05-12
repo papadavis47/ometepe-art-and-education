@@ -1,34 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Source Code for ometepeartandeducation.org
 
-## Getting Started
+This is an informational website for Ometepe Art and Education (OAE) - a wonderful organization,
+based in Seattle, with the following mission statement:
 
-First, run the development server:
+> "To share, with as wide an audience as possible, the traditional dance, musical culture and
+> culinary dishes unique to our beautiful Central American country. We also wish to expose as many
+> people as possible to our visual arts."
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The founders of OAE are from Nicaragua. They teach Nicaraguan dance and culinary arts - as well as
+provide summer camps for children where they teach Spanish and Central American culture with other
+immigrants from the community.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The website is build with Next.js and Bulma CSS for styling.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+It utilizes the useContext API from React.js - to allow for bilingual (Spanish/English) transitions
+by clicking a button on the Navbar.
