@@ -45,17 +45,17 @@ const NavBar = () => {
           <div className='navbar-end is-size-4'>
             <Link href='/info/mission'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                {spanish ? "Nuestra misión" : "Our Mission"} |
+                {spanish ? "Nuestra misión" : "Our Mission"}
               </a>
             </Link>
             <Link href='/info/programs'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                {spanish ? "Programas" : "Programs"}
+                {spanish ? "Programas" : "Programs"}&nbsp; {!mobileOpen && "|"}
               </a>
             </Link>
             <Link href='/info/summer-camp'>
               <a className='navbar-item' onClick={closeBurgerMenu}>
-                {spanish ? "Campamento de Verano" : "Summer Camp"}
+                {spanish ? "Campamento de Verano" : "Summer Camp Information"}
               </a>
             </Link>
             <a
@@ -63,7 +63,7 @@ const NavBar = () => {
               className='navbar-item'
               onClick={closeBurgerMenu}
             >
-              {spanish ? "Inscripción" : "Enrollment"} &nbsp;|
+              {spanish ? "Registro" : "Camp Registration"}&nbsp; {!mobileOpen && "  |"}
             </a>
 
             <div
