@@ -1,4 +1,4 @@
-<h1 align="center">ometepeartandeducation.org</h1>
+<h2 align="center">ometepeartandeducation.org</h2>
 
 This is the source code of an informational website for Ometepe Art and Education (OAE) - an
 organization based in Seattle with the following mission statement:
@@ -17,7 +17,7 @@ organization based in Seattle with the following mission statement:
 
 The founders of OAE are from Nicaragua. They teach Nicaraguan dance and culinary arts - as well as
 provide summer camps for children where they teach Spanish and Central American culture along with
-other immigrants from the community.
+other immigrants from the various Central American countries.
 
 The website is build with Next.js and Bulma CSS for styling.
 

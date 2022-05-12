@@ -5,7 +5,9 @@ const Contact = () => {
   return (
     <div className='has-text-light has-textweight-light has-text-centered mt-6'>
       <h2 className='is-size-3 is-size-5-mobile'>
-        {spanish ? "Llena nuestro formulario haciendo clic " : "Fill out our form by clicking "}
+        {spanish
+          ? "Complete nuestro formulario de interés haciendo clic "
+          : "Fill out our interest form by clicking "}
         <a
           className='has-text-light has-text-weight-bold is-underlined'
           href='https://form.jotform.com/221110567022137'
