@@ -58,13 +58,38 @@ const NavBar = () => {
                 {spanish ? "Campamento de Verano" : "Summer Camp Information"}
               </a>
             </Link>
-            <a
-              href='https://form.jotform.com/221290155777156'
-              className='navbar-item'
-              onClick={closeBurgerMenu}
+            {/* new dropdown going here */}
+            <div
+              className={`navbar-item has-dropdown ${!isActive ? "is-hoverable" : null}`}
+              onMouseEnter={() => setIsActive(false)}
             >
-              {spanish ? "Registro" : "Camp Registration"}&nbsp; {!mobileOpen && "  |"}
-            </a>
+              <a className='navbar-link is-arrowless' onClick={closeBurgerMenu}>
+                {spanish ? "Registro" : "Camp Registration"}&nbsp; {!mobileOpen && "  |"}
+              </a>
+              <div className='navbar-dropdown is-size-6' onClick={() => setIsActive(true)}>
+                <a
+                  className='navbar-item'
+                  href='https://form.jotform.com/221290155777156'
+                  onClick={closeBurgerMenu}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  {spanish ? "Formulario de inscripción" : "Registration Form"}
+                </a>
+
+                <hr className='navbar-divider' />
+                <a
+                  className='navbar-item'
+                  href='https://www.paypal.com/donate/?hosted_button_id=F6WPQX2HNRTGA'
+                  onClick={closeBurgerMenu}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  PayPal
+                </a>
+              </div>
+            </div>
+            {/* end new setup for links */}
 
             <div
               className={`navbar-item has-dropdown ${!isActive ? "is-hoverable" : null}`}
