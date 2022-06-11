@@ -29,8 +29,12 @@ const Sandra = () => {
               <div className='block  has-text-white my-3 is-size-3'>
                 <p className='is-size-5-mobile is-size-4  has-text-white'>
                   Sandra has been working with kids for ten years. She loves helping children to
-                  learn and to understand the world around themselves. Watching them grow and
-                  succeed is her greatest joy.{" "}
+                  learn and to understand the world around them.{" "}
+                </p>
+              </div>
+              <div className='block  has-text-white my-3 is-size-3'>
+                <p className='is-size-5-mobile is-size-4  has-text-white'>
+                  Watching them grow and succeed is her greatest joy.{" "}
                 </p>
               </div>
               <div className='block'>
