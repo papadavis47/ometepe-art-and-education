@@ -49,12 +49,14 @@ const Camp = () => {
           Schedule for Summer 2022
         </h2>
         <ul>
-          <li className='is-size-4 is-size-6-mobile'>
-            <p>
+          <li className=' mb-4 is-size-4 is-size-6-mobile'>
+            <p className='cancelled'>
               Session 1: &nbsp;June 13 - June 17{" "}
               <span className='has-text-weight-bold'>&nbsp;We Are All Amigos</span>
             </p>
+            <span className='is-italic'>Cancelled</span>
           </li>
+
           <li className='is-size-4 is-size-6-mobile'>
             <p>
               Session 2: &nbsp;June 20 - June 24{" "}
