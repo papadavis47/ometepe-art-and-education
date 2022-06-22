@@ -61,7 +61,7 @@ const Camp = () => {
             <p>
               Session 2: &nbsp;June 20 - June 24{" "}
               <span className='has-text-weight-bold'>
-                &nbsp;Central America - Knowing El Salvador
+                &nbsp;Central America - Knowing Nicaragua
               </span>
             </p>
           </li>
@@ -75,7 +75,7 @@ const Camp = () => {
             <p>
               Session 4: &nbsp;July 05 - July 08{" "}
               <span className='has-text-weight-bold'>
-                &nbsp;Central America - Knowing Nicaragua
+                &nbsp;Central America - Knowing El Salvador
               </span>
             </p>
           </li>
