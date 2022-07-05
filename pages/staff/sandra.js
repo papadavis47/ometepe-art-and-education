@@ -1,4 +1,3 @@
-// import Construction from "../../src/components/Construction";
 import Image from "next/image";
 import { useAppContext } from "../../src/Context/appContext.js";
 
