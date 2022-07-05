@@ -1,7 +1,7 @@
+# Old CSS
+
+```css
 @charset "utf-8";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
 
 $family-serif: "Arapey", serif;
@@ -35,15 +35,4 @@ $footer-padding: 2rem 1.5rem 2rem;
     padding: 0.75rem 0;
   }
 }
-
-// @import "../node_modules/bulma/bulma.sass";
-
-// @import "../node_modules/bulma/sass/utilities/_all.sass";
-// @import "../node_modules/bulma/sass/base/_all.sass";
-// @import "../node_modules/bulma/sass/elements/button.sass";
-// @import "../node_modules/bulma/sass/elements/container.sass";
-// @import "../node_modules/bulma/sass/elements/title.sass";
-// @import "../node_modules/bulma/sass/form/_all.sass";
-// @import "../node_modules/bulma/sass/components/navbar.sass";
-// @import "../node_modules/bulma/sass/layout/hero.sass";
-// @import "../node_modules/bulma/sass/layout/section.sass";
+```

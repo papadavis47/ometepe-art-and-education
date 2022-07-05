@@ -1,6 +1,6 @@
 import "../styles/global.css";
-import Layout from "../src/components/Layout";
-import { ContextWrapper } from "../src/Context/appContext.js";
+import Layout from "../components/Layout";
+import { ContextWrapper } from "../Context/appContext.js";
 
 function MyApp({ Component, pageProps }) {
   return (

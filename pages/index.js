@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useAppContext } from "../src/Context/appContext.js";
+import { useAppContext } from "../Context/appContext.js";
 
 export default function Home() {
   const { spanish, setSpanish, toggleSpanish } = useAppContext();
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='has-text-centered text-sm'>
-        <h1 className='text-5xl is-size-1 is-size-4-mobile has-text-light has-text-weight-light title mt-6'>
+        <h1 className='text-5xl text-red-400 is-size-4-mobile has-text-light has-text-weight-light title mt-6'>
           Ometepe Art and Education
         </h1>
         <h2 className=' is-italic is-size-4 is-size-6-mobile has-text-weight-light has-text-light subtitle'>
