@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useAppContext } from "../../src/Context/appContext.js";
+import { useAppContext } from "../../Context/appContext.js";
 
 const bioParagraphOneSpanish =
   "Inmaculada Cruz nació en la Isla de Ometepe, Nicaragua. Desde pequeña, la flora y fauna de esta isla influyó en su desarrollo artístico. Aprendió a pintar la naturaleza que la rodeaba tal como la percibía: los árboles, las flores, los animales, las granjas, la gente y sus costumbres. Más tarde descubrió que su pintura es primitiva, nativa y natural. No tiene un estilo derivado y no depende de técnicas sofisticadas.";

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useAppContext } from "../../src/Context/appContext.js";
+import { useAppContext } from "../../Context/appContext.js";
 
 const Camp = () => {
   const { spanish } = useAppContext();
@@ -11,16 +11,16 @@ const Camp = () => {
         <meta name='description' content='Ometepe Art and Education' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h1 className='is-size-1 is-size-4-mobile  title mt-6 has-text-light has-text-weight-light has-text-centered'>
+      <h1 className='mt-6 is-size-1 is-size-4-mobile title has-text-light has-text-weight-light has-text-centered'>
         Summer Camps 2022
       </h1>
       <p className='is-size-6-mobile has-text-justified is-size-4-desktop'>
         Summer Camps are open to students from ages 5-12 years old.{" "}
       </p>
-      <p className='is-size-6-mobile has-text-justified is-size-4-desktop mt-3'>
+      <p className='mt-3 is-size-6-mobile has-text-justified is-size-4-desktop'>
         <strong className='has-text-light'>No prior Spanish language required.</strong>
       </p>
-      <div className='columns is-flex is-centered my-6'>
+      <div className='my-6 columns is-flex is-centered'>
         <figure className='image'>
           <Image
             src='/new-flyer.jpeg'
@@ -30,26 +30,26 @@ const Camp = () => {
           />
         </figure>
       </div>
-      <p className='is-size-6-mobile has-text-justified is-size-4-desktop mt-3'>
+      <p className='mt-3 is-size-6-mobile has-text-justified is-size-4-desktop'>
         Our Ometepe summer camp has been designed to accommodate your family’s schedule, offering
         weekly camps.
       </p>
-      <p className='is-size-6-mobile has-text-justified is-size-4-desktop mt-3'>
+      <p className='mt-3 is-size-6-mobile has-text-justified is-size-4-desktop'>
         Our camps are well-supervised, engaging, and educational. Available all day, children will
         participate in creative projects, hands-on activities, and clubs.{" "}
       </p>
-      <p className='is-size-6-mobile has-text-justified is-size-4-desktop mt-3'>
+      <p className='mt-3 is-size-6-mobile has-text-justified is-size-4-desktop'>
         Our Summer Camp curriculum explores a variety of topics and concepts. Among other physical
         activities - we include field trips around TT Minor Park and Miller Park - for play and for
         exercise.
       </p>
-      <section className='block has-text-light has-text-weight-light mt-4 pt-4'>
+      <section className='block pt-4 mt-4 has-text-light has-text-weight-light'>
         <h2 className='title is-size-2 is-size-4-mobile has-text-light has-text-centered has-text-weight-semibold'>
           {" "}
           Schedule for Summer 2022
         </h2>
         <ul>
-          <li className=' mb-4 is-size-4 is-size-6-mobile'>
+          <li className='mb-4 is-size-4 is-size-6-mobile'>
             <p className='cancelled'>
               Session 1: &nbsp;June 13 - June 17{" "}
               <span className='has-text-weight-bold'>&nbsp;We Are All Amigos</span>
@@ -113,8 +113,8 @@ const Camp = () => {
           </li>
         </ul>
       </section>
-      <section className='mt-5 py-3'>
-        <div className='has-text-light has-textweight-light has-text-centered mt-6'>
+      <section className='py-3 mt-5'>
+        <div className='mt-6 has-text-light has-textweight-light has-text-centered'>
           <h2 className='is-size-3 is-size-5-mobile'>
             {spanish
               ? "Complete nuestro formulario de interés haciendo clic  "

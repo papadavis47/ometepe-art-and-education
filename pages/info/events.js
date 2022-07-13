@@ -1,5 +1,5 @@
-import Construction from "../../src/components/Construction/Construction.js";
-import { useAppContext } from "../../src/Context/appContext.js";
+import Construction from "../../components/Construction";
+import { useAppContext } from "../../Context/appContext.js";
 
 const Events = () => {
   const { spanish } = useAppContext();

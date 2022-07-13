@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useAppContext } from "../../src/Context/appContext.js";
+import { useAppContext } from "../../Context/appContext.js";
 
 const englishStatement =
   "The intention of my painting is to project Latin-American art and culture through themes from my Latin roots. In this context, the goal of my work is to transmit my knowledge, my sensibility and my love of art to the different cultures in Washington State. In this sense, the visual arts has been my greatests connection with the Pacific Northwest. Here, the various cultures allow me to learn from them and thereby enrich my artwork - liberating my brush toward new expressions and colors. I believe art lives within each one of us and this life force seeks a universe of forms and colors that enrich humanity and touch the spirit.";
@@ -12,16 +12,16 @@ const Victor = () => {
   return (
     <div>
       <div className='section has-text-centered'>
-        <h1 className='is-size-1 is-size-3-mobile has-text-light has-text-weight-light title mt-6'>
+        <h1 className='mt-6 is-size-1 is-size-3-mobile has-text-light has-text-weight-light title'>
           Victor Fuentes
         </h1>
-        <h2 className=' is-italic is-size-4 is-size-6-mobile has-text-weight-light has-text-light subtitle mb-0'>
+        <h2 className='mb-0  is-italic is-size-4 is-size-6-mobile has-text-weight-light has-text-light subtitle'>
           {spanish ? "Pintor y Poeta" : "Painter and Poet"}
         </h2>
       </div>
-      <div className='columns is-centered has-text-centered section pt-0'>
+      <div className='pt-0 columns is-centered has-text-centered section'>
         <div className='column is-four-fifths-desktop'>
-          <figure className='image is-16by9 shadow'>
+          <figure className='shadow image is-16by9'>
             <Image
               className='shadow'
               src='/victor-portrait.jpg'
@@ -31,7 +31,7 @@ const Victor = () => {
           </figure>
           <div>
             <article>
-              <div className='has-text-centered has-text-white my-3 is-size-3'>
+              <div className='my-3 has-text-centered has-text-white is-size-3'>
                 <p className='p-2'>{spanish ? "Declaración del artista" : "Artist Statement"}</p>
               </div>
               <div>

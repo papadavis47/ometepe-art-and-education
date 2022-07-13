@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useAppContext } from "../../src/Context/appContext.js";
+import { useAppContext } from "../.../Context/appContext.js";
 
 const spanishMissionStatement =
   "La misión de nuestra organizacíon es compartir y dar a conocer nuestra cultura destacando la danza folklorica, arte visual, historia de la música y lengua de nuestro hermoso país Nicaragua de America Central a traves de la conexión y participacion de nuestra communidad en el Noroeste.";
@@ -11,7 +11,7 @@ const Mission = () => {
   const { spanish } = useAppContext();
   return (
     <div className='column is-centered'>
-      <div className='content mt-5'>
+      <div className='mt-5 content'>
         <h1 className='title has-text-centered has-text-light is-size-1 has-text-weight-light'>
           {spanish ? "Nuestra misión" : "Our Mission"}
         </h1>
@@ -21,7 +21,7 @@ const Mission = () => {
           {spanish ? spanishMissionStatement : englishMissionStatement}
         </p>
       </section>
-      <div className='columns is-flex is-centered mt-6'>
+      <div className='mt-6 columns is-flex is-centered'>
         <figure className='image'>
           <Image src='/dancer-ometepe.jpg' width={600} height={500} alt='Dancer in Ometepe' />
           <figcaption className='has-text-light is-size-6'>

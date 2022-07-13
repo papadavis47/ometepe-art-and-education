@@ -1,5 +1,5 @@
-import Construction from "../../src/components/Construction/Construction.js";
-import { useAppContext } from "../../src/Context/appContext.js";
+import Construction from "../../components/Construction";
+import { useAppContext } from "../../Context/appContext.js";
 
 const Location = () => {
   const { spanish } = useAppContext();
@@ -7,7 +7,7 @@ const Location = () => {
     <div className='has-text-white'>
       <div>
         <div className='is-flex is-flex-direction-column is-align-items-center'>
-          <div className='has-text-centered py-4'>
+          <div className='py-4 has-text-centered'>
             <h2 className='is-size-3 is-size-5-mobile'>Ometepe Art & Education Summer Camp</h2>
             <p className='is-size-4 has-text-has-text-weight-medium '>
               <a
