@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: ["Arapey", ...defaultTheme.fontFamily.serif],
+        sans: ["Raleway", ...defaultTheme.fontFamily.sans],
       },
     },
   },
