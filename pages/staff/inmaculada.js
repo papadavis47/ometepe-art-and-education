@@ -17,34 +17,24 @@ const Inmaculada = () => {
   const { spanish } = useAppContext();
   return (
     <>
-      <div className='section has-text-centered'>
-        <h1 className='is-size-1 is-size-3-mobile has-text-light has-text-weight-light title mt-6'>
-          Inmaculada Cruz
-        </h1>
-        <h2 className=' is-italic is-size-4 is-size-6-mobile has-text-weight-light has-text-light subtitle'>
-          {spanish ? "Pintora y Chef" : "Painter and Chef"}
-        </h2>
+      <div className=''>
+        <h1 className='mt-6'>Inmaculada Cruz</h1>
+        <h2 className='italic'>{spanish ? "Pintora y Chef" : "Painter and Chef"}</h2>
       </div>
-      <div className='columns is-centered has-text-centered section pt-0'>
-        <div className='column is-three-quarters-desktop'>
-          <figure className='image is-3by2 shadow'>
-            <Image src='/inmaculada.jpg' alt='Inmaculada Cruz, painter' layout='fill' />
-          </figure>
+      <div className=''>
+        <div className=''>
+          <Image src='/inmaculada.jpg' alt='Inmaculada Cruz, painter' width={700} height={500} />
           <div>
-            <article>
-              <div className='has-text-centered has-text-white my-3 is-size-3'>
+            <div>
+              <div className='text-white'>
                 <p className='p-2'>{spanish ? "Biografia del artista" : "Artist Biography"}</p>
               </div>
               <div>
-                <p className='is-size-5-mobile is-size-4 has-text-justified has-text-white'>
-                  {spanish ? bioParagraphOneSpanish : bioParagraphOneEnglish}
-                </p>
+                <p className=''>{spanish ? bioParagraphOneSpanish : bioParagraphOneEnglish}</p>
                 <br />
-                <p className='is-size-5-mobile is-size-4 has-text-justified has-text-white'>
-                  {spanish ? bioParagraphTwoSpanish : bioParagraphTwoEnglish}
-                </p>
+                <p className=''>{spanish ? bioParagraphTwoSpanish : bioParagraphTwoEnglish}</p>
               </div>
-            </article>
+            </div>
           </div>
         </div>
       </div>

@@ -10,36 +10,29 @@ const spanishStatement =
 const Victor = () => {
   const { spanish } = useAppContext();
   return (
-    <div>
-      <div className='section has-text-centered'>
-        <h1 className='mt-6 is-size-1 is-size-3-mobile has-text-light has-text-weight-light title'>
-          Victor Fuentes
-        </h1>
-        <h2 className='mb-0  is-italic is-size-4 is-size-6-mobile has-text-weight-light has-text-light subtitle'>
-          {spanish ? "Pintor y Poeta" : "Painter and Poet"}
-        </h2>
+    <div className='text-white'>
+      <div className=''>
+        <h1 className='mt-6'>Victor Fuentes</h1>
+        <h2 className='italic'>{spanish ? "Pintor y Poeta" : "Painter and Poet"}</h2>
       </div>
-      <div className='pt-0 columns is-centered has-text-centered section'>
-        <div className='column is-four-fifths-desktop'>
-          <figure className='shadow image is-16by9'>
-            <Image
-              className='shadow'
-              src='/victor-portrait.jpg'
-              layout='fill'
-              alt='Victor Fuentes, painter'
-            />
-          </figure>
+      <div className=''>
+        <div className=''>
+          <Image
+            className='shadow'
+            src='/victor-portrait.jpg'
+            width={800}
+            height={500}
+            alt='Victor Fuentes, painter'
+          />
           <div>
-            <article>
-              <div className='my-3 has-text-centered has-text-white is-size-3'>
+            <div>
+              <div className='my-3'>
                 <p className='p-2'>{spanish ? "Declaración del artista" : "Artist Statement"}</p>
               </div>
               <div>
-                <p className='has-text-justified has-text-white is-size-5-mobile is-size-4'>
-                  {spanish ? spanishStatement : englishStatement}
-                </p>
+                <p className=''>{spanish ? spanishStatement : englishStatement}</p>
               </div>
-            </article>
+            </div>
           </div>
         </div>
       </div>

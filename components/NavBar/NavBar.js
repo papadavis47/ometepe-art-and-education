@@ -17,22 +17,16 @@ const NavBar = () => {
   };
   return (
     <div>
-      <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
-        <div className='navbar-brand has-text-weight-medium'>
+      <nav className='sticky bg-white'>
+        <div className='font-medium'>
           <Link href='/'>
-            <a className='navbar-item' onClick={closeBurgerMenu}>
+            <a className=''>
               <IoColorPalette size={36} style={{ fontWeight: "bold" }} />
-              <span className='is-size-5 pl-4'>
-                {spanish ? "Arte Nicaraguense" : "Nicaraguan Art"}
-              </span>
+              <span className='pl-4'>{spanish ? "Arte Nicaraguense" : "Nicaraguan Art"}</span>
             </a>
           </Link>
           <a
-            role='button'
             className={`navbar-burger ${mobileOpen ? "is-active" : null}`}
-            aria-label='menu'
-            aria-expanded='false'
-            data-target='navbarBasicExample'
             onClick={() => toggleBurgerMenu()}
           >
             <span aria-hidden='true'></span>
@@ -41,47 +35,26 @@ const NavBar = () => {
           </a>
         </div>
 
-        <div className={`navbar-menu ${mobileOpen ? "is-active" : null}`}>
-          <div className='navbar-end is-size-4'>
-            <Link href='/info/mission'>
-              <a className='navbar-item' onClick={closeBurgerMenu}>
-                {spanish ? "Nuestra misión" : "Our Mission"}
-              </a>
-            </Link>
-            <Link href='/info/programs'>
-              <a className='navbar-item' onClick={closeBurgerMenu}>
-                {spanish ? "Programas" : "Programs"}&nbsp; {!mobileOpen && "|"}
-              </a>
-            </Link>
+        <div className=''>
+          <div className='text-lg'>
+            <Link href='/info/mission'>{spanish ? "Nuestra misión" : "Our Mission"}</Link>
+            <Link href='/info/programs'>{spanish ? "Programas" : "Programs"}</Link>
             <Link href='/info/summer-camp'>
-              <a className='navbar-item' onClick={closeBurgerMenu}>
-                {spanish ? "Campamento de Verano" : "Summer Camp Information"}
-              </a>
+              {spanish ? "Campamento de Verano" : "Summer Camp Information"}
             </Link>
-            {/* new dropdown going here */}
-            <div
-              className={`navbar-item has-dropdown ${!isActive ? "is-hoverable" : null}`}
-              onMouseEnter={() => setIsActive(false)}
-            >
+
+            <div>
               <a className='navbar-link is-arrowless' onClick={closeBurgerMenu}>
                 {spanish ? "Registro" : "Camp Registration"}&nbsp; {!mobileOpen && "  |"}
               </a>
-              <div className='navbar-dropdown is-size-6' onClick={() => setIsActive(true)}>
-                <a
-                  className='navbar-item'
-                  href='https://form.jotform.com/221290155777156'
-                  onClick={closeBurgerMenu}
-                  target='_blank'
-                  rel='noreferrer'
-                >
+              <div className=''>
+                <a href='https://form.jotform.com/221290155777156' target='_blank' rel='noreferrer'>
                   {spanish ? "Formulario de inscripción" : "Registration Form"}
                 </a>
 
                 <hr className='navbar-divider' />
                 <a
-                  className='navbar-item'
                   href='https://www.paypal.com/donate/?hosted_button_id=F6WPQX2HNRTGA'
-                  onClick={closeBurgerMenu}
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -89,38 +62,18 @@ const NavBar = () => {
                 </a>
               </div>
             </div>
-            {/* end new setup for links */}
 
-            <div
-              className={`navbar-item has-dropdown ${!isActive ? "is-hoverable" : null}`}
-              onMouseEnter={() => setIsActive(false)}
-            >
-              <a className='navbar-link is-arrowless'>{spanish ? "Personal" : "Staff"}</a>
+            <div>
+              <a className=''>{spanish ? "Personal" : "Staff"}</a>
 
-              <div className='navbar-dropdown is-size-6' onClick={() => setIsActive(true)}>
-                <Link href='/staff/inma'>
-                  <a className='navbar-item' onClick={closeBurgerMenu}>
-                    Maestra Inma
-                  </a>
-                </Link>
+              <div className=''>
+                <Link href='/staff/inma'>Maestra Inma</Link>
                 <hr className='navbar-divider' />
-                <Link href='/staff/sandra'>
-                  <a className='navbar-item' onClick={closeBurgerMenu}>
-                    Maestra Sandra
-                  </a>
-                </Link>
+                <Link href='/staff/sandra'>Maestra Sandra</Link>
                 <hr className='navbar-divider' />
-                <Link href='/staff/inmaculada'>
-                  <a className='navbar-item' onClick={closeBurgerMenu}>
-                    Inmaculada Cruz
-                  </a>
-                </Link>
+                <Link href='/staff/inmaculada'>Inmaculada Cruz</Link>
                 <hr className='navbar-divider' />
-                <Link href='/staff/victor'>
-                  <a className='navbar-item' onClick={closeBurgerMenu}>
-                    Victor Fuentes
-                  </a>
-                </Link>
+                <Link href='/staff/victor'>Victor Fuentes</Link>
               </div>
             </div>
             <Link href='/info/location'>
@@ -128,25 +81,17 @@ const NavBar = () => {
                 {spanish ? "Localización" : "Location"}
               </a>
             </Link>
-            <Link href='/info/events'>
-              <a className='navbar-item' onClick={closeBurgerMenu}>
-                {spanish ? "Eventos" : "Events"}
-              </a>
-            </Link>
-            <Link href='/info/contact'>
-              <a className='navbar-item' onClick={closeBurgerMenu}>
-                {spanish ? "Contactar" : "Contact"}
-              </a>
-            </Link>
+            <Link href='/info/events'>{spanish ? "Eventos" : "Events"}</Link>
+            <Link href='/info/contact'>{spanish ? "Contactar" : "Contact"}</Link>
           </div>
 
-          <div className='navbar-end mr-4'>
-            <div className='navbar-item'>
-              <div className='buttons is-large' onClick={toggleSpanish}>
-                <a className='button is-warning is-light' onClick={toggleBurgerMenu}>
-                  <p className='is-size-5 p-3'>{spanish ? "English" : "En Español"}</p>
+          <div className='mr-4'>
+            <div className=''>
+              <button className='' onClick={toggleSpanish}>
+                <a className=''>
+                  <p className='p-3 text-lg'>{spanish ? "English" : "En Español"}</p>
                 </a>
-              </div>
+              </button>
             </div>
           </div>
         </div>

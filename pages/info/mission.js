@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useAppContext } from "../.../Context/appContext.js";
+import { useAppContext } from "../../Context/appContext.js";
 
 const spanishMissionStatement =
   "La misión de nuestra organizacíon es compartir y dar a conocer nuestra cultura destacando la danza folklorica, arte visual, historia de la música y lengua de nuestro hermoso país Nicaragua de America Central a traves de la conexión y participacion de nuestra communidad en el Noroeste.";

@@ -5,14 +5,14 @@ import { useAppContext } from "../Context/appContext.js";
 export default function Home() {
   const { spanish, setSpanish, toggleSpanish } = useAppContext();
   return (
-    <div>
+    <div className='text-white'>
       <Head>
         <title>Ometepe Art and Education</title>
         <meta name='description' content='Adding our voices to a beautifully diverse world' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='text-sm text-center'>
-        <h1 className='mt-6 font-serif text-5xl text-red-400'>Ometepe Art and Education</h1>
+        <h1 className='mt-6 font-serif text-5xl'>Ometepe Art and Education</h1>
         <h2 className='font-serif text-3xl italic'>
           {spanish
             ? "Añadiendo nuestras voces a un mundo maravillosamente diverso"

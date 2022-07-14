@@ -6,28 +6,20 @@ import { useAppContext } from "../../Context/appContext.js";
 const Footer = () => {
   const { spanish } = useAppContext();
   return (
-    <footer className='footer has-text-centered is-white column is-narrow mt-6'>
-      <h2 className='is-size-4'>
+    <footer className='flex flex-col items-center justify-center w-full py-4 mt-6 bg-white border-t-2 border-stone-400'>
+      <h2 className=''>
         <span>&copy;</span> Ometepe Art & Education 2022
       </h2>
-      <div className='block has-text-centered mt-4'>
-        <h3 className='is-italic is-size-4 is-size-5-mobile'>
-          <a className='has-text-dark' href='mailto:ometepeartandeducation@gmail.com'>
+      <div className=''>
+        <h3 className='italic'>
+          <a className='' href='mailto:ometepeartandeducation@gmail.com'>
             ometepeartandeducation@gmail.com
           </a>
         </h3>
       </div>
-      <div>
-        <p className='is-size-5'>
-          {spanish ? "Construido con" : "Built with"} <SiNextdotjs />
-        </p>
-      </div>
-      <div className='mt-3'>
-        <figure>
-          <a href='https://bulma.io'>
-            <Image src='/made-with-bulma.png' alt='Made with Bulma' width='128' height='24'></Image>
-          </a>
-        </figure>
+      <div className='flex items-center text-xl'>
+        <p className='mr-2'>{spanish ? "Construido con " : "Built with "}</p>
+        <SiNextdotjs />
       </div>
     </footer>
   );
