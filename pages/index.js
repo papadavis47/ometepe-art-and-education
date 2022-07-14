@@ -12,8 +12,8 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='text-sm text-center'>
-        <h1 className='mt-6 text-5xl text-red-400'>Ometepe Art and Education</h1>
-        <h2 className='text-3xl italic'>
+        <h1 className='mt-6 font-serif text-5xl text-red-400'>Ometepe Art and Education</h1>
+        <h2 className='font-serif text-3xl italic'>
           {spanish
             ? "Añadiendo nuestras voces a un mundo maravillosamente diverso"
             : "Adding Our Voices to a Beautifully Diverse World"}
