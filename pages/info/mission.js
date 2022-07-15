@@ -10,21 +10,19 @@ const englishMissionStatement =
 const Mission = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='column is-centered'>
-      <div className='mt-5 content'>
-        <h1 className='title has-text-centered has-text-light is-size-1 has-text-weight-light'>
-          {spanish ? "Nuestra misión" : "Our Mission"}
-        </h1>
+    <div className='text-white'>
+      <div className='mt-5'>
+        <h1 className=''>{spanish ? "Nuestra misión" : "Our Mission"}</h1>
       </div>
-      <section className='content has-text-light'>
+      <div className=''>
         <p className='is-size-6-mobile has-text-justified is-size-4-desktop'>
           {spanish ? spanishMissionStatement : englishMissionStatement}
         </p>
-      </section>
-      <div className='mt-6 columns is-flex is-centered'>
-        <figure className='image'>
+      </div>
+      <div className='mt-6'>
+        <figure className=''>
           <Image src='/dancer-ometepe.jpg' width={600} height={500} alt='Dancer in Ometepe' />
-          <figcaption className='has-text-light is-size-6'>
+          <figcaption className='text-md'>
             {spanish
               ? "Bailarín, La Isla de Ometepe Junio ​​2021"
               : "Dancer, The Island of Ometepe June 2021"}

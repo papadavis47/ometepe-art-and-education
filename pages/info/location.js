@@ -4,15 +4,15 @@ import { useAppContext } from "../../Context/appContext.js";
 const Location = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='has-text-white'>
+    <div className='text-white'>
       <div>
-        <div className='is-flex is-flex-direction-column is-align-items-center'>
-          <div className='py-4 has-text-centered'>
-            <h2 className='is-size-3 is-size-5-mobile'>Ometepe Art & Education Summer Camp</h2>
-            <p className='is-size-4 has-text-has-text-weight-medium '>
+        <div className='flex flex-col items-center'>
+          <div className='py-4'>
+            <h2 className='text-lg'>Ometepe Art & Education Summer Camp</h2>
+            <p className=''>
               <a
                 href='https://goo.gl/maps/rqMghbq7jPJZu26u5'
-                className='has-text-white bottomBorder is-size-5-mobile'
+                className='text-white border-b-2'
                 target='_blank'
                 rel='noreferrer'
               >
