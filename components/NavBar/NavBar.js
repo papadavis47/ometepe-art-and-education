@@ -1,27 +1,24 @@
-import Image from "next/image";
 import { IoColorPalette } from "react-icons/io5";
 import { useAppContext } from "../../Context/appContext.js";
-import Link from "next/link";
 import { MyLink } from "../../utils/myLink.js";
-// import { useState } from "react";
 
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { classNames } from "../../utils/classnames.js";
-import { user, navigation, userNavigation } from "../../data/fakeData.js";
+import { navigation, userNavigation } from "../../data/fakeData.js";
 
 const NavBar = () => {
   const { spanish, toggleSpanish } = useAppContext();
   return (
-    <div>
+    <div className='sticky top-0 z-50'>
       <Disclosure as='nav' className='bg-white border-b border-gray-200 '>
         {({ open }) => (
           <>
             <div className='px-4 mx-auto max-w-8xl sm:px-6 lg:px-8'>
               <div className='flex justify-between h-20'>
                 <div className='flex'>
-                  <div className='flex items-center flex-shrink-0'>
+                  <div className='flex items-center'>
                     <MyLink href='/'>
                       <IoColorPalette size={36} style={{ fontWeight: "bold" }} />
                     </MyLink>
@@ -31,9 +28,9 @@ const NavBar = () => {
                       </span>
                     </MyLink>
                   </div>
-                  <div className='hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8'>
+                  <div className='hidden lg:ml-6 lg:flex lg:space-x-8'>
                     {navigation.map((item) => (
-                      <a
+                      <MyLink
                         key={item.name}
                         href={item.href}
                         className={classNames(
@@ -45,53 +42,19 @@ const NavBar = () => {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </MyLink>
                     ))}
                   </div>
-                  <button
-                    type='button'
-                    className='hidden p-1 ml-auto text-gray-400 bg-white sm:inline-block hover:text-gray-500'
-                    onClick={toggleSpanish}
-                  >
-                    <span className='sr-only'>Toggle Spanish</span>
-                    <span className='p-3 text-sm'>{spanish ? "English" : "En Español"}</span>
-                  </button>
-                </div>
-                <div className='hidden sm:ml-6 sm:flex sm:items-center'>
-                  <Menu as='div' className='relative ml-3'>
-                    <div>
-                      <Menu.Button className='flex items-center max-w-xs text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'>
-                        <span className='sr-only'>Open Menu</span>
-                      </Menu.Button>
-                    </div>
-                    <Transition
-                      as={Fragment}
-                      enter='transition ease-out duration-200'
-                      enterFrom='transform opacity-0 scale-95'
-                      enterTo='transform opacity-100 scale-100'
-                      leave='transition ease-in duration-75'
-                      leaveFrom='transform opacity-100 scale-100'
-                      leaveTo='transform opacity-0 scale-95'
+                  <div className='flex items-center'>
+                    <button
+                      type='button'
+                      className='hidden p-1 ml-auto text-gray-400 bg-white md:inline-block hover:text-gray-500'
+                      onClick={toggleSpanish}
                     >
-                      <Menu.Items className='absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
-                        {userNavigation.map((item) => (
-                          <Menu.Item key={item.name}>
-                            {({ active }) => (
-                              <a
-                                href={item.href}
-                                className={classNames(
-                                  active ? "bg-gray-100" : "",
-                                  "block px-4 py-2 text-sm text-gray-700"
-                                )}
-                              >
-                                {item.name}
-                              </a>
-                            )}
-                          </Menu.Item>
-                        ))}
-                      </Menu.Items>
-                    </Transition>
-                  </Menu>
+                      <span className='sr-only'>Toggle Spanish</span>
+                      <span className='p-3 text-sm'>{spanish ? "English" : "En Español"}</span>
+                    </button>
+                  </div>
                 </div>
                 <div className='flex items-center -mr-2 sm:hidden'>
                   {/* Mobile menu button */}
@@ -107,7 +70,7 @@ const NavBar = () => {
               </div>
             </div>
 
-            <Disclosure.Panel className='sm:hidden'>
+            <Disclosure.Panel className='min-h-screen sm:hidden'>
               <div className='pt-2 pb-3 space-y-1'>
                 {navigation.map((item) => (
                   <Disclosure.Button
@@ -127,26 +90,12 @@ const NavBar = () => {
                 ))}
                 <button
                   type='button'
-                  className='flex-shrink-0 p-1 ml-auto text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                  className='p-1 ml-auto text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                   onClick={toggleSpanish}
                 >
                   <span className='sr-only'>Toggle Spanish</span>
                   <span className='p-3 text-lg'>{spanish ? "English" : "En Español"}</span>
                 </button>
-              </div>
-              <div className='pt-4 pb-3 border-t border-gray-200'>
-                <div className='mt-3 space-y-1'>
-                  {userNavigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as='a'
-                      href={item.href}
-                      className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
-                    >
-                      {item.name}
-                    </Disclosure.Button>
-                  ))}
-                </div>
               </div>
             </Disclosure.Panel>
           </>
