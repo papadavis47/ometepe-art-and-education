@@ -18,8 +18,8 @@ const NavBar = () => {
       <Disclosure as='nav' className='bg-white border-b border-gray-200 '>
         {({ open }) => (
           <>
-            <div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
-              <div className='flex justify-between h-16'>
+            <div className='px-4 mx-auto max-w-8xl sm:px-6 lg:px-8'>
+              <div className='flex justify-between h-20'>
                 <div className='flex'>
                   <div className='flex items-center flex-shrink-0'>
                     <MyLink href='/'>
@@ -38,9 +38,9 @@ const NavBar = () => {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "border-indigo-500 text-gray-900"
+                            ? "border-orange-500 text-gray-900"
                             : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                          "inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                          "inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium capitalize"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -48,22 +48,20 @@ const NavBar = () => {
                       </a>
                     ))}
                   </div>
-                </div>
-                <div className='hidden sm:ml-6 sm:flex sm:items-center'>
                   <button
                     type='button'
-                    className='p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                    className='hidden p-1 ml-auto text-gray-400 bg-white sm:inline-block hover:text-gray-500'
+                    onClick={toggleSpanish}
                   >
-                    <span className='sr-only'>View notifications</span>
-                    <BellIcon className='w-6 h-6' aria-hidden='true' />
+                    <span className='sr-only'>Toggle Spanish</span>
+                    <span className='p-3 text-sm'>{spanish ? "English" : "En Español"}</span>
                   </button>
-
-                  {/* Profile dropdown */}
+                </div>
+                <div className='hidden sm:ml-6 sm:flex sm:items-center'>
                   <Menu as='div' className='relative ml-3'>
                     <div>
                       <Menu.Button className='flex items-center max-w-xs text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'>
-                        <span className='sr-only'>Open user menu</span>
-                        <img className='w-8 h-8 rounded-full' src={user.imageUrl} alt='' />
+                        <span className='sr-only'>Open Menu</span>
                       </Menu.Button>
                     </div>
                     <Transition
@@ -120,31 +118,23 @@ const NavBar = () => {
                       item.current
                         ? "bg-indigo-50 border-indigo-500 text-indigo-700"
                         : "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800",
-                      "block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                      "block pl-3 pr-4 py-2 border-l-4 text-base font-medium capitalize"
                     )}
                     aria-current={item.current ? "page" : undefined}
                   >
                     {item.name}
                   </Disclosure.Button>
                 ))}
+                <button
+                  type='button'
+                  className='flex-shrink-0 p-1 ml-auto text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                  onClick={toggleSpanish}
+                >
+                  <span className='sr-only'>Toggle Spanish</span>
+                  <span className='p-3 text-lg'>{spanish ? "English" : "En Español"}</span>
+                </button>
               </div>
               <div className='pt-4 pb-3 border-t border-gray-200'>
-                <div className='flex items-center px-4'>
-                  <div className='flex-shrink-0'>
-                    <img className='w-10 h-10 rounded-full' src={user.imageUrl} alt='' />
-                  </div>
-                  <div className='ml-3'>
-                    <div className='text-base font-medium text-gray-800'>{user.name}</div>
-                    <div className='text-sm font-medium text-gray-500'>{user.email}</div>
-                  </div>
-                  <button
-                    type='button'
-                    className='flex-shrink-0 p-1 ml-auto text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-                  >
-                    <span className='sr-only'>View notifications</span>
-                    <BellIcon className='w-6 h-6' aria-hidden='true' />
-                  </button>
-                </div>
                 <div className='mt-3 space-y-1'>
                   {userNavigation.map((item) => (
                     <Disclosure.Button

@@ -6,10 +6,14 @@ export const user = {
 };
 
 export const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "our mission", href: "#", current: true },
+  { name: "programs", href: "#", current: false },
+  { name: "summer camp information", href: "#", current: false },
+  { name: "camp registration", href: "#", current: false },
+  { name: "staff", href: "#", current: false },
+  { name: "location", href: "#", current: false },
+  { name: "events", href: "#", current: false },
+  { name: "contact", href: "#", current: false },
 ];
 export const userNavigation = [
   { name: "Your Profile", href: "#" },
