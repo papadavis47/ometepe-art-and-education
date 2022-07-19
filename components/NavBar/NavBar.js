@@ -21,10 +21,10 @@ const NavBar = () => {
       <Disclosure as='nav' className='bg-white border-b border-gray-200 '>
         {({ open }) => (
           <>
-            <div className='px-4 mx-auto max-w-8xl sm:px-6 lg:px-8'>
+            <div className='max-w-full px-4 mx-auto sm:px-6 lg:px-8'>
               <div className='flex justify-between h-20'>
                 {/* left side of bar */}
-                <div className='flex items-center'>
+                <div className='flex items-center flex-shrink-0'>
                   <MyLink href='/'>
                     <IoColorPalette size={36} style={{ fontWeight: "bold" }} />
                   </MyLink>
@@ -35,14 +35,13 @@ const NavBar = () => {
 
                 {/* center of bar */}
                 <div className='flex items-center'>
-                  <div className='hidden lg:ml-6 lg:flex lg:space-x-8'>
+                  <div className='hidden lg:ml-6 xl:flex xl:space-x-8'>
                     {!spanish &&
                       navigation.map((item) => (
                         <MyLink
                           key={item.name}
                           href={item.href}
                           className='inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 capitalize border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700'
-                          aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
                         </MyLink>
@@ -88,6 +87,8 @@ const NavBar = () => {
                                         active ? "bg-gray-100" : "",
                                         "block px-4 py-2 text-sm text-gray-700"
                                       )}
+                                      target='_blank'
+                                      rel='noreferrer'
                                     >
                                       {item.text}
                                     </a>
@@ -104,6 +105,8 @@ const NavBar = () => {
                                         active ? "bg-gray-100" : "",
                                         "block px-4 py-2 text-sm text-gray-700"
                                       )}
+                                      target='_blank'
+                                      rel='noreferrer'
                                     >
                                       {item.text}
                                     </a>
@@ -161,14 +164,14 @@ const NavBar = () => {
                 <div className='flex items-center'>
                   <button
                     type='button'
-                    className='hidden p-1 ml-auto text-gray-400 bg-white lg:inline-block hover:text-gray-500'
+                    className='hidden p-1 ml-auto text-gray-400 bg-white xl:inline-block hover:text-gray-500'
                     onClick={toggleSpanish}
                   >
                     <span className='sr-only'>Toggle Spanish</span>
                     <span className='p-3 text-sm'>{spanish ? "English" : "En Español"}</span>
                   </button>
                 </div>
-                <div className='flex items-center -mr-2 sm:hidden'>
+                <div className='flex items-center -mr-2 md:hidden'>
                   {/* Mobile menu button */}
                   <Disclosure.Button className='inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'>
                     <span className='sr-only'>Open main menu</span>
@@ -182,13 +185,13 @@ const NavBar = () => {
               </div>
             </div>
 
-            <Disclosure.Panel className='min-h-screen sm:hidden'>
+            <Disclosure.Panel className='sm:hidden'>
               <div className='pt-2 pb-3 space-y-1'>
                 {!spanish &&
                   navigation.map((item) => (
                     <Disclosure.Button
                       key={item.name}
-                      as='MyLink'
+                      as={MyLink}
                       href={item.href}
                       className='block py-2 pl-3 pr-4 text-base font-medium text-gray-600 capitalize border-l-4 border-indigo-500 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
                     >
@@ -199,13 +202,58 @@ const NavBar = () => {
                   spanishNavigation.map((item) => (
                     <Disclosure.Button
                       key={item.name}
-                      as='MyLink'
+                      as={MyLink}
                       href={item.href}
                       className='block py-2 pl-3 pr-4 text-base font-medium text-gray-600 capitalize border-l-4 border-indigo-500 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
                     >
                       {item.name}
                     </Disclosure.Button>
                   ))}
+                {/* submenu 1 */}
+                <div className='pt-4 pb-3 border-t border-gray-200'>
+                  <p className='ml-3'>{spanish ? "Registro de Campamento" : "Camp Registration"}</p>
+                  {!spanish &&
+                    campRegistration.map((item) => (
+                      <Disclosure.Button
+                        key={item.text}
+                        as='a'
+                        href={item.href}
+                        className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        {item.text}
+                      </Disclosure.Button>
+                    ))}
+                  {spanish &&
+                    spanishRegistration.map((item) => (
+                      <Disclosure.Button
+                        key={item.text}
+                        as='a'
+                        href={item.href}
+                        className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        {item.text}
+                      </Disclosure.Button>
+                    ))}
+                </div>
+                {/* end submenu 1 */}
+                {/* submenu 2 */}
+                <div className='pt-4 pb-3 border-t border-gray-200'>
+                  <p className='ml-3'>{spanish ? "Personal" : "Staff"}</p>
+                  {staff.map((link) => (
+                    <Disclosure.Button
+                      key={link.text}
+                      as={MyLink}
+                      href={link.href}
+                      className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
+                    >
+                      {link.text}
+                    </Disclosure.Button>
+                  ))}
+                </div>
                 {/* language toggle for mobile */}
                 <button
                   type='button'
