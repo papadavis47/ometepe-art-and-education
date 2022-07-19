@@ -153,6 +153,7 @@ const NavBar = () => {
                         </Transition>
                       </Menu>
                     </div>
+                    {/* end desktop staff menu */}
                   </div>
                 </div>
 
@@ -183,22 +184,29 @@ const NavBar = () => {
 
             <Disclosure.Panel className='min-h-screen sm:hidden'>
               <div className='pt-2 pb-3 space-y-1'>
-                {navigation.map((item) => (
-                  <Disclosure.Button
-                    key={item.name}
-                    as='a'
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? "bg-indigo-50 border-indigo-500 text-indigo-700"
-                        : "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800",
-                      "block pl-3 pr-4 py-2 border-l-4 text-base font-medium capitalize"
-                    )}
-                    aria-current={item.current ? "page" : undefined}
-                  >
-                    {item.name}
-                  </Disclosure.Button>
-                ))}
+                {!spanish &&
+                  navigation.map((item) => (
+                    <Disclosure.Button
+                      key={item.name}
+                      as='MyLink'
+                      href={item.href}
+                      className='block py-2 pl-3 pr-4 text-base font-medium text-gray-600 capitalize border-l-4 border-indigo-500 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  ))}
+                {spanish &&
+                  spanishNavigation.map((item) => (
+                    <Disclosure.Button
+                      key={item.name}
+                      as='MyLink'
+                      href={item.href}
+                      className='block py-2 pl-3 pr-4 text-base font-medium text-gray-600 capitalize border-l-4 border-indigo-500 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  ))}
+                {/* language toggle for mobile */}
                 <button
                   type='button'
                   className='p-1 ml-auto text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
@@ -207,6 +215,7 @@ const NavBar = () => {
                   <span className='sr-only'>Toggle Spanish</span>
                   <span className='p-3 text-lg'>{spanish ? "English" : "En Español"}</span>
                 </button>
+                {/* end language toggle for mobile */}
               </div>
             </Disclosure.Panel>
           </>
