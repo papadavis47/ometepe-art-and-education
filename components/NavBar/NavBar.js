@@ -6,7 +6,13 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { classNames } from "../../utils/classnames.js";
-import { navigation, userNavigation } from "../../data/fakeData.js";
+import {
+  navigation,
+  spanishNavigation,
+  campRegistration,
+  spanishRegistration,
+  staff,
+} from "../../data/navData.js";
 
 const NavBar = () => {
   const { spanish, toggleSpanish } = useAppContext();
@@ -17,44 +23,149 @@ const NavBar = () => {
           <>
             <div className='px-4 mx-auto max-w-8xl sm:px-6 lg:px-8'>
               <div className='flex justify-between h-20'>
-                <div className='flex'>
-                  <div className='flex items-center'>
-                    <MyLink href='/'>
-                      <IoColorPalette size={36} style={{ fontWeight: "bold" }} />
-                    </MyLink>
-                    <MyLink href='/'>
-                      <span className='pl-4'>
-                        {spanish ? "Arte Nicaraguense" : "Nicaraguan Art"}
-                      </span>
-                    </MyLink>
-                  </div>
+                {/* left side of bar */}
+                <div className='flex items-center'>
+                  <MyLink href='/'>
+                    <IoColorPalette size={36} style={{ fontWeight: "bold" }} />
+                  </MyLink>
+                  <MyLink href='/'>
+                    <span className='pl-4'>{spanish ? "Arte Nicaraguense" : "Nicaraguan Art"}</span>
+                  </MyLink>
+                </div>
+
+                {/* center of bar */}
+                <div className='flex items-center'>
                   <div className='hidden lg:ml-6 lg:flex lg:space-x-8'>
-                    {navigation.map((item) => (
-                      <MyLink
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "border-orange-500 text-gray-900"
-                            : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                          "inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium capitalize"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </MyLink>
-                    ))}
+                    {!spanish &&
+                      navigation.map((item) => (
+                        <MyLink
+                          key={item.name}
+                          href={item.href}
+                          className='inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 capitalize border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700'
+                          aria-current={item.current ? "page" : undefined}
+                        >
+                          {item.name}
+                        </MyLink>
+                      ))}
+                    {spanish &&
+                      spanishNavigation.map((item) => (
+                        <MyLink
+                          key={item.name}
+                          href={item.href}
+                          className='inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700'
+                          aria-current={item.current ? "page" : undefined}
+                        >
+                          {item.name}
+                        </MyLink>
+                      ))}
+
+                    {/* dropdown registration desktop */}
+                    <div className='flex items-center'>
+                      <Menu as='div' className='relative ml-3'>
+                        <div>
+                          <Menu.Button className='flex items-center max-w-xs text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'>
+                            <span className='sr-only'>Camp Registration</span>
+                            <p>{spanish ? "Registro de Campamento" : "Camp Registration"}</p>
+                          </Menu.Button>
+                        </div>
+                        <Transition
+                          as={Fragment}
+                          enter='transition ease-out duration-200'
+                          enterFrom='transform opacity-0 scale-95'
+                          enterTo='transform opacity-100 scale-100'
+                          leave='transition ease-in duration-75'
+                          leaveFrom='transform opacity-100 scale-100'
+                          leaveTo='transform opacity-0 scale-95'
+                        >
+                          <Menu.Items className='absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+                            {!spanish &&
+                              campRegistration.map((item) => (
+                                <Menu.Item key={item.text}>
+                                  {({ active }) => (
+                                    <a
+                                      href={item.href}
+                                      className={classNames(
+                                        active ? "bg-gray-100" : "",
+                                        "block px-4 py-2 text-sm text-gray-700"
+                                      )}
+                                    >
+                                      {item.text}
+                                    </a>
+                                  )}
+                                </Menu.Item>
+                              ))}
+                            {spanish &&
+                              spanishRegistration.map((item) => (
+                                <Menu.Item key={item.text}>
+                                  {({ active }) => (
+                                    <a
+                                      href={item.href}
+                                      className={classNames(
+                                        active ? "bg-gray-100" : "",
+                                        "block px-4 py-2 text-sm text-gray-700"
+                                      )}
+                                    >
+                                      {item.text}
+                                    </a>
+                                  )}
+                                </Menu.Item>
+                              ))}
+                          </Menu.Items>
+                        </Transition>
+                      </Menu>
+                    </div>
+                    {/* end registration menu */}
+                    {/* begin staff menu */}
+                    <div className='flex items-center'>
+                      <Menu as='div' className='relative ml-3'>
+                        <div>
+                          <Menu.Button className='flex items-center max-w-xs text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'>
+                            <span className='sr-only'>Staff Members</span>
+                            <p>{spanish ? "Personal" : "Staff"}</p>
+                          </Menu.Button>
+                        </div>
+                        <Transition
+                          as={Fragment}
+                          enter='transition ease-out duration-200'
+                          enterFrom='transform opacity-0 scale-95'
+                          enterTo='transform opacity-100 scale-100'
+                          leave='transition ease-in duration-75'
+                          leaveFrom='transform opacity-100 scale-100'
+                          leaveTo='transform opacity-0 scale-95'
+                        >
+                          <Menu.Items className='absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+                            {staff.map((item) => (
+                              <Menu.Item key={item.text}>
+                                {({ active }) => (
+                                  <MyLink
+                                    href={item.href}
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-4 py-2 text-sm text-gray-700"
+                                    )}
+                                  >
+                                    {item.text}
+                                  </MyLink>
+                                )}
+                              </Menu.Item>
+                            ))}
+                          </Menu.Items>
+                        </Transition>
+                      </Menu>
+                    </div>
                   </div>
-                  <div className='flex items-center'>
-                    <button
-                      type='button'
-                      className='hidden p-1 ml-auto text-gray-400 bg-white md:inline-block hover:text-gray-500'
-                      onClick={toggleSpanish}
-                    >
-                      <span className='sr-only'>Toggle Spanish</span>
-                      <span className='p-3 text-sm'>{spanish ? "English" : "En Español"}</span>
-                    </button>
-                  </div>
+                </div>
+
+                {/* right side */}
+                <div className='flex items-center'>
+                  <button
+                    type='button'
+                    className='hidden p-1 ml-auto text-gray-400 bg-white lg:inline-block hover:text-gray-500'
+                    onClick={toggleSpanish}
+                  >
+                    <span className='sr-only'>Toggle Spanish</span>
+                    <span className='p-3 text-sm'>{spanish ? "English" : "En Español"}</span>
+                  </button>
                 </div>
                 <div className='flex items-center -mr-2 sm:hidden'>
                   {/* Mobile menu button */}
@@ -102,90 +213,6 @@ const NavBar = () => {
         )}
       </Disclosure>
     </div>
-
-    // Begin old code
-
-    // <div>
-    //   <nav className='sticky bg-white'>
-    //     <div className='font-medium'>
-    //       <Link href='/'>
-    //         <a className=''>
-    //           <IoColorPalette size={36} style={{ fontWeight: "bold" }} />
-    //           <span className='pl-4'>{spanish ? "Arte Nicaraguense" : "Nicaraguan Art"}</span>
-    //         </a>
-    //       </Link>
-    //       <a
-    //         className={`navbar-burger ${mobileOpen ? "is-active" : null}`}
-    //         onClick={() => toggleBurgerMenu()}
-    //       >
-    //         <span aria-hidden='true'></span>
-    //         <span aria-hidden='true'></span>
-    //         <span aria-hidden='true'></span>
-    //       </a>
-    //     </div>
-
-    //     <div className=''>
-    //       <div className='text-lg'>
-    //         <Link href='/info/mission'>{spanish ? "Nuestra misión" : "Our Mission"}</Link>
-    //         <Link href='/info/programs'>{spanish ? "Programas" : "Programs"}</Link>
-    //         <Link href='/info/summer-camp'>
-    //           {spanish ? "Campamento de Verano" : "Summer Camp Information"}
-    //         </Link>
-
-    //         <div>
-    //           <a className='navbar-link is-arrowless' onClick={closeBurgerMenu}>
-    //             {spanish ? "Registro" : "Camp Registration"}&nbsp; {!mobileOpen && "  |"}
-    //           </a>
-    //           <div className=''>
-    //             <a href='https://form.jotform.com/221290155777156' target='_blank' rel='noreferrer'>
-    //               {spanish ? "Formulario de inscripción" : "Registration Form"}
-    //             </a>
-
-    //             <hr className='navbar-divider' />
-    //             <a
-    //               href='https://www.paypal.com/donate/?hosted_button_id=F6WPQX2HNRTGA'
-    //               target='_blank'
-    //               rel='noreferrer'
-    //             >
-    //               PayPal
-    //             </a>
-    //           </div>
-    //         </div>
-
-    //         <div>
-    //           <a className=''>{spanish ? "Personal" : "Staff"}</a>
-
-    //           <div className=''>
-    //             <Link href='/staff/inma'>Maestra Inma</Link>
-    //             <hr className='navbar-divider' />
-    //             <Link href='/staff/sandra'>Maestra Sandra</Link>
-    //             <hr className='navbar-divider' />
-    //             <Link href='/staff/inmaculada'>Inmaculada Cruz</Link>
-    //             <hr className='navbar-divider' />
-    //             <Link href='/staff/victor'>Victor Fuentes</Link>
-    //           </div>
-    //         </div>
-    //         <Link href='/info/location'>
-    //           <a className='navbar-item' onClick={closeBurgerMenu}>
-    //             {spanish ? "Localización" : "Location"}
-    //           </a>
-    //         </Link>
-    //         <Link href='/info/events'>{spanish ? "Eventos" : "Events"}</Link>
-    //         <Link href='/info/contact'>{spanish ? "Contactar" : "Contact"}</Link>
-    //       </div>
-
-    //       <div className='mr-4'>
-    //         <div className=''>
-    //           <button className='' onClick={toggleSpanish}>
-    //             <a className=''>
-    //               <p className='p-3 text-lg'>{spanish ? "English" : "En Español"}</p>
-    //             </a>
-    //           </button>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </nav>
-    // </div>
   );
 };
 
