@@ -17,14 +17,12 @@ const Camp = () => {
         <strong className='has-text-light'>No prior Spanish language required.</strong>
       </p>
       <div className='flex flex-col my-6'>
-        <figure className='image'>
-          <Image
-            src='/new-flyer.jpeg'
-            width={700}
-            height={700}
-            alt='Flyer for summer camp information'
-          />
-        </figure>
+        <Image
+          src='/new-flyer.jpeg'
+          width={700}
+          height={700}
+          alt='Flyer for summer camp information'
+        />
       </div>
       <p className='mt-3'>
         Our Ometepe summer camp has been designed to accommodate your family’s schedule, offering
