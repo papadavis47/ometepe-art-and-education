@@ -43,7 +43,7 @@ const NavBar = () => {
                         <MyLink
                           key={item.name}
                           href={item.href}
-                          className='inline-flex items-center px-1 pt-1 text-base font-medium capitalize border-b-2 border-transparent text-stone-900 hover:border-orange-200'
+                          className='inline-flex items-center px-1 pt-1 font-serif text-xl font-medium capitalize border-b-2 border-transparent text-stone-900 hover:border-orange-200'
                         >
                           {item.name}
                         </MyLink>
@@ -65,7 +65,7 @@ const NavBar = () => {
                         <div>
                           <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-orange-100'>
                             <span className='sr-only'>Camp Registration</span>
-                            <p className='text-base font-medium text-gray-900 border-b-2 border-transparent hover:border-orange-200'>
+                            <p className='font-serif text-xl text-gray-900 border-b-2 border-transparent hover:border-orange-200'>
                               {spanish ? "Registro de Campamento" : "Camp Registration"}
                             </p>
                           </Menu.Button>
@@ -88,7 +88,7 @@ const NavBar = () => {
                                       href={item.href}
                                       className={classNames(
                                         active ? "bg-gray-100" : "",
-                                        "block px-4 py-2 text-sm text-stone-800"
+                                        "block px-4 font-serif py-2 text-lg text-stone-800"
                                       )}
                                       target='_blank'
                                       rel='noreferrer'
@@ -106,7 +106,7 @@ const NavBar = () => {
                                       href={item.href}
                                       className={classNames(
                                         active ? "bg-gray-100" : "",
-                                        "block px-4 py-2 text-sm text-stone-800"
+                                        "font-serif block px-4 py-2 text-lg text-stone-800"
                                       )}
                                       target='_blank'
                                       rel='noreferrer'
@@ -127,7 +127,7 @@ const NavBar = () => {
                         <div>
                           <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-100'>
                             <span className='sr-only'>Staff Members</span>
-                            <p className='text-base font-medium border-b-2 border-transparent text-stone-900 hover:border-orange-200'>
+                            <p className='font-serif text-xl font-medium border-b-2 border-transparent text-stone-900 hover:border-orange-200'>
                               {spanish ? "Personal" : "Staff"}
                             </p>
                           </Menu.Button>
@@ -149,7 +149,7 @@ const NavBar = () => {
                                     href={item.href}
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
-                                      "block px-4 py-2 text-sm text-stone-800"
+                                      "font-serif text-lg block px-4 py-2 text-stone-800"
                                     )}
                                   >
                                     {item.text}
