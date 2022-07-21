@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useAppContext } from "../../Context/appContext.js";
 import StaffTitle from "../../components/StaffTitle";
 import BioParagraph from "../../components/BioParagraph";
-import { englishParagraphs } from "../../data/victorBio.js";
+import { englishParagraphs } from "../../data/victorBioData.js";
 
 const Victor = () => {
   const { spanish } = useAppContext();
