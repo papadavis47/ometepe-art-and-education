@@ -1,47 +1,54 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useAppContext } from "../../Context/appContext.js";
+import SmallContactSnippet from "../../components/SmallContactSnippet";
 
 const Camp = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='text-white'>
+    <div className='px-4 mx-auto text-white max-w-7xl'>
       <Head>
         <title>Summer Camps 2022</title>
         <meta name='description' content='Ometepe Art and Education' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h1 className='mt-6'>Summer Camps 2022</h1>
-      <p className=''>Summer Camps are open to students from ages 5-12 years old. </p>
-      <p className='mt-3'>
-        <strong className='has-text-light'>No prior Spanish language required.</strong>
-      </p>
-      <div className='flex flex-col my-6'>
+      <div className='py-4 my-6'>
+        <h1 className='my-4 mt-6 text-3xl text-center sm:text-4xl'>Summer Camps 2022</h1>
+        <p className='py-4 text-xl sm:text-2xl'>
+          Summer Camps are open to students from ages 5-12 years old.{" "}
+        </p>
+        <p className='mt-3 text-lg sm:text-xl'>
+          <strong className=''>No prior Spanish language required.</strong>
+        </p>
+      </div>
+      <div className=''>
         <Image
-          src='/new-flyer.jpeg'
+          src='/images/informational/flyer.jpeg'
           width={700}
           height={700}
           alt='Flyer for summer camp information'
         />
       </div>
-      <p className='mt-3'>
-        Our Ometepe summer camp has been designed to accommodate your family’s schedule, offering
-        weekly camps.
-      </p>
-      <p className='mt-3'>
-        Our camps are well-supervised, engaging, and educational. Available all day, children will
-        participate in creative projects, hands-on activities, and clubs.{" "}
-      </p>
-      <p className='mt-3'>
-        Our Summer Camp curriculum explores a variety of topics and concepts. Among other physical
-        activities - we include field trips around TT Minor Park and Miller Park - for play and for
-        exercise.
-      </p>
+      <section className='text-xl sm:text-2xl'>
+        <p className='mt-3'>
+          Our Ometepe summer camp has been designed to accommodate your family’s schedule, offering
+          weekly camps.
+        </p>
+        <p className='mt-3'>
+          Our camps are well-supervised, engaging, and educational. Available all day, children will
+          participate in creative projects, hands-on activities, and clubs.{" "}
+        </p>
+        <p className='mt-3'>
+          Our Summer Camp curriculum explores a variety of topics and concepts. Among other physical
+          activities - we include field trips around TT Minor Park and Miller Park - for play and
+          for exercise.
+        </p>
+      </section>
       <section className='pt-4 mt-4 '>
-        <h2 className='font-semibold'> Schedule for Summer 2022</h2>
-        <ul>
+        <h2 className='text-3xl font-semibold sm:text-4xl'> Schedule for Summer 2022</h2>
+        <ul className='mt-4 text-lg sm:text-xl'>
           <li className='mb-4'>
-            <p className=''>
+            <p className='line-through'>
               Session 1: &nbsp;June 13 - June 17{" "}
               <span className='font-bold'>&nbsp;We Are All Amigos</span>
             </p>
@@ -98,23 +105,9 @@ const Camp = () => {
           </li>
         </ul>
       </section>
-      <section className='py-3 mt-5'>
-        <div className='mt-6'>
-          <h2 className=''>
-            {spanish
-              ? "Complete nuestro formulario de interés haciendo clic  "
-              : "Fill out our interest form by clicking "}
-            <a className='' href='https://form.jotform.com/221110567022137'>
-              {spanish ? "aqui" : "here"}
-            </a>{" "}
-            {spanish ? "o:" : "or:"}
-          </h2>
-          <h2 className=''>{spanish ? "Enviar un correo electrónico" : "Send an Email"}:&nbsp; </h2>
-          <p>
-            <span className=''> ometepeartandeducation@gmail.com</span>
-          </p>
-        </div>
-      </section>
+      <div className='py-3 mt-5'>
+        <SmallContactSnippet />
+      </div>
     </div>
   );
 };
