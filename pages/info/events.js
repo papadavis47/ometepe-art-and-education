@@ -4,7 +4,7 @@ import { useAppContext } from "../../Context/appContext.js";
 const Events = () => {
   const { spanish } = useAppContext();
   return (
-    <div>
+    <div className='pt-28'>
       <Construction title={spanish ? "Eventos" : "Events"} />
     </div>
   );
