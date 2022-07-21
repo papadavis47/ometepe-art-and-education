@@ -11,7 +11,7 @@ const Inma = () => {
       <StaffTitle title='Teacher' titulo='Maestra' name='Inma Davis' />
       <div className='flex flex-col items-center px-4 mx-auto sm:max-w-6xl'>
         <Image
-          src='/inma-profile.jpg'
+          src='/images/staff/inma-profile.jpg'
           alt='Inma - profile picture'
           width={500}
           height={510}
