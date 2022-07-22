@@ -3,13 +3,9 @@ import { useAppContext } from "../../Context/appContext.js";
 function SmallContactSnippet() {
   const { spanish } = useAppContext();
   return (
-    // The min-w-max class is something I am trying
-    // I may revisit this later
-    <div className='mt-6 text-lg sm:text-xl min-w-max'>
+    <div className='mt-6 text-lg sm:text-xl'>
       <h2 className=''>
-        {spanish
-          ? "Complete nuestro formulario de interés haciendo clic  "
-          : "Fill out our interest form by clicking "}
+        {spanish ? "Para nuestro formulario de interés haga clic " : "For our interest form click "}
         <a className='font-bold underline' href='https://form.jotform.com/221110567022137'>
           {spanish ? "aqui" : "here"}
         </a>{" "}
