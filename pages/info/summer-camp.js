@@ -6,14 +6,14 @@ import SmallContactSnippet from "../../components/SmallContactSnippet";
 const Camp = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='px-4 mx-auto text-white max-w-7xl'>
+    <div className='max-w-5xl px-4 mx-auto text-white'>
       <Head>
         <title>Summer Camps 2022</title>
         <meta name='description' content='Ometepe Art and Education' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='py-4 my-6'>
-        <h1 className='my-4 mt-6 text-3xl text-center sm:text-4xl'>Summer Camps 2022</h1>
+        <h1 className='my-4 mt-6 font-serif text-3xl sm:text-5xl'>Summer Camps 2022</h1>
         <p className='py-4 text-xl sm:text-2xl'>
           Summer Camps are open to students from ages 5-12 years old.{" "}
         </p>

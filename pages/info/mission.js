@@ -1,33 +1,33 @@
 import Image from "next/image";
 import { useAppContext } from "../../Context/appContext.js";
-
-const spanishMissionStatement =
-  "La misión de nuestra organizacíon es compartir y dar a conocer nuestra cultura destacando la danza folklorica, arte visual, historia de la música y lengua de nuestro hermoso país Nicaragua de America Central a traves de la conexión y participacion de nuestra communidad en el Noroeste.";
-
-const englishMissionStatement =
-  "To share, with as wide an audience as possible, the traditional dance, musical culture and culinary dishes unique to our beautiful Central American country. We also wish to expose as many people as possible to our visual arts.";
+import {
+  englishMissionStatement,
+  spanishMissionStatement,
+} from "../../data/missionStatementData.js";
 
 const Mission = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='text-white'>
-      <div className='mt-5'>
-        <h1 className=''>{spanish ? "Nuestra misión" : "Our Mission"}</h1>
+    <div className='max-w-5xl px-4 mx-auto mt-8 text-white'>
+      <div className='py-6 font-serif'>
+        <h1 className='text-3xl sm:text-5xl'>{spanish ? "Nuestra misión" : "Our Mission"}</h1>
       </div>
-      <div className=''>
-        <p className='is-size-6-mobile has-text-justified is-size-4-desktop'>
-          {spanish ? spanishMissionStatement : englishMissionStatement}
-        </p>
+      <div className='text-xl sm:text-2xl'>
+        <quote className=''>{spanish ? spanishMissionStatement : englishMissionStatement}</quote>
       </div>
       <div className='mt-6'>
-        <figure className=''>
-          <Image src='/dancer-ometepe.jpg' width={600} height={500} alt='Dancer in Ometepe' />
-          <figcaption className='text-md'>
-            {spanish
-              ? "Bailarín, La Isla de Ometepe Junio ​​2021"
-              : "Dancer, The Island of Ometepe June 2021"}
-          </figcaption>
-        </figure>
+        <Image
+          src='/images/nicaragua/dancer-ometepe.jpg'
+          width={600}
+          height={500}
+          alt='Dancer in Ometepe'
+          className='rounded-xl'
+        />
+        <figcaption className='font-semibold'>
+          {spanish
+            ? "Bailarín, La Isla de Ometepe Junio ​​2021"
+            : "Dancer, The Island of Ometepe June 2021"}
+        </figcaption>
       </div>
     </div>
   );
