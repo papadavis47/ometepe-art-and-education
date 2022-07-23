@@ -26,7 +26,12 @@ const NavBar = () => {
                 {/* left side of bar */}
                 <div className='flex items-center flex-shrink-0 text-stone-800'>
                   <MyLink href='/'>
-                    <IoColorPalette size={36} style={{ fontWeight: "bold" }} />
+                    <IoColorPalette
+                      size={36}
+                      style={{
+                        fontWeight: "bold",
+                      }}
+                    />
                   </MyLink>
                   <MyLink href='/'>
                     <span className='pl-4 font-serif text-xl'>
@@ -43,7 +48,7 @@ const NavBar = () => {
                         <MyLink
                           key={item.name}
                           href={item.href}
-                          className='inline-flex items-center px-1 pt-1 font-serif text-xl font-medium capitalize border-b-2 border-transparent text-stone-900 hover:border-orange-200'
+                          className='inline-flex items-center px-1 pt-1 font-serif text-xl font-medium capitalize border-b-2 border-transparent orange-focus text-stone-900 hover:border-orange-200'
                         >
                           {item.name}
                         </MyLink>
@@ -53,7 +58,7 @@ const NavBar = () => {
                         <MyLink
                           key={item.name}
                           href={item.href}
-                          className='inline-flex items-center px-1 pt-1 font-serif text-lg font-medium border-b-2 border-transparent text-stone-900 hover:border-orange-200'
+                          className='inline-flex items-center px-1 pt-1 font-serif text-lg font-medium border-b-2 border-transparent orange-focus text-stone-900 hover:border-orange-200'
                         >
                           {item.name}
                         </MyLink>
@@ -129,7 +134,7 @@ const NavBar = () => {
                     <div className='flex items-center'>
                       <Menu as='div' className='relative ml-3'>
                         <div>
-                          <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-100'>
+                          <Menu.Button className='flex items-center max-w-xs p-2 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-100'>
                             <span className='sr-only'>Staff Members</span>
                             <p
                               className={`font-serif ${
@@ -198,87 +203,99 @@ const NavBar = () => {
               </div>
             </div>
 
-            <Disclosure.Panel className='h-screen lg:hidden'>
-              <div className='pt-2 pb-3 space-y-1'>
-                {!spanish &&
-                  navigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as={MyLink}
-                      href={item.href}
-                      className='block py-2 pl-3 pr-4 text-base font-medium capitalize border-l-4 border-indigo-500 text-stone-700 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-stone-800'
-                    >
-                      {item.name}
-                    </Disclosure.Button>
-                  ))}
-                {spanish &&
-                  spanishNavigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as={MyLink}
-                      href={item.href}
-                      className='block py-2 pl-3 pr-4 text-base font-medium text-gray-600 capitalize border-l-4 border-indigo-500 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
-                    >
-                      {item.name}
-                    </Disclosure.Button>
-                  ))}
-                {/* submenu 1 */}
-                <div className='pt-4 pb-3 border-t border-gray-200'>
-                  <p className='ml-3'>{spanish ? "Registro de Campamento" : "Camp Registration"}</p>
+            {/* This is for the full menu transition - on mobile */}
+            <Transition
+              enter='transition duration-200 ease-out'
+              enterFrom='transform scale-95 opacity-0'
+              enterTo='transform scale-100 opacity-100'
+              leave='transition duration-150 ease-out'
+              leaveFrom='transform scale-100 opacity-100'
+              leaveTo='transform scale-95 opacity-0'
+            >
+              <Disclosure.Panel className='h-screen lg:hidden'>
+                <div className='pt-2 pb-3 space-y-1'>
                   {!spanish &&
-                    campRegistration.map((item) => (
+                    navigation.map((item) => (
                       <Disclosure.Button
-                        key={item.text}
-                        as='a'
+                        key={item.name}
+                        as={MyLink}
                         href={item.href}
-                        className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
-                        target='_blank'
-                        rel='noreferrer'
+                        className='block py-2 pl-3 pr-4 text-base font-medium capitalize border-l-4 border-indigo-500 text-stone-700 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-stone-800'
                       >
-                        {item.text}
+                        {item.name}
                       </Disclosure.Button>
                     ))}
                   {spanish &&
-                    spanishRegistration.map((item) => (
+                    spanishNavigation.map((item) => (
                       <Disclosure.Button
-                        key={item.text}
-                        as='a'
+                        key={item.name}
+                        as={MyLink}
                         href={item.href}
-                        className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
-                        target='_blank'
-                        rel='noreferrer'
+                        className='block py-2 pl-3 pr-4 text-base font-medium text-gray-600 capitalize border-l-4 border-indigo-500 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
                       >
-                        {item.text}
+                        {item.name}
                       </Disclosure.Button>
                     ))}
+                  {/* submenu 1 */}
+                  <div className='pt-4 pb-3 border-t border-gray-200'>
+                    <p className='ml-3'>
+                      {spanish ? "Registro de Campamento" : "Camp Registration"}
+                    </p>
+                    {!spanish &&
+                      campRegistration.map((item) => (
+                        <Disclosure.Button
+                          key={item.text}
+                          as='a'
+                          href={item.href}
+                          className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
+                          target='_blank'
+                          rel='noreferrer'
+                        >
+                          {item.text}
+                        </Disclosure.Button>
+                      ))}
+                    {spanish &&
+                      spanishRegistration.map((item) => (
+                        <Disclosure.Button
+                          key={item.text}
+                          as='a'
+                          href={item.href}
+                          className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
+                          target='_blank'
+                          rel='noreferrer'
+                        >
+                          {item.text}
+                        </Disclosure.Button>
+                      ))}
+                  </div>
+                  {/* end submenu 1 */}
+                  {/* submenu 2 */}
+                  <div className='pt-4 pb-3 border-t border-gray-200'>
+                    <p className='ml-3'>{spanish ? "Personal" : "Staff"}</p>
+                    {staff.map((link) => (
+                      <Disclosure.Button
+                        key={link.text}
+                        as={MyLink}
+                        href={link.href}
+                        className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
+                      >
+                        {link.text}
+                      </Disclosure.Button>
+                    ))}
+                  </div>
+                  {/* language toggle for mobile */}
+                  <button
+                    type='button'
+                    className='p-1 ml-auto text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                    onClick={toggleSpanish}
+                  >
+                    <span className='sr-only'>Toggle Spanish</span>
+                    <span className='p-3 text-lg'>{spanish ? "English" : "En Español"}</span>
+                  </button>
+                  {/* end language toggle for mobile */}
                 </div>
-                {/* end submenu 1 */}
-                {/* submenu 2 */}
-                <div className='pt-4 pb-3 border-t border-gray-200'>
-                  <p className='ml-3'>{spanish ? "Personal" : "Staff"}</p>
-                  {staff.map((link) => (
-                    <Disclosure.Button
-                      key={link.text}
-                      as={MyLink}
-                      href={link.href}
-                      className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
-                    >
-                      {link.text}
-                    </Disclosure.Button>
-                  ))}
-                </div>
-                {/* language toggle for mobile */}
-                <button
-                  type='button'
-                  className='p-1 ml-auto text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-                  onClick={toggleSpanish}
-                >
-                  <span className='sr-only'>Toggle Spanish</span>
-                  <span className='p-3 text-lg'>{spanish ? "English" : "En Español"}</span>
-                </button>
-                {/* end language toggle for mobile */}
-              </div>
-            </Disclosure.Panel>
+              </Disclosure.Panel>
+            </Transition>
           </>
         )}
       </Disclosure>
