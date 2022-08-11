@@ -15,11 +15,11 @@ const Inmaculada = () => {
           alt='Inmaculda - profile picture'
           width={600}
           height={410}
-          className='shadow-lg rounded-3xl shadow-black'
+          className='rounded-3xl'
         />
       </div>
       <div className=''>
-        <h1 className='py-2 my-8 font-serif text-3xl text-white sm:text-4xl'>
+        <h1 className='py-2 my-4 font-serif text-3xl text-white sm:my-6 sm:text-4xl'>
           {spanish ? "Biografia del artista" : "Artist's Biography"}
         </h1>
         {englishParagraphs.map((para) => (

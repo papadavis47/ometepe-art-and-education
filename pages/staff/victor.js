@@ -15,11 +15,11 @@ const Victor = () => {
           alt='Victor Fuentes, Painter'
           width={700}
           height={400}
-          className='shadow-lg rounded-3xl shadow-black'
+          className='rounded-3xl'
         />
       </div>
       <div className=''>
-        <h1 className='py-2 my-8 font-serif text-3xl text-white sm:text-4xl'>
+        <h1 className='py-2 my-4 font-serif text-3xl text-white sm:my-6 sm:text-4xl'>
           {spanish ? "Declaración del artista" : "Artist's Statement"}
         </h1>
         {englishParagraphs.map((para) => (

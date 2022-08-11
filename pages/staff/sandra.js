@@ -15,7 +15,7 @@ const Sandra = () => {
           alt='Sandra - profile picture'
           width={400}
           height={400}
-          className='shadow-lg rounded-3xl shadow-black'
+          className='rounded-3xl'
         />
       </div>
       {englishParagraphs.map((para) => (

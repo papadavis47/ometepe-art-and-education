@@ -15,7 +15,7 @@ const Inma = () => {
           alt='Inma - profile picture'
           width={400}
           height={410}
-          className='shadow-lg rounded-3xl shadow-black'
+          className='rounded-3xl'
         />
       </div>
       {englishParagraphs.map((para) => (
