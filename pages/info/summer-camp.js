@@ -6,7 +6,7 @@ import SmallContactSnippet from "../../components/SmallContactSnippet";
 const Camp = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='max-w-5xl px-4 mx-auto text-white'>
+    <div className='max-w-4xl px-4 mx-auto text-white'>
       <Head>
         <title>Summer Camps 2022</title>
         <meta name='description' content='Ometepe Art and Education' />

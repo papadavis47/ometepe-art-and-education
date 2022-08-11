@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const Programs = () => {
   return (
-    <div className='max-w-5xl px-4 mx-auto text-white'>
+    <div className='max-w-4xl px-4 mx-auto text-white'>
       <Head>
         <title>Programs</title>
         <meta name='description' content='Ometepe Art and Education' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='mt-6 '>
-        <h1 className='py-6 font-serif text-4xl sm:text-5xl'>Programs</h1>
-        <p className='text-xl sm:text-3xl'>
+        <h1 className='py-6 font-serif text-4xl sm:text-5xl'>Our Programs</h1>
+        <p className='text-xl sm:text-2xl'>
           Our classes and workshops are designed to enrich the students lives by exposing them to
           Latino culture, language and creativity &hearts;
         </p>

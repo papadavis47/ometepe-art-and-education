@@ -7,25 +7,21 @@ import BioParagraph from "../../components/BioParagraph";
 const Inma = () => {
   const { spanish } = useAppContext();
   return (
-    <>
+    <div className='max-w-4xl px-4 mx-auto'>
       <StaffTitle title='Teacher' titulo='Maestra' name='Inma Davis' />
-      <div className='flex flex-col items-center px-4 mx-auto sm:max-w-6xl'>
+      <div className='sm:pl-4'>
         <Image
           src='/images/staff/inma-profile.jpg'
           alt='Inma - profile picture'
-          width={500}
-          height={510}
+          width={400}
+          height={410}
           className='shadow-lg rounded-3xl shadow-black'
         />
-        <div className=''>
-          <section className='mt-6 text-white'>
-            {englishParagraphs.map((para) => (
-              <BioParagraph text={para.text} key={para.id} />
-            ))}
-          </section>
-        </div>
       </div>
-    </>
+      {englishParagraphs.map((para) => (
+        <BioParagraph text={para.text} key={para.id} />
+      ))}
+    </div>
   );
 };
 

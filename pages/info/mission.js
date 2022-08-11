@@ -8,7 +8,7 @@ import {
 const Mission = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='max-w-5xl px-4 mx-auto mt-8 text-white'>
+    <div className='max-w-4xl px-4 mx-auto mt-8 text-white'>
       <div className='py-6 font-serif'>
         <h1 className='text-3xl sm:text-5xl'>{spanish ? "Nuestra misión" : "Our Mission"}</h1>
       </div>
