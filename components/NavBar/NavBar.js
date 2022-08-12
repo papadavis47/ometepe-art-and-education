@@ -69,13 +69,13 @@ const NavBar = () => {
                       <Menu as='div' className='relative ml-3'>
                         <div>
                           <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-orange-100'>
-                            <span className='sr-only'>Camp Registration</span>
+                            <span className='sr-only'>Registration</span>
                             <p
                               className={`font-serif ${
                                 spanish ? "text-lg" : "text-xl"
                               } text-gray-900 border-b-2 border-transparent hover:border-orange-200`}
                             >
-                              {spanish ? "Registro de Campamento" : "Camp Registration"}
+                              {spanish ? "Registracion" : "Registration"}
                             </p>
                           </Menu.Button>
                         </div>

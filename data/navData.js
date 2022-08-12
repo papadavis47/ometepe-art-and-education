@@ -1,10 +1,10 @@
 export const navigation = [
   { name: "our mission", href: "/info/mission" },
-  { name: "programs", href: "/info/programs" },
+  { name: "our programs", href: "/info/programs" },
   { name: "location", href: "/info/location" },
   { name: "events", href: "/info/events" },
   { name: "contact", href: "/info/contact" },
-  { name: "summer camp information", href: "/info/summer-camp" },
+  { name: "summer camp", href: "/info/summer-camp" },
 ];
 
 export const spanishNavigation = [
