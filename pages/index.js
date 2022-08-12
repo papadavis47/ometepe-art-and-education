@@ -61,6 +61,32 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className='mx-auto mt-6 md:mt-10 max-w-7xl'>
+        <div className='py-4 text-center'>
+          <h2 className='mb-6 font-serif text-3xl sm:text-4xl'>
+            {spanish ? "Fomentando la creatividad" : "Encouraging Creativity"}
+          </h2>
+          <Image
+            width={900}
+            height={700}
+            alt='Ometepe Dancers'
+            src='/images/landing-mid/yellow.jpg'
+            className='rounded-2xl'
+          />
+        </div>
+        <div className='text-center'>
+          <h2 className='py-6 font-serif text-3xl sm:text-4xl mb-y'>
+            {spanish ? "Enriqueciendo vidas" : "Enriching Lives"}
+          </h2>
+          <Image
+            width={900}
+            height={700}
+            alt='Child Dancers'
+            src='/images/landing-mid/kids.jpg'
+            className='rounded-2xl'
+          />
+        </div>
+      </section>
     </div>
   );
 }

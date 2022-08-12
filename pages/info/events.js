@@ -13,19 +13,23 @@ const Events = () => {
       <p className='py-2 text-lg font-semibold sm:text-xl'>
         {spanish ? "Festival Centro Americano 2022" : "Central American Festival 2022"}
       </p>
-      <div className='flex'>
-        <Image
-          alt='Poster for Central American Festival 2022'
-          src='/images/events/central-american-festival.jpg'
-          height={700}
-          width={500}
-        />
-        <Image
-          alt='Poster for Central American Festival 2022'
-          src='/images/events/central-american-festival2.jpg'
-          height={700}
-          width={500}
-        />
+      <div className='flex space-x-4'>
+        <div className='max-w-fit'>
+          <Image
+            alt='Poster for Central American Festival 2022'
+            src='/images/events/central-american-festival.jpg'
+            height={700}
+            width={500}
+          />
+        </div>
+        <div>
+          <Image
+            alt='Poster for Central American Festival 2022'
+            src='/images/events/central-american-festival2.jpg'
+            height={700}
+            width={500}
+          />
+        </div>
       </div>
     </div>
   );

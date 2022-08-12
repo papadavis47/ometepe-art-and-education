@@ -17,16 +17,16 @@ const Mission = () => {
       </div>
       <div className='mt-6'>
         <Image
-          src='/images/nicaragua/dancer-ometepe.jpg'
-          width={600}
-          height={500}
-          alt='Dancer in Ometepe'
+          src='/images/mission/together2.jpg'
+          width={800}
+          height={600}
+          alt='Young Folklore Dancers'
           className='rounded-xl'
         />
-        <figcaption className='font-semibold'>
+        <figcaption className='font-semibold sm:text-xl'>
           {spanish
-            ? "Bailarín, La Isla de Ometepe Junio ​​2021"
-            : "Dancer, The Island of Ometepe June 2021"}
+            ? "Jóvenes bailarines @ Ometepe Art and Education"
+            : "Young Dancers @ Ometepe Art and Education"}
         </figcaption>
       </div>
     </div>
