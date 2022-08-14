@@ -7,7 +7,7 @@ import { englishParagraphs } from "../../data/inmaculadaBioData.js";
 const Inmaculada = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='max-w-4xl px-4 mx-auto'>
+    <div className='max-w-4xl px-4 mx-auto page-spacing'>
       <StaffTitle name='Inmaculada Cruz' titulo='Pintora y Chef' title='Painter and Chef' />
       <div className='sm:pl-4'>
         <Image

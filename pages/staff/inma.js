@@ -7,7 +7,7 @@ import BioParagraph from "../../components/BioParagraph";
 const Inma = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='max-w-4xl px-4 mx-auto'>
+    <div className='max-w-4xl px-4 mx-auto page-spacing'>
       <StaffTitle title='Teacher' titulo='Maestra' name='Inma Davis' />
       <div className='sm:pl-4'>
         <Image

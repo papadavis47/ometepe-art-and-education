@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Programs = () => {
   return (
-    <div className='max-w-4xl px-4 mx-auto text-white'>
+    <div className='max-w-4xl px-4 mx-auto text-white page-spacing'>
       <Head>
         <title>Programs</title>
         <meta name='description' content='Ometepe Art and Education' />
@@ -19,13 +19,13 @@ const Programs = () => {
       <section className='mt-4 font-medium'>
         <ul className='text-base sm:text-xl'>
           <li className=''>
-            <p>Arts and Crafts - Saturdays 10am to 1pm</p>
+            <p>Arts and Crafts</p>
           </li>
           <li className=''>
-            <p>Dance Classes - Saturdays 10am to 1pm</p>
+            <p>Dance Classes</p>
           </li>
           <li className=''>
-            <p>Cooking Workshops - Saturdays 10am to 1pm</p>
+            <p>Cooking Workshops</p>
           </li>
           <li className=''>
             <p>Spanish Language Classes (For Beginners)</p>
@@ -34,13 +34,15 @@ const Programs = () => {
       </section>
       <div className='mt-6'>
         <Image
-          src='/images/nicaragua/dancers2-ometepe.jpg'
-          width={600}
-          height={500}
-          alt='Dancers in Ometepe'
+          src='/images/programs/family-dancers.jpg'
+          width={900}
+          height={700}
+          alt='Traditional Nicaraguan Folklore'
           className='rounded-xl'
         />
-        <figcaption className='font-semibold'>Dancers, The Island of Ometepe June 2021</figcaption>
+        <figcaption className='font-semibold'>
+          Our Family, Traditional Nicaraguan Dancers - Seattle
+        </figcaption>
       </div>
     </div>
   );

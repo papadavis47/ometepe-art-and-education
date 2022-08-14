@@ -3,10 +3,10 @@ import { useAppContext } from "../../Context/appContext.js";
 const Location = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='px-2 text-white'>
+    <div className='px-2 text-white page-spacing'>
       <div className='flex flex-col items-center'>
-        <div className='py-4 mt-16 sm:mt-10'>
-          <h2 className='font-serif text-xl sm:text-5xl'>Ometepe Art & Education Summer Camp</h2>
+        <div className='py-4 mt-8 sm:mt-4'>
+          <h2 className='font-serif text-3xl sm:text-5xl'>Ometepe Art & Education</h2>
           <p className='mt-6 mb-6 text-center'>
             <a
               href='https://goo.gl/maps/2MPC2Z41EZpxxMmu7'

@@ -7,7 +7,7 @@ import { englishParagraphs } from "../../data/victorBioData.js";
 const Victor = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='max-w-4xl px-4 mx-auto'>
+    <div className='max-w-4xl px-4 mx-auto page-spacing'>
       <StaffTitle name='Victor Fuentes' titulo='Pintor y Poeta' title='Painter and Poet' />
       <div className='sm:pl-4'>
         <Image

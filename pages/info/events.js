@@ -5,7 +5,7 @@ import Image from "next/image";
 const Events = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='max-w-4xl px-4 pt-6 mx-auto mt-8 text-white'>
+    <div className='max-w-4xl px-4 pt-6 mx-auto mt-8 text-white page-spacing'>
       <h1 className='font-serif text-4xl sm:text-6xl'>{spanish ? "Eventos" : "Events"}</h1>
       <p className='my-4 text-lg sm:text-xl'>
         {spanish ? "Estamos participando en:" : "We are participating in:"}

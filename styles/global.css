@@ -6,4 +6,7 @@
   .orange-focus {
     @apply focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-orange-100;
   }
+  .page-spacing {
+    @apply pt-4 pb-12 sm:pt-6;
+  }
 }
