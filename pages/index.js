@@ -28,7 +28,7 @@ export default function Home() {
             <Image
               width={800}
               height={600}
-              className='rounded-xl'
+              className='rounded-lg'
               src='/images/landing/linda.jpg'
               alt='Painting of Nicaraguan Dancers'
             />
@@ -38,7 +38,7 @@ export default function Home() {
                 width={800}
                 height={600}
                 alt='A Beautiful Little Girl'
-                className='rounded-xl'
+                className='rounded-lg'
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Home() {
               height={600}
               src='/images/landing/dollsgrey.jpg'
               alt='Houses in Chinandega'
-              className='rounded-xl'
+              className='rounded-lg'
             />
             <div className='py-2'>
               <Image
@@ -59,7 +59,7 @@ export default function Home() {
                 height={600}
                 src='/images/landing/artgallery.jpg'
                 alt='Nicaragua Doll'
-                className='rounded-xl'
+                className='rounded-lg'
               />
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
             height={700}
             alt='Ometepe Dancers'
             src='/images/landing-mid/yellow.jpg'
-            className='rounded-xl'
+            className='rounded-lg'
           />
         </div>
         <div className='text-center'>
@@ -87,7 +87,7 @@ export default function Home() {
             height={700}
             alt='Child Dancers'
             src='/images/landing-mid/kids.jpg'
-            className='rounded-xl'
+            className='rounded-lg'
           />
         </div>
       </section>

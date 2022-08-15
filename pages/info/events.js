@@ -1,5 +1,7 @@
 import Construction from "../../components/Construction";
 import { useAppContext } from "../../Context/appContext.js";
+import Poster1 from "../../public/images/events/central-american-festival.jpg";
+import Poster2 from "../../public/images/events/central-american-festival2.jpg";
 import Image from "next/image";
 
 const Events = () => {
@@ -17,17 +19,19 @@ const Events = () => {
         <div className='max-w-fit'>
           <Image
             alt='Poster for Central American Festival 2022'
-            src='/images/events/central-american-festival.jpg'
+            src={Poster1}
             height={700}
             width={500}
+            placeholder='blur'
           />
         </div>
         <div>
           <Image
             alt='Poster for Central American Festival 2022'
-            src='/images/events/central-american-festival2.jpg'
+            src={Poster2}
             height={700}
             width={500}
+            placeholder='blur'
           />
         </div>
       </div>

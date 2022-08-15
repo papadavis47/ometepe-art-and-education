@@ -15,7 +15,7 @@ const Inmaculada = () => {
           alt='Inmaculda - profile picture'
           width={600}
           height={410}
-          className='rounded-3xl'
+          className='rounded-lg'
         />
       </div>
       <div className=''>

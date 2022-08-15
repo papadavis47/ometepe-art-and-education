@@ -15,7 +15,7 @@ const Victor = () => {
           alt='Victor Fuentes, Painter'
           width={700}
           height={400}
-          className='rounded-3xl'
+          className='rounded-lg'
         />
       </div>
       <div className=''>
