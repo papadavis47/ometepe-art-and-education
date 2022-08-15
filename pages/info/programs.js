@@ -31,6 +31,10 @@ const Programs = () => {
       <section className='mt-4 font-medium'>
         <div className='pt-6'>
           <h3 className='my-6 text-2xl font-semibold sm:text-4xl'>Arts and Crafts</h3>
+          <p className='my-4 text-xl italic sm:text-2xl'>
+            We believe in the power of the visual arts to inspire confidence and personal growth in
+            children.
+          </p>
           <div className='pb-6 border-b-2 max-w-fit border-b-white'>
             <Image
               src='/images/programs/arts-crafts.jpg'
@@ -43,6 +47,9 @@ const Programs = () => {
         </div>
         <div className='pt-6'>
           <h3 className='my-6 text-2xl font-semibold sm:text-4xl'>Dance Classes</h3>
+          <p className='my-4 text-xl italic sm:text-2xl'>
+            We love the traditional folklore dance of Nicaragua.
+          </p>
           <div className='pb-6 border-b-2 max-w-fit border-b-white'>
             <Image
               src='/images/programs/together.jpg'
@@ -55,6 +62,9 @@ const Programs = () => {
         </div>
         <div className='pt-6'>
           <h3 className='my-6 text-2xl font-semibold sm:text-4xl'>Cooking Workshops</h3>
+          <p className='my-4 text-xl italic sm:text-2xl'>
+            Every culture on earth enjoys eating! Food is an amazing way of sharing cultures.
+          </p>
           <div className='pb-6 border-b-2 max-w-fit border-b-white'>
             <Image
               src='/images/programs/fritanga.jpg'
@@ -69,6 +79,10 @@ const Programs = () => {
           <h3 className='my-6 text-2xl font-semibold sm:text-4xl '>
             Spanish Language Classes (For Beginners)
           </h3>
+          <p className='my-4 text-xl italic sm:text-2xl'>
+            We teach lesson in our first language - Spanish - spoken by approximately 600 million
+            people around the world!
+          </p>
           <div>
             <Image
               src='/images/programs/machoraton.jpg'
