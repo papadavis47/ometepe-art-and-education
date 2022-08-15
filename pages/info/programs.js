@@ -63,7 +63,8 @@ const Programs = () => {
         <div className='pt-6'>
           <h3 className='my-6 text-2xl font-semibold sm:text-4xl'>Cooking Workshops</h3>
           <p className='my-4 text-xl italic sm:text-2xl'>
-            Every culture on earth enjoys eating! Food is an amazing way of sharing cultures.
+            Every country on earth enjoys eating! Food is an amazing way of sharing cultures. And
+            Nicaragua has amazing food!
           </p>
           <div className='pb-6 border-b-2 max-w-fit border-b-white'>
             <Image
@@ -80,13 +81,13 @@ const Programs = () => {
             Spanish Language Classes (For Beginners)
           </h3>
           <p className='my-4 text-xl italic sm:text-2xl'>
-            We teach lesson in our first language - Spanish - spoken by approximately 600 million
-            people around the world!
+            We teach lesson in our first language - <span className='font-bold'>Spanish</span> -
+            spoken by approximately 600 million people around the world!
           </p>
           <div>
             <Image
               src='/images/programs/machoraton.jpg'
-              alt='Cooking Nicaraguan food'
+              alt='Painting of Nicaraguan dancers - Machoraton'
               width={600}
               height={475}
               className='rounded-lg'
