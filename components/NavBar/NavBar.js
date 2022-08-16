@@ -35,7 +35,7 @@ const NavBar = () => {
                   </MyLink>
                   <MyLink href='/'>
                     <span className='pl-4 font-serif text-xl'>
-                      {spanish ? "Arte Nicaraguense" : "Nicaraguan Art"}
+                      {spanish ? "Cultura Nicaraguense" : "Nicaraguan Culture"}
                     </span>
                   </MyLink>
                 </div>

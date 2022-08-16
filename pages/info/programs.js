@@ -48,7 +48,7 @@ const Programs = () => {
         <div className='pt-6'>
           <h3 className='my-6 text-2xl font-semibold sm:text-4xl'>Dance Classes</h3>
           <p className='my-4 text-xl italic sm:text-2xl'>
-            We love the traditional folklore dance of Nicaragua.
+            We love sharing the traditional folklore dance of Nicaragua.
           </p>
           <div className='pb-6 border-b-2 max-w-fit border-b-white'>
             <Image
@@ -81,7 +81,7 @@ const Programs = () => {
             Spanish Language Classes (For Beginners)
           </h3>
           <p className='my-4 text-xl italic sm:text-2xl'>
-            We teach lesson in our first language - <span className='font-bold'>Spanish</span> -
+            We teach lessons in our first language - <span className='font-bold'>Spanish</span> -
             spoken by approximately 600 million people around the world!
           </p>
           <div>

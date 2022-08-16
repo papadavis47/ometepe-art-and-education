@@ -68,7 +68,7 @@ export default function Home() {
       <section className='mx-auto mt-6 md:mt-10 max-w-7xl'>
         <div className='py-4 text-center'>
           <h2 className='mb-6 font-serif text-3xl italic sm:text-4xl'>
-            {spanish ? "Fomentando la creatividad" : "Encouraging Creativity"}
+            {spanish ? "Fomentando la creatividad" : "Fostering Creativity"}
           </h2>
           <Image
             width={900}
