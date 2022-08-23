@@ -4,7 +4,7 @@ export const navigation = [
   { name: "location", href: "/info/location" },
   { name: "events", href: "/info/events" },
   { name: "contact", href: "/info/contact" },
-  { name: "summer camps", href: "/info/summer-camp" },
+  { name: "camps", href: "/info/summer-camp" },
 ];
 
 export const spanishNavigation = [
@@ -13,7 +13,7 @@ export const spanishNavigation = [
   { name: "Localización", href: "/info/location" },
   { name: "Eventos", href: "/info/events" },
   { name: "Contactar", href: "/info/contact" },
-  { name: "Campamentos de Verano", href: "/info/summer-camp" },
+  { name: "Campamentos", href: "/info/summer-camp" },
 ];
 
 export const staff = [

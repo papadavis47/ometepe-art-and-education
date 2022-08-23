@@ -34,7 +34,7 @@ const NavBar = () => {
                     />
                   </MyLink>
                   <MyLink href='/'>
-                    <span className='pl-4 font-serif text-xl'>
+                    <span className='hidden pl-4 font-serif text-xl xl:block'>
                       {spanish ? "Cultura Nicaraguense" : "Nicaraguan Culture"}
                     </span>
                   </MyLink>
@@ -42,7 +42,7 @@ const NavBar = () => {
 
                 {/* center of bar */}
                 <div className='flex items-center'>
-                  <div className='hidden flex-shrink-1 lg:ml-6 xl:flex xl:space-x-8'>
+                  <div className='hidden flex-shrink-1 lg:ml-6 lg:flex lg:space-x-4 xl:space-x-8'>
                     {!spanish &&
                       navigation.map((item) => (
                         <MyLink
@@ -182,7 +182,7 @@ const NavBar = () => {
                 <div className='flex items-center'>
                   <button
                     type='button'
-                    className='flex-shrink-0 hidden p-1 ml-auto bg-orange-100 rounded-lg text-stone-800 xl:inline-block hover:text-stone-800'
+                    className='flex-shrink-0 hidden p-1 ml-auto bg-orange-100 rounded-lg text-stone-800 lg:inline-block lg:ml-2 hover:text-stone-800'
                     onClick={toggleSpanish}
                   >
                     <span className='sr-only'>Toggle Spanish</span>
