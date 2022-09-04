@@ -22,7 +22,7 @@ const Camp = () => {
           <Image
             src='/images/camp/group-summer-camp.jpg'
             width={1200}
-            height={800}
+            height={700}
             alt='Flyer for summer camp information'
             className='rounded-lg'
           />
