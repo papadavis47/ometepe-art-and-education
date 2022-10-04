@@ -3,10 +3,11 @@ import { useAppContext } from "../../Context/appContext.js";
 
 const Footer = () => {
   const { spanish } = useAppContext();
+  const year = new Date().getFullYear();
   return (
     <footer className='flex flex-col items-center justify-center w-full py-12 mt-12 font-serif bg-white border-t-2 text-stone-800 border-stone-400'>
       <h2 className='text-xl hover:text-[#d26914]'>
-        <span>&copy;</span> Ometepe Art & Education 2022
+        <span>&copy;</span> Ometepe Art & Education {year}
       </h2>
       <div className=''>
         <h3 className='text-xl italic hover:text-[#d26914]'>
