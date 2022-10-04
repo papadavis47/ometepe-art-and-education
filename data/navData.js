@@ -1,6 +1,6 @@
 export const navigation = [
-  { name: "our mission", href: "/info/mission" },
-  { name: "our programs", href: "/info/programs" },
+  { name: "mission", href: "/info/mission" },
+  { name: "programs", href: "/info/programs" },
   { name: "location", href: "/info/location" },
   { name: "events", href: "/info/events" },
   { name: "contact", href: "/info/contact" },
@@ -8,7 +8,7 @@ export const navigation = [
 ];
 
 export const spanishNavigation = [
-  { name: "Nuestra Misión", href: "/info/mission" },
+  { name: "Misión", href: "/info/mission" },
   { name: "Programas", href: "/info/programs" },
   { name: "Localización", href: "/info/location" },
   { name: "Eventos", href: "/info/events" },

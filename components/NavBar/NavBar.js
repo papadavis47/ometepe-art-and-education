@@ -1,7 +1,7 @@
 import { IoColorPalette } from "react-icons/io5";
 import { useAppContext } from "../../Context/appContext.js";
 import { MyLink } from "../../utils/myLink.js";
-
+import Logo from "../Logo";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -24,21 +24,7 @@ const NavBar = () => {
             <div className='max-w-full px-4 mx-auto sm:px-6 lg:px-10'>
               <div className='flex justify-between h-20'>
                 {/* left side of bar */}
-                <div className='flex items-center flex-shrink-0 text-stone-800'>
-                  <MyLink href='/'>
-                    <IoColorPalette
-                      size={36}
-                      style={{
-                        fontWeight: "bold",
-                      }}
-                    />
-                  </MyLink>
-                  <MyLink href='/'>
-                    <span className='hidden pl-4 font-serif text-xl xl:block'>
-                      {spanish ? "Cultura Nicaraguense" : "Nicaraguan Culture"}
-                    </span>
-                  </MyLink>
-                </div>
+                <Logo />
 
                 {/* center of bar */}
                 <div className='flex items-center'>
