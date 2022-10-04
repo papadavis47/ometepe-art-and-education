@@ -2,7 +2,7 @@ import { MyLink } from "../../utils/myLink.js";
 
 function Logo() {
   return (
-    <div className='flex items-center flex-shrink-0 gap-4 text-stone-800'>
+    <div className='flex items-center flex-shrink-0 gap-4 px-4 text-stone-800'>
       <MyLink href='/'>
         <svg
           version='1.0'
