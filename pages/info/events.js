@@ -20,7 +20,7 @@ const Events = () => {
         <div>
           <Image
             alt='Flyer for Dance Lessons'
-            src={spanish ? danceLessonsEn : danceLessonsEs}
+            src={spanish ? danceLessonsEs : danceLessonsEn}
             height={600}
             width={900}
             placeholder='blur'
