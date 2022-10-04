@@ -24,7 +24,7 @@ const Camp = () => {
             width={1200}
             height={700}
             alt='Flyer for summer camp information'
-            className='rounded-lg'
+            className='rounded-md'
           />
         </div>
         <p className='py-4 text-xl sm:text-2xl'>

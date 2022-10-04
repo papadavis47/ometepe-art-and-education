@@ -22,7 +22,7 @@ const Mission = () => {
           width={800}
           height={600}
           alt='Young Folklore Dancers'
-          className='rounded-xl'
+          className='rounded-md'
         />
         <figcaption className='font-semibold sm:text-xl'>
           {spanish
@@ -53,7 +53,7 @@ const Mission = () => {
             width={800}
             height={600}
             alt='Dancers on Ometepe'
-            className='rounded-xl'
+            className='rounded-md'
           />
           <figcaption className='font-semibold sm:text-xl'>
             {spanish
@@ -67,7 +67,7 @@ const Mission = () => {
             width={800}
             height={600}
             alt='Young Folklore Dancers'
-            className='rounded-xl'
+            className='rounded-md'
           />
           <figcaption className='font-semibold sm:text-xl'>
             {spanish

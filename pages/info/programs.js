@@ -22,7 +22,7 @@ const Programs = () => {
           width={900}
           height={700}
           alt='Traditional Nicaraguan Folklore'
-          className='rounded-lg'
+          className='rounded-md'
         />
         <figcaption className='font-semibold'>
           Our Family, Traditional Nicaraguan Dancers - Seattle
@@ -41,7 +41,7 @@ const Programs = () => {
               width={400}
               height={500}
               alt='Kids learning art'
-              className='rounded-lg'
+              className='rounded-md'
             />
           </div>
         </div>
@@ -56,7 +56,7 @@ const Programs = () => {
               alt='Nicaraguan folklore dancers'
               width={600}
               height={400}
-              className='rounded-lg'
+              className='rounded-md'
             />
           </div>
         </div>
@@ -72,7 +72,7 @@ const Programs = () => {
               alt='Cooking Nicaraguan food'
               width={600}
               height={475}
-              className='rounded-lg'
+              className='rounded-md'
             />
           </div>
         </div>
@@ -90,7 +90,7 @@ const Programs = () => {
               alt='Painting of Nicaraguan dancers - Machoraton'
               width={600}
               height={475}
-              className='rounded-lg'
+              className='rounded-md'
             />
           </div>
         </div>

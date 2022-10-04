@@ -4,6 +4,8 @@ import Poster1 from "../../public/images/events/central-american-festival.jpg";
 import Poster2 from "../../public/images/events/central-american-festival2.jpg";
 import Advert1 from "../../public/images/events/open-house-oae-spanish.jpg";
 import Advert2 from "../../public/images/events/open-house-oae-english.jpg";
+import danceLessonsEn from "../../public/images/events/dance-lessons-en.png";
+import danceLessonsEs from "../../public/images/events/dance-lessons-esp.png";
 import Image from "next/image";
 
 const Events = () => {
@@ -11,6 +13,20 @@ const Events = () => {
   return (
     <div className='max-w-4xl px-4 pt-6 mx-auto mt-8 text-white page-spacing'>
       <h1 className='font-serif text-4xl sm:text-6xl'>{spanish ? "Eventos" : "Events"}</h1>
+      <div>
+        <p className='my-6 text-xl font-semibold sm:text-2xl'>
+          {spanish ? "Lecciones de baile" : "Dance Lessons"}
+        </p>
+        <div>
+          <Image
+            alt='Flyer for Dance Lessons'
+            src={spanish ? danceLessonsEn : danceLessonsEs}
+            height={600}
+            width={900}
+            placeholder='blur'
+          />
+        </div>
+      </div>
       <div>
         <p className='my-6 text-xl font-semibold sm:text-2xl'>
           {spanish ? "Sábado, 1 de Octubre" : "Saturday, October 1st"}
