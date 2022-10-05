@@ -70,25 +70,29 @@ export default function Home() {
           <h2 className='mb-6 font-serif text-3xl italic sm:text-4xl'>
             {spanish ? "Fomentando la creatividad" : "Fostering Creativity"}
           </h2>
-          <Image
-            width={900}
-            height={700}
-            alt='Ometepe Dancers'
-            src='/images/landing-mid/kids.jpg'
-            className='rounded-md'
-          />
+          <figure>
+            <Image
+              width={900}
+              height={700}
+              alt='Ometepe Dancers'
+              src='/images/landing-mid/kids.jpg'
+              className='rounded-md'
+            />
+          </figure>
         </div>
         <div className='text-center'>
           <h2 className='py-6 font-serif text-3xl italic sm:text-4xl mb-y'>
             {spanish ? "Enriqueciendo vidas" : "Enriching Lives"}
           </h2>
-          <Image
-            width={900}
-            height={700}
-            alt='Child Dancers'
-            src='/images/landing-mid/yellow.jpg'
-            className='rounded-md'
-          />
+          <figure>
+            <Image
+              width={900}
+              height={700}
+              alt='Child Dancers'
+              src='/images/landing-mid/yellow.jpg'
+              className='rounded-md'
+            />
+          </figure>
         </div>
       </section>
     </div>

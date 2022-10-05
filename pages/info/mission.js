@@ -16,7 +16,7 @@ const Mission = () => {
       <div className='text-xl sm:text-2xl'>
         <p className=''>{spanish ? spanishMissionStatement : englishMissionStatement}</p>
       </div>
-      <div className='mt-6'>
+      <figure className='mt-6'>
         <Image
           src='/images/mission/together2.jpg'
           width={800}
@@ -29,7 +29,7 @@ const Mission = () => {
             ? "Jóvenes bailarines @ Ometepe Art and Education"
             : "Young Dancers @ Ometepe Art and Education"}
         </figcaption>
-      </div>
+      </figure>
       <section className='mt-10'>
         <div>
           <h2 className='font-serif text-3xl sm:text-4xl'>
@@ -47,7 +47,7 @@ const Mission = () => {
             .
           </p>
         </div>
-        <div className='mt-6'>
+        <figure className='mt-6'>
           <Image
             src='/images/mission/nicaragua/dancer-ometepe.jpg'
             width={800}
@@ -60,8 +60,8 @@ const Mission = () => {
               ? "Bailarines en la Isla Ometepe, Nicaragua 2021"
               : "Dancers on the Island of Ometepe, Nicaragua 2021"}
           </figcaption>
-        </div>
-        <div className='mt-6'>
+        </figure>
+        <figure className='mt-6'>
           <Image
             src='/images/mission/nicaragua/dancers2-ometepe.jpg'
             width={800}
@@ -74,7 +74,7 @@ const Mission = () => {
               ? "Bailarines en la Isla Ometepe, Nicaragua 2021"
               : "Dancers on the Island of Ometepe, Nicaragua 2021"}
           </figcaption>
-        </div>
+        </figure>
       </section>
     </div>
   );

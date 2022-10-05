@@ -6,7 +6,7 @@ import Advert1 from "../../public/images/events/open-house-oae-spanish.jpg";
 import Advert2 from "../../public/images/events/open-house-oae-english.jpg";
 import danceLessonsEn from "../../public/images/events/dance-lessons-en.png";
 import danceLessonsEs from "../../public/images/events/dance-lessons-esp.png";
-import Image from "next/image";
+import Image from "next/future/image";
 
 const Events = () => {
   const { spanish } = useAppContext();
@@ -24,6 +24,7 @@ const Events = () => {
             height={600}
             width={900}
             placeholder='blur'
+            className='block border-8 border-white border-solid'
           />
         </div>
       </div>
@@ -38,6 +39,7 @@ const Events = () => {
             height={900}
             width={600}
             placeholder='blur'
+            className='block border-8 border-white border-solid'
           />
         </div>
       </div>
@@ -55,6 +57,7 @@ const Events = () => {
             height={700}
             width={500}
             placeholder='blur'
+            className='block border-8 border-white border-solid'
           />
         </div>
         <div>
@@ -64,6 +67,7 @@ const Events = () => {
             height={700}
             width={500}
             placeholder='blur'
+            className='block border-8 border-white border-solid'
           />
         </div>
       </div>
