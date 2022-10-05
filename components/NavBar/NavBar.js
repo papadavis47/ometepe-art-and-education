@@ -23,7 +23,7 @@ const NavBar = () => {
 
                 {/* center of bar */}
                 <div className='flex items-center'>
-                  <div className='hidden flex-shrink-1 lg:ml-6 lg:flex lg:space-x-4 xl:space-x-8'>
+                  <div className='hidden flex-shrink-1 lg:flex lg:space-x-4 xl:space-x-8'>
                     {navItems.map((item) => (
                       <MyLink
                         key={item.name}
@@ -36,15 +36,11 @@ const NavBar = () => {
 
                     {/* dropdown registration desktop */}
                     <div className='flex items-center'>
-                      <Menu as='div' className='relative ml-3'>
+                      <Menu as='div' className='relative'>
                         <div>
                           <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-orange-100'>
                             <span className='sr-only'>Registration</span>
-                            <p
-                              className={`font-serif ${
-                                spanish ? "text-lg" : "text-xl"
-                              } text-gray-900 border-b-2 border-transparent hover:border-orange-200`}
-                            >
+                            <p className='font-serif text-xl border-b-2 border-transparent hover:border-orange-200'>
                               {spanish ? "Registracion" : "Registration"}
                             </p>
                           </Menu.Button>
@@ -79,19 +75,13 @@ const NavBar = () => {
                           </Menu.Items>
                         </Transition>
                       </Menu>
-                    </div>
-                    {/* end registration menu */}
-                    {/* begin staff menu */}
-                    <div className='flex items-center'>
-                      <Menu as='div' className='relative ml-3'>
+                      {/* end registration menu */}
+                      {/* begin staff menu */}
+                      <Menu as='div' className='relative'>
                         <div>
-                          <Menu.Button className='flex items-center max-w-xs p-2 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-100'>
+                          <Menu.Button className='flex items-center max-w-xs p-2 pb-1 ml-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-100'>
                             <span className='sr-only'>Staff Members</span>
-                            <p
-                              className={`font-serif ${
-                                spanish ? "text-lg" : "text-xl"
-                              } text-gray-900 border-b-2 border-transparent hover:border-orange-200`}
-                            >
+                            <p className='font-serif text-xl border-b-2 border-transparent hover:border-orange-200'>
                               {spanish ? "Personal" : "Staff"}
                             </p>
                           </Menu.Button>
@@ -124,8 +114,8 @@ const NavBar = () => {
                           </Menu.Items>
                         </Transition>
                       </Menu>
+                      {/* end desktop staff menu */}
                     </div>
-                    {/* end desktop staff menu */}
                   </div>
                 </div>
 
