@@ -1,4 +1,3 @@
-import { IoColorPalette } from "react-icons/io5";
 import { useAppContext } from "../../Context/appContext.js";
 import { MyLink } from "../../utils/myLink.js";
 import Logo from "../Logo";
@@ -6,16 +5,12 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { classNames } from "../../utils/classnames.js";
-import {
-  navigation,
-  spanishNavigation,
-  campRegistration,
-  spanishRegistration,
-  staff,
-} from "../../data/navData.js";
+import { navigation, registration, staff } from "../../data/navData.js";
 
 const NavBar = () => {
   const { spanish, toggleSpanish } = useAppContext();
+  let navItems = spanish ? navigation.spanish : navigation.english;
+  let regItems = spanish ? registration.spanish : registration.english;
   return (
     <div className='sticky top-0 z-50'>
       <Disclosure as='nav' className='bg-white border-b border-stone-200 '>
@@ -29,26 +24,15 @@ const NavBar = () => {
                 {/* center of bar */}
                 <div className='flex items-center'>
                   <div className='hidden flex-shrink-1 lg:ml-6 lg:flex lg:space-x-4 xl:space-x-8'>
-                    {!spanish &&
-                      navigation.map((item) => (
-                        <MyLink
-                          key={item.name}
-                          href={item.href}
-                          className='inline-flex items-center px-1 pt-1 font-serif text-xl font-medium capitalize border-b-2 border-transparent orange-focus text-stone-900 hover:border-orange-200'
-                        >
-                          {item.name}
-                        </MyLink>
-                      ))}
-                    {spanish &&
-                      spanishNavigation.map((item) => (
-                        <MyLink
-                          key={item.name}
-                          href={item.href}
-                          className='inline-flex items-center px-1 pt-1 font-serif text-lg font-medium border-b-2 border-transparent orange-focus text-stone-900 hover:border-orange-200'
-                        >
-                          {item.name}
-                        </MyLink>
-                      ))}
+                    {navItems.map((item) => (
+                      <MyLink
+                        key={item.name}
+                        href={item.href}
+                        className='inline-flex items-center px-1 pt-1 font-serif text-xl font-medium capitalize border-b-2 border-transparent orange-focus text-stone-900 hover:border-orange-200'
+                      >
+                        {item.name}
+                      </MyLink>
+                    ))}
 
                     {/* dropdown registration desktop */}
                     <div className='flex items-center'>
@@ -75,42 +59,23 @@ const NavBar = () => {
                           leaveTo='transform opacity-0 scale-95'
                         >
                           <Menu.Items className='absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
-                            {!spanish &&
-                              campRegistration.map((item) => (
-                                <Menu.Item key={item.text}>
-                                  {({ active }) => (
-                                    <a
-                                      href={item.href}
-                                      className={classNames(
-                                        active ? "bg-gray-100" : "",
-                                        "block px-4 font-serif py-2 text-lg text-stone-800"
-                                      )}
-                                      target='_blank'
-                                      rel='noreferrer'
-                                    >
-                                      {item.text}
-                                    </a>
-                                  )}
-                                </Menu.Item>
-                              ))}
-                            {spanish &&
-                              spanishRegistration.map((item) => (
-                                <Menu.Item key={item.text}>
-                                  {({ active }) => (
-                                    <a
-                                      href={item.href}
-                                      className={classNames(
-                                        active ? "bg-gray-100" : "",
-                                        "font-serif block px-4 py-2 text-lg text-stone-800"
-                                      )}
-                                      target='_blank'
-                                      rel='noreferrer'
-                                    >
-                                      {item.text}
-                                    </a>
-                                  )}
-                                </Menu.Item>
-                              ))}
+                            {regItems.map((item) => (
+                              <Menu.Item key={item.text}>
+                                {({ active }) => (
+                                  <a
+                                    href={item.href}
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-4 font-serif py-2 text-lg text-stone-800"
+                                    )}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                  >
+                                    {item.text}
+                                  </a>
+                                )}
+                              </Menu.Item>
+                            ))}
                           </Menu.Items>
                         </Transition>
                       </Menu>
@@ -200,59 +165,31 @@ const NavBar = () => {
             >
               <Disclosure.Panel className='h-screen lg:hidden'>
                 <div className='pt-2 pb-3 space-y-1'>
-                  {!spanish &&
-                    navigation.map((item) => (
-                      <Disclosure.Button
-                        key={item.name}
-                        as={MyLink}
-                        href={item.href}
-                        className='block py-2 pl-3 pr-4 text-base font-medium capitalize border-l-4 border-indigo-500 text-stone-700 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-stone-800'
-                      >
-                        {item.name}
-                      </Disclosure.Button>
-                    ))}
-                  {spanish &&
-                    spanishNavigation.map((item) => (
-                      <Disclosure.Button
-                        key={item.name}
-                        as={MyLink}
-                        href={item.href}
-                        className='block py-2 pl-3 pr-4 text-base font-medium text-gray-600 capitalize border-l-4 border-indigo-500 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
-                      >
-                        {item.name}
-                      </Disclosure.Button>
-                    ))}
+                  {navItems.map((item) => (
+                    <Disclosure.Button
+                      key={item.name}
+                      as={MyLink}
+                      href={item.href}
+                      className='block py-2 pl-3 pr-4 text-base font-medium capitalize border-l-4 border-indigo-500 text-stone-700 bg-indigo-50 hover:bg-gray-50 hover:border-gray-300 hover:text-stone-800'
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  ))}
                   {/* submenu 1 */}
                   <div className='pt-4 pb-3 border-t border-gray-200'>
-                    <p className='ml-3'>
-                      {spanish ? "Registro de Campamento" : "Camp Registration"}
-                    </p>
-                    {!spanish &&
-                      campRegistration.map((item) => (
-                        <Disclosure.Button
-                          key={item.text}
-                          as='a'
-                          href={item.href}
-                          className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
-                          target='_blank'
-                          rel='noreferrer'
-                        >
-                          {item.text}
-                        </Disclosure.Button>
-                      ))}
-                    {spanish &&
-                      spanishRegistration.map((item) => (
-                        <Disclosure.Button
-                          key={item.text}
-                          as='a'
-                          href={item.href}
-                          className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
-                          target='_blank'
-                          rel='noreferrer'
-                        >
-                          {item.text}
-                        </Disclosure.Button>
-                      ))}
+                    <p className='ml-3'>{spanish ? "Registracion" : "Registration"}</p>
+                    {regItems.map((item) => (
+                      <Disclosure.Button
+                        key={item.text}
+                        as='a'
+                        href={item.href}
+                        className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        {item.text}
+                      </Disclosure.Button>
+                    ))}
                   </div>
                   {/* end submenu 1 */}
                   {/* submenu 2 */}
