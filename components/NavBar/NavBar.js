@@ -24,6 +24,44 @@ const NavBar = () => {
                 {/* center of bar */}
                 <div className='flex items-center'>
                   <div className='hidden flex-shrink-1 lg:flex lg:space-x-4 xl:space-x-8'>
+                    <Menu as='div' className='relative'>
+                      <div>
+                        <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-orange-100'>
+                          <span className='sr-only'>Programs</span>
+                          <p className='font-serif text-xl border-b-2 border-transparent hover:border-orange-200'>
+                            {spanish ? "Programas" : "Programs"}
+                          </p>
+                        </Menu.Button>
+                      </div>
+                      <Transition
+                        as={Fragment}
+                        enter='transition ease-out duration-200'
+                        enterFrom='transform opacity-0 scale-95'
+                        enterTo='transform opacity-100 scale-100'
+                        leave='transition ease-in duration-75'
+                        leaveFrom='transform opacity-100 scale-100'
+                        leaveTo='transform opacity-0 scale-95'
+                      >
+                        <Menu.Items className='absolute left-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+                          {programItems.map((item) => (
+                            <Menu.Item key={item.text}>
+                              {({ active }) => (
+                                <MyLink
+                                  href={item.href}
+                                  className={classNames(
+                                    active ? "bg-gray-100" : "",
+                                    "block px-4 font-serif py-2 text-lg text-stone-800"
+                                  )}
+                                >
+                                  {item.text}
+                                </MyLink>
+                              )}
+                            </Menu.Item>
+                          ))}
+                        </Menu.Items>
+                      </Transition>
+                    </Menu>
+                    {/* end Programs menu */}
                     {navItems.map((item) => (
                       <MyLink
                         key={item.name}
@@ -36,44 +74,6 @@ const NavBar = () => {
 
                     {/* dropdown registration desktop */}
                     <div className='flex items-center lg:space-x-4 xl:space-x-8'>
-                      <Menu as='div' className='relative'>
-                        <div>
-                          <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-orange-100'>
-                            <span className='sr-only'>Registration</span>
-                            <p className='font-serif text-xl border-b-2 border-transparent hover:border-orange-200'>
-                              {spanish ? "Programas" : "Programs"}
-                            </p>
-                          </Menu.Button>
-                        </div>
-                        <Transition
-                          as={Fragment}
-                          enter='transition ease-out duration-200'
-                          enterFrom='transform opacity-0 scale-95'
-                          enterTo='transform opacity-100 scale-100'
-                          leave='transition ease-in duration-75'
-                          leaveFrom='transform opacity-100 scale-100'
-                          leaveTo='transform opacity-0 scale-95'
-                        >
-                          <Menu.Items className='absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
-                            {programItems.map((item) => (
-                              <Menu.Item key={item.text}>
-                                {({ active }) => (
-                                  <MyLink
-                                    href={item.href}
-                                    className={classNames(
-                                      active ? "bg-gray-100" : "",
-                                      "block px-4 font-serif py-2 text-lg text-stone-800"
-                                    )}
-                                  >
-                                    {item.text}
-                                  </MyLink>
-                                )}
-                              </Menu.Item>
-                            ))}
-                          </Menu.Items>
-                        </Transition>
-                      </Menu>
-                      {/* end registration menu */}
                       {/* begin staff menu */}
                       <Menu as='div' className='relative'>
                         <div>
@@ -121,7 +121,7 @@ const NavBar = () => {
                 <div className='flex items-center'>
                   <button
                     type='button'
-                    className='flex-shrink-0 hidden p-1 ml-auto bg-orange-100 rounded-lg text-stone-800 lg:inline-block lg:ml-2 hover:text-stone-800'
+                    className='flex-shrink-0 hidden p-1 ml-auto bg-orange-100 rounded-lg text-stone-800 xl:inline-block hover:text-stone-800'
                     onClick={toggleSpanish}
                   >
                     <span className='sr-only'>Toggle Spanish</span>

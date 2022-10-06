@@ -1,7 +1,6 @@
 export const navigation = {
   english: [
-    { name: "our mission", href: "/info/mission" },
-    // { name: "programs", href: "/info/programs" },
+    { name: "mission", href: "/info/mission" },
     { name: "events", href: "/info/events" },
     { name: "contact", href: "/info/contact" },
     { name: "camps", href: "/info/summer-camp" },
@@ -10,11 +9,10 @@ export const navigation = {
   ],
   spanish: [
     { name: "Misión", href: "/info/mission" },
-    // { name: "Programas", href: "/info/programs" },
-    { name: "Localización", href: "/info/location" },
     { name: "Eventos", href: "/info/events" },
     { name: "Contactar", href: "/info/contact" },
     { name: "Campamentos", href: "/info/summer-camp" },
+    { name: "Localización", href: "/info/location" },
     { name: "Registracion", href: "/registration" },
   ],
 };

@@ -4,8 +4,8 @@ const ComingSoon = ({ title }) => {
   const { spanish } = useAppContext();
   return (
     <>
-      <div className='pt-6 mt-6 text-center'>
-        <h1 className='text-5xl text-white'>{title}</h1>
+      <div className='p-6 mt-6 text-center'>
+        <h1 className='text-3xl text-white lg:text-5xl'>{title}</h1>
         <h2 className='mt-4 text-2xl italic text-white'>
           {spanish ? "Viene Pronto" : "Coming Soon"} 🔨
         </h2>
