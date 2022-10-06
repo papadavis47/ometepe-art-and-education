@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { schedule } from "../../data/learningClubData.js";
+import { schedule } from "../../data/programsData.js";
 import ScheduleItems from "../../components/ScheduleItems";
 
 const LearningClub = () => {

@@ -15,4 +15,13 @@ export const schedule = {
     { id: 4, time: "Thursday", activity: "Drawing" },
     { id: 5, time: "Friday", activity: "Spanish Language" },
   ],
+  artClasses: [
+    {
+      id: 1,
+      time: "11:30am - 1:00pm",
+      activity: "Drawing class / ages 7-12: curriculum repeats every month",
+    },
+    { id: 2, time: "2:00pm - 3:30pm", activity: "Intermediate Art Class / ages 12 - 17" },
+    { id: 3, time: "4:00pm - 5:50pm ", activity: "Painting / for adults" },
+  ],
 };
