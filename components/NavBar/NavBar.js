@@ -35,7 +35,7 @@ const NavBar = () => {
                     ))}
 
                     {/* dropdown registration desktop */}
-                    <div className='flex items-center'>
+                    <div className='flex items-center lg:space-x-4 xl:space-x-8'>
                       <Menu as='div' className='relative'>
                         <div>
                           <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-orange-100'>
@@ -145,6 +145,7 @@ const NavBar = () => {
             </div>
 
             {/* This is for the full menu transition - on mobile */}
+            {/* This is mobile menu - a separate block of code */}
             <Transition
               enter='transition duration-200 ease-out'
               enterFrom='transform scale-95 opacity-0'
