@@ -5,12 +5,12 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { classNames } from "../../utils/classnames.js";
-import { navigation, registration, staff } from "../../data/navData.js";
+import { navigation, registration, staff, programs } from "../../data/navData.js";
 
 const NavBar = () => {
   const { spanish, toggleSpanish } = useAppContext();
   let navItems = spanish ? navigation.spanish : navigation.english;
-  let regItems = spanish ? registration.spanish : registration.english;
+  let programItems = spanish ? programs.spanish : programs.english;
   return (
     <div className='sticky top-0 z-50'>
       <Disclosure as='nav' className='bg-white border-b border-stone-200 '>
@@ -41,7 +41,7 @@ const NavBar = () => {
                           <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-orange-100'>
                             <span className='sr-only'>Registration</span>
                             <p className='font-serif text-xl border-b-2 border-transparent hover:border-orange-200'>
-                              {spanish ? "Registracion" : "Registration"}
+                              {spanish ? "Programas" : "Programs"}
                             </p>
                           </Menu.Button>
                         </div>
@@ -55,20 +55,18 @@ const NavBar = () => {
                           leaveTo='transform opacity-0 scale-95'
                         >
                           <Menu.Items className='absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
-                            {regItems.map((item) => (
+                            {programItems.map((item) => (
                               <Menu.Item key={item.text}>
                                 {({ active }) => (
-                                  <a
+                                  <MyLink
                                     href={item.href}
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
                                       "block px-4 font-serif py-2 text-lg text-stone-800"
                                     )}
-                                    target='_blank'
-                                    rel='noreferrer'
                                   >
                                     {item.text}
-                                  </a>
+                                  </MyLink>
                                 )}
                               </Menu.Item>
                             ))}
@@ -168,15 +166,13 @@ const NavBar = () => {
                   ))}
                   {/* submenu 1 */}
                   <div className='pt-4 pb-3 border-t border-gray-200'>
-                    <p className='ml-3'>{spanish ? "Registracion" : "Registration"}</p>
-                    {regItems.map((item) => (
+                    <p className='ml-3'>{spanish ? "Programas" : "Programs"}</p>
+                    {programItems.map((item) => (
                       <Disclosure.Button
                         key={item.text}
-                        as='a'
+                        as={MyLink}
                         href={item.href}
                         className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
-                        target='_blank'
-                        rel='noreferrer'
                       >
                         {item.text}
                       </Disclosure.Button>

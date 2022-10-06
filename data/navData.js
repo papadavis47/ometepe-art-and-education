@@ -1,31 +1,36 @@
 export const navigation = {
   english: [
     { name: "our mission", href: "/info/mission" },
-    { name: "programs", href: "/info/programs" },
-    { name: "location", href: "/info/location" },
+    // { name: "programs", href: "/info/programs" },
     { name: "events", href: "/info/events" },
     { name: "contact", href: "/info/contact" },
     { name: "camps", href: "/info/summer-camp" },
+    { name: "location", href: "/info/location" },
+    { name: "registration", href: "/registration" },
   ],
   spanish: [
     { name: "Misión", href: "/info/mission" },
-    { name: "Programas", href: "/info/programs" },
+    // { name: "Programas", href: "/info/programs" },
     { name: "Localización", href: "/info/location" },
     { name: "Eventos", href: "/info/events" },
     { name: "Contactar", href: "/info/contact" },
     { name: "Campamentos", href: "/info/summer-camp" },
+    { name: "Registracion", href: "/registration" },
   ],
 };
 
-export const registration = {
+export const programs = {
   english: [
-    { text: "Registration Form", href: "https://form.jotform.com/221290155777156" },
-    { text: "PayPal", href: "https://www.paypal.com/donate/?hosted_button_id=F6WPQX2HNRTGA" },
+    { text: "Afterschool Learning", href: "/programs/learning-club" },
+    { text: "Art Classes", href: "/programs/art-classes" },
+    { text: "Cultural Classes", href: "/programs/cultural-classes" },
+    { text: "Spanish Classes", href: "/programs/spanish-classes" },
   ],
-
   spanish: [
-    { text: "Formulario de inscripción", href: "https://form.jotform.com/221290155777156" },
-    { text: "PayPal", href: "https://www.paypal.com/donate/?hosted_button_id=F6WPQX2HNRTGA" },
+    { text: "Club despues de clases", href: "/programs/learning-club" },
+    { text: "Classes de arte", href: "/programs/art-classes" },
+    { text: "Clases culturales", href: "/programs/cultural-classes" },
+    { text: "Clases de Español", href: "/programs/spanish-classes" },
   ],
 };
 
