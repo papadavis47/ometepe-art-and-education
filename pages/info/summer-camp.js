@@ -14,7 +14,7 @@ const Camp = () => {
       </Head>
       <div className='py-4 my-2'>
         <h1 className='my-4 font-serif text-3xl sm:text-5xl'>Summer Camps 2022</h1>
-        <p className='py-6 text-xl sm:text-2xl'>
+        <p className='py-6 text-xl'>
           Thank you to the wonderful kids and families that participated in our first summer camps
           of 2022! Much love from <span className='font-semibold'>las maestras</span>!
         </p>
@@ -27,14 +27,12 @@ const Camp = () => {
             className='rounded-md'
           />
         </div>
-        <p className='py-4 text-xl sm:text-2xl'>
-          Summer Camps are open to students from ages 5-12 years old.{" "}
-        </p>
+        <p className='py-4 text-xl'>Summer Camps are open to students from ages 5-12 years old. </p>
         <p className='mt-3 text-lg sm:text-xl'>
           <strong className=''>No prior Spanish language required.</strong>
         </p>
       </div>
-      <section className='text-xl sm:text-2xl'>
+      <section className='text-xl'>
         <p className='mt-3'>
           Our Ometepe summer camp has been designed to accommodate your family’s schedule, offering
           weekly camps.

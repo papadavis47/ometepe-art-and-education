@@ -13,7 +13,7 @@ const Mission = () => {
       <div className='py-6 font-serif'>
         <h1 className='text-3xl sm:text-5xl'>{spanish ? "Nuestra misión" : "Our Mission"}</h1>
       </div>
-      <div className='text-xl sm:text-2xl'>
+      <div className='text-xl'>
         <p className=''>{spanish ? spanishMissionStatement : englishMissionStatement}</p>
       </div>
       <figure className='mt-6'>
@@ -35,11 +35,11 @@ const Mission = () => {
           <h2 className='font-serif text-3xl sm:text-4xl'>
             {spanish ? "La Isla Ometepe" : "The Island of Ometepe"}
           </h2>
-          <p className='my-4 text-xl sm:text-2xl'>
+          <p className='my-4 text-xl'>
             The inspiration for our organization has come from the beautiful island of Ometepe in
             Lake Nicaragua.
           </p>
-          <p className='my-4 text-xl sm:text-2xl'>
+          <p className='my-4 text-xl'>
             Ometepe is the birthplace of our staff member,{" "}
             <span className='font-semibold'>
               <Link href='/staff/inmaculada'>Inmaculada Cruz</Link>
