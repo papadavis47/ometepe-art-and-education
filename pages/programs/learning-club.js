@@ -14,20 +14,20 @@ const LearningClub = () => {
       <section className='mt-6 '>
         <div>
           <h1 className='py-6 font-serif text-4xl sm:text-5xl'>Afterschool Learning Club</h1>
-          <p className='text-xl italic font-semibold'>For PreK thru 6 Grade ( 4 to 12 years old)</p>
+          <p className='text-xl italic font-semibold'>
+            For PreK thru 6 Grade ( 4 to 12 years old )
+          </p>
         </div>
         <div className='my-4 text-lg sm:text-xl'>
           <p className='py-2'>
-            We offer fun learning experiences to promote Spanish language and culture.
+            We offer fun learning experiences to promote Spanish language and culture
           </p>
-          <p className='py-2'>Our teachers have extensive teaching experience.</p>{" "}
+          <p className='py-2'>Our teachers have extensive teaching experience</p>{" "}
+          <p className='py-2'>Our staff members are patient, loving and always available to help</p>
           <p className='py-2'>
-            Our staff members are patient, loving and they are lways there to help.
+            The children in our care have time to relax, learn, play and enjoy their day
           </p>
-          <p className='py-2'>
-            The children in our care have time to relax, learn, play and enjoy their day.
-          </p>
-          <p className='py-2'>There is plenty of quiet space for homework and reading. </p>
+          <p className='py-2'>There is plenty of quiet space for homework and reading</p>
           <p className='py-2'>Healthy snacks provided.</p>
         </div>
         <div>
@@ -59,15 +59,12 @@ const LearningClub = () => {
       </section>
       <div className='mt-6'>
         <Image
-          src='/images/programs/family-dancers.jpg'
+          src='/images/learning-club/inmaculada-mateo.jpg'
           width={900}
           height={700}
-          alt='Traditional Nicaraguan Folklore'
-          className='rounded-md'
+          alt='Inmaculada with student'
         />
-        <figcaption className='font-semibold'>
-          Our Family, Traditional Nicaraguan Dancers - Seattle
-        </figcaption>
+        <figcaption className='font-semibold'>Inmaculada with student, 2022</figcaption>
       </div>
     </div>
   );

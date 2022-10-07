@@ -25,8 +25,11 @@ const SpanishClasses = () => {
               Maestra Sandra
             </MyLink>
           </p>
-          <p className='text-xl italic font-semibold'>
-            Saturday classes for children or Monday / Wednesday evenings classes for adults
+          <p className='pb-2 text-xl font-semibold'>
+            Learn spanish with personal and dedicated tutors
+          </p>
+          <p className='mt-4 text-xl italic font-semibold'>
+            Saturday classes for children or Monday and Wednesday evenings classes for adults
           </p>
           <p className='mt-4 text-lg font-semibold'>
             Cost:&nbsp; 6 sessions - $180 -{" "}
