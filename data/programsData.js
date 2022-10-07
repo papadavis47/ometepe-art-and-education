@@ -37,4 +37,21 @@ export const schedule = {
       activity: "Traditional Nicaraguan Dance - children and adults",
     },
   ],
+  spanishClasses: [
+    {
+      id: 1,
+      time: "9:00am - 11:00am - Saturdays only",
+      activity: "Beginning Spanish / 3 to 6 years old",
+    },
+    {
+      id: 2,
+      time: "11:30am - 1:30pm - Saturdays only",
+      activity: "Beginning Spanish / 7 to 10 years old",
+    },
+    {
+      id: 3,
+      time: "6:00pm - 8:00pm ",
+      activity: "Beginning Spanish / Adults - Monday and Wednesday Evenings",
+    },
+  ],
 };

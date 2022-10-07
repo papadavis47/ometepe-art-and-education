@@ -47,7 +47,7 @@ const ArtClasses = () => {
           height={700}
           alt='Painting by Victor Fuents'
         />
-        <figcaption className='font-semibold'>Cuadros - Victor Fuentes</figcaption>
+        <figcaption className='font-semibold'>Frutas - Victor Fuentes</figcaption>
       </figure>
     </div>
   );

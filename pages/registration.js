@@ -20,8 +20,8 @@ const Registration = () => {
             ometepeartandeducation@gmail.com
           </a>
         </p>
-        <p className='text-xl text-white'>
-          Or call: <span className='font-semibold'>206-866-8204</span>
+        <p className='text-lg text-white'>
+          Or text:&nbsp; <span className='font-semibold'>206-866-8204</span>
         </p>
       </div>
     </div>
