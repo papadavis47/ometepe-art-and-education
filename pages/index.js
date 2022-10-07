@@ -75,7 +75,7 @@ export default function Home() {
               width={900}
               height={700}
               alt='Ometepe Dancers'
-              src='/images/landing-mid/kids.jpg'
+              src='/images/landing-mid/yellow.jpg'
               className='rounded-md'
             />
           </figure>
@@ -89,7 +89,7 @@ export default function Home() {
               width={900}
               height={700}
               alt='Child Dancers'
-              src='/images/landing-mid/yellow.jpg'
+              src='/images/landing-mid/kids.jpg'
               className='rounded-md'
             />
           </figure>
