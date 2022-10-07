@@ -1,6 +1,6 @@
 import { useAppContext } from "../../Context/appContext.js";
 import { MyLink } from "../../utils/myLink.js";
-import Logo from "../Logo";
+import LogoLink from "../LogoLink";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -19,7 +19,7 @@ const NavBar = () => {
             <div className='max-w-full px-4 mx-auto sm:px-6 lg:px-10'>
               <div className='flex justify-between h-20'>
                 {/* left side of bar */}
-                <Logo />
+                <LogoLink />
 
                 {/* center of bar */}
                 <div className='flex items-center'>
