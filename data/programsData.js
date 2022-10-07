@@ -24,4 +24,17 @@ export const schedule = {
     { id: 2, time: "2:00pm - 3:30pm", activity: "Intermediate Art Class / ages 12 - 17" },
     { id: 3, time: "4:00pm - 5:50pm ", activity: "Painting / for adults" },
   ],
+  culturalClasses: [
+    {
+      id: 1,
+      time: "10:00am - 11:00am",
+      activity: "Knitting class / minimum 7 years old to any age",
+    },
+    { id: 2, time: "11:00am - 1:00pm", activity: "Cooking Classes - adults" },
+    {
+      id: 3,
+      time: "1:00pm - 2:30pm ",
+      activity: "Traditional Nicaraguan Dance - children and adults",
+    },
+  ],
 };
