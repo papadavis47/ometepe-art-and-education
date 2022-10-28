@@ -25,10 +25,10 @@ const ArtClasses = () => {
           <p className='text-xl italic font-semibold'>
             A different painting and drawing technique will be covered each week.
           </p>
-          <p className='mt-4 text-lg font-semibold'>
+          {/* <p className='mt-4 text-lg font-semibold'>
             Cost:&nbsp; Each class $50 per week -{" "}
             <span className='font-semibold'>materials included</span>
-          </p>
+          </p> */}
         </div>
       </section>
       <section className='mt-4'>

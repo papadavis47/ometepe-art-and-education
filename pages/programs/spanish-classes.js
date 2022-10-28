@@ -31,10 +31,10 @@ const SpanishClasses = () => {
           <p className='mt-4 text-xl italic font-semibold'>
             Saturday classes for children or Monday and Wednesday evenings classes for adults
           </p>
-          <p className='mt-4 text-lg font-semibold'>
+          {/* <p className='mt-4 text-lg font-semibold'>
             Cost:&nbsp; 6 sessions - $180 -{" "}
             <span className='font-semibold'>materials included</span>
-          </p>
+          </p> */}
         </div>
       </section>
       <section className='mt-4'>

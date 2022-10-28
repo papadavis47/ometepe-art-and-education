@@ -96,9 +96,9 @@ const Camp = () => {
           alt='Flyer for summer camp information'
         />
       </div>
-      <div className='py-3 mt-5'>
+      {/* <div className='py-3 mt-5'>
         <SmallContactSnippet />
-      </div>
+      </div> */}
     </div>
   );
 };

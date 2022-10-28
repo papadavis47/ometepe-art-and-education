@@ -35,7 +35,7 @@ const LearningClub = () => {
             <span>Hours of Operation:&nbsp;</span>
             <span>&nbsp;2:30pm to 6pm</span>{" "}
           </p>
-          <p className='text-lg font-semibold'>Cost: $500 per month or $150 per week</p>
+          {/* <p className='text-lg font-semibold'>Cost: $500 per month or $150 per week</p> */}
         </div>
       </section>
       <section className='mt-4'>
