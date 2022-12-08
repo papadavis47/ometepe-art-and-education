@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useAppContext } from '../Context/appContext.jsx';
+import { useAppContext } from '../Context/appContext';
 
 export default function Home() {
   const { spanish } = useAppContext();
@@ -76,7 +76,7 @@ export default function Home() {
               height={700}
               alt='Ometepe Dancers'
               src='/images/landing-mid/yellow.jpg'
-              className='rounded-md'
+              className='mx-auto rounded-md'
             />
           </figure>
         </div>
@@ -90,7 +90,7 @@ export default function Home() {
               height={700}
               alt='Child Dancers'
               src='/images/landing-mid/kids.jpg'
-              className='rounded-md'
+              className='mx-auto rounded-md'
             />
           </figure>
         </div>

@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import { MyLink } from "../../utils/myLink.js";
-import ScheduleItems from "../../components/ScheduleItems";
-import { schedule } from "../../data/programsData.js";
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import ScheduleItems from '../../components/ScheduleItems';
+import { schedule } from '../../data/programsData';
 
 const ArtClasses = () => {
   return (
@@ -16,10 +16,10 @@ const ArtClasses = () => {
         <div>
           <h1 className='py-6 font-serif text-4xl sm:text-5xl'>Art Classes</h1>
           <p className='py-4 text-xl'>
-            Taught by{" "}
-            <MyLink className='font-bold' href='/staff/victor'>
+            Taught by{' '}
+            <Link className='font-bold' href='/staff/victor'>
               Victor Fuentes
-            </MyLink>
+            </Link>
             &nbsp; - every SATURDAY
           </p>
           <p className='text-xl italic font-semibold'>

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useAppContext } from '../../Context/appContext.jsx';
-import SmallContactSnippet from '../../components/SmallContactSnippet';
+import { useAppContext } from '../../Context/appContext';
 
 const Camp = () => {
   const { spanish } = useAppContext();

@@ -1,4 +1,4 @@
-import { useAppContext } from '../../Context/appContext.jsx';
+import { useAppContext } from '../../Context/appContext';
 
 const Location = () => {
   const { spanish } = useAppContext();
@@ -25,7 +25,7 @@ const Location = () => {
             height='550'
             style={{ border: '0' }}
             loading='lazy'
-            allowFullScreen=''
+            allowFullScreen={true}
             referrerPolicy='no-referrer-when-downgrade'
             className='mx-auto'
           ></iframe>

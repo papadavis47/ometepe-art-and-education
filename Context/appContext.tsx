@@ -5,13 +5,10 @@ type AppContextType = {
   toggleSpanish: () => void;
 };
 
-export const AppContext = createContext<AppContextType>({
-  spanish: false,
-  toggleSpanish: () => {},
-});
+export const AppContext = createContext({ spanish: false, toggleSpanish: () => {} });
 
 export function ContextWrapper({ children }) {
-  const [spanish, setSpanish] = useState(false);
+  const [spanish, setSpanish] = useState<boolean>(false);
 
   const toggleSpanish = () => {
     setSpanish(!spanish);

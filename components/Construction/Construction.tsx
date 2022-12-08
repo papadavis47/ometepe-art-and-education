@@ -1,4 +1,4 @@
-import { useAppContext } from '../../Context/appContext.js';
+import { useAppContext } from '../../Context/appContext';
 
 const Construction = ({ title }) => {
   const { spanish } = useAppContext();

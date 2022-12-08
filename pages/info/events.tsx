@@ -1,12 +1,12 @@
-import Construction from '../../components/Construction';
-import { useAppContext } from '../../Context/appContext.jsx';
+// import Construction from '../../components/Construction';
+import { useAppContext } from '../../Context/appContext';
 import Poster1 from '../../public/images/events/central-american-festival.jpg';
 import Poster2 from '../../public/images/events/central-american-festival2.jpg';
 import Advert1 from '../../public/images/events/open-house-oae-spanish.jpg';
 import Advert2 from '../../public/images/events/open-house-oae-english.jpg';
 import danceLessonsEn from '../../public/images/events/dance-lessons-en.png';
 import danceLessonsEs from '../../public/images/events/dance-lessons-esp.png';
-import Image from 'next/future/image';
+import Image from 'next/image';
 
 const Events = () => {
   const { spanish } = useAppContext();

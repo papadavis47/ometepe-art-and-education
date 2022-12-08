@@ -1,5 +1,5 @@
 import { SiNextdotjs } from 'react-icons/si';
-import { useAppContext } from '../../Context/appContext.js';
+import { useAppContext } from '../../Context/appContext';
 
 const Footer = () => {
   const { spanish } = useAppContext();

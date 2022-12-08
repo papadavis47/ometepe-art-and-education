@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { useAppContext } from "../../Context/appContext.js";
-import StaffTitle from "../../components/StaffTitle";
-import { englishParagraphs } from "../../data/InmaBioData.js";
-import BioParagraph from "../../components/BioParagraph";
+import Image from 'next/image';
+import { useAppContext } from '../../Context/appContext';
+import StaffTitle from '../../components/StaffTitle';
+import { englishParagraphs } from '../../data/InmaBioData';
+import BioParagraph from '../../components/BioParagraph';
 
 const Inma = () => {
   const { spanish } = useAppContext();

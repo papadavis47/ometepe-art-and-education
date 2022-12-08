@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useAppContext } from '../../Context/appContext.jsx';
-import {
-  englishMissionStatement,
-  spanishMissionStatement,
-} from '../../data/missionStatementData.js';
+import { useAppContext } from '../../Context/appContext';
+import { englishMissionStatement, spanishMissionStatement } from '../../data/missionStatementData';
 
 const Mission = () => {
   const { spanish } = useAppContext();
