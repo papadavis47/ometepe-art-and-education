@@ -1,8 +1,9 @@
 <h1 align="center">ometepeartandeducation.org</h1>
 
 This is the source code of a website built with TypeScript, Next.js, and TailwindCSS - for Ometepe
-Art and Education (OAE) - an organization, based in Seattle, that has the following mission
-statement:
+Art and Education (OAE).
+
+OAE is a Seattle based organization that has the following mission statement:
 
 ---
 
