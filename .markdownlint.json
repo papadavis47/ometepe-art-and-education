@@ -1,0 +1,7 @@
+{
+  "MD033": false,
+  "no-inline-html": {
+    "allowed_elements": ["h1", "p", "img"]
+  },
+  "MD013": { "line_length": 100 }
+}

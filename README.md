@@ -1,7 +1,8 @@
 <h1 align="center">ometepeartandeducation.org</h1>
 
-This is the source code of a website, built with Next.js, for Ometepe Art and Education (OAE) - an
-organization based in Seattle with the following mission statement:
+This is the source code of a website built with TypeScript, Next.js, and TailwindCSS - for Ometepe
+Art and Education (OAE) - an organization, based in Seattle, that has the following mission
+statement:
 
 ---
 
@@ -23,7 +24,5 @@ The website utilizes the useContext API from React.js - to allow for bilingual (
 transitions by clicking a button on the Navbar.
 
 There are links to a contact form as well as a navbar link to register for camps provided by OAE.
-
-Bulma CSS was used for styling.
 
 https://ometepeartandeducation.org
