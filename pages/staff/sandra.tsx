@@ -19,7 +19,7 @@ const Sandra = () => {
         />
       </div>
       {englishParagraphs.map((para) => (
-        <BioParagraph text={para.text} key={para.id} />
+        <BioParagraph text={para.text} key={para.key} />
       ))}
     </div>
   );

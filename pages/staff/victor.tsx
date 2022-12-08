@@ -23,7 +23,7 @@ const Victor = () => {
           {spanish ? 'Declaración del artista' : "Artist's Statement"}
         </h1>
         {englishParagraphs.map((para) => (
-          <BioParagraph text={para.text} key={para.id} />
+          <BioParagraph text={para.text} key={para.key} />
         ))}
       </div>
     </div>
