@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import ScheduleItems from '../../components/ScheduleItems';
-import { schedule } from '../../data/programsData.js';
+import { schedule } from '../../data/programsData';
 import Link from 'next/link';
 
 const SpanishClasses = () => {

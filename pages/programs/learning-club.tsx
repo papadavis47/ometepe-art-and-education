@@ -1,7 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-import { schedule } from "../../data/programsData.js";
-import ScheduleItems from "../../components/ScheduleItems";
+import Head from 'next/head';
+import Image from 'next/image';
+import { schedule } from '../../data/programsData';
+import ScheduleItems from '../../components/ScheduleItems';
 
 const LearningClub = () => {
   return (
@@ -22,7 +22,7 @@ const LearningClub = () => {
           <p className='py-2'>
             We offer fun learning experiences to promote Spanish language and culture
           </p>
-          <p className='py-2'>Our teachers have extensive teaching experience</p>{" "}
+          <p className='py-2'>Our teachers have extensive teaching experience</p>{' '}
           <p className='py-2'>Our staff members are patient, loving and always available to help</p>
           <p className='py-2'>
             The children in our care have time to relax, learn, play and enjoy their day
@@ -33,7 +33,7 @@ const LearningClub = () => {
         <div>
           <p className='text-lg font-semibold'>
             <span>Hours of Operation:&nbsp;</span>
-            <span>&nbsp;2:30pm to 6pm</span>{" "}
+            <span>&nbsp;2:30pm to 6pm</span>{' '}
           </p>
           {/* <p className='text-lg font-semibold'>Cost: $500 per month or $150 per week</p> */}
         </div>
