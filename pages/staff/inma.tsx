@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useAppContext } from '../../Context/appContext';
 import StaffTitle from '../../components/StaffTitle';
 import { englishParagraphs } from '../../data/InmaBioData';
-import BioParagraph from '../../components/BioParagraph';
+import BioParagraph, { BioContent } from '../../components/BioParagraph';
 
 const Inma = () => {
   const { spanish } = useAppContext();
@@ -18,8 +18,8 @@ const Inma = () => {
           className='rounded-lg'
         />
       </div>
-      {englishParagraphs.map((para) => (
-        <BioParagraph text={para.text} key={para.id} />
+      {englishParagraphs.map((para: BioContent) => (
+        <BioParagraph text={para.text} key={para.key} />
       ))}
     </div>
   );
