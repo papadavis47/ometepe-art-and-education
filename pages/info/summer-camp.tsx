@@ -1,7 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useAppContext } from "../../Context/appContext.js";
-import SmallContactSnippet from "../../components/SmallContactSnippet";
+import Head from 'next/head';
+import Image from 'next/image';
+import { useAppContext } from '../../Context/appContext.jsx';
+import SmallContactSnippet from '../../components/SmallContactSnippet';
 
 const Camp = () => {
   const { spanish } = useAppContext();
@@ -39,7 +39,7 @@ const Camp = () => {
         </p>
         <p className='mt-3'>
           Our camps are well-supervised, engaging, and educational. Available all day, children will
-          participate in creative projects, hands-on activities, and clubs.{" "}
+          participate in creative projects, hands-on activities, and clubs.{' '}
         </p>
         <p className='mt-3'>
           Our Summer Camp curriculum explores a variety of topics and concepts. Among other physical
@@ -52,37 +52,37 @@ const Camp = () => {
         <ul className='mt-4 text-lg sm:text-xl'>
           <li className=''>
             <p>
-              Session 1: &nbsp;June 20 - June 24{" "}
+              Session 1: &nbsp;June 20 - June 24{' '}
               <span className='font-bold'>&nbsp;Central America - Knowing Nicaragua</span>
             </p>
           </li>
           <li className=''>
             <p>
-              Session 2: &nbsp;June 27 - July 01{" "}
+              Session 2: &nbsp;June 27 - July 01{' '}
               <span className='font-bold'>&nbsp;Under the Sea</span>
             </p>
           </li>
           <li className=''>
             <p>
-              Session 3: &nbsp;July 05 - July 08{" "}
+              Session 3: &nbsp;July 05 - July 08{' '}
               <span className='font-bold'>&nbsp;Central America - Knowing El Salvador</span>
             </p>
           </li>
           <li className=''>
             <p>
-              Session 4: &nbsp;July 11 - July 15{" "}
+              Session 4: &nbsp;July 11 - July 15{' '}
               <span className='font-bold'>&nbsp;Crazy Scientist</span>
             </p>
           </li>
           <li className=''>
             <p>
-              Session 5: &nbsp;July 18 - July 22{" "}
+              Session 5: &nbsp;July 18 - July 22{' '}
               <span className='font-bold'>&nbsp;Central America - Knowing Guatemala</span>
             </p>
           </li>
           <li className='is-size-4 is-size-6-mobile'>
             <p>
-              Session 6: &nbsp;July 25 - July 29{" "}
+              Session 6: &nbsp;July 25 - July 29{' '}
               <span className='font-bold'>&nbsp;The Wildlife</span>
             </p>
           </li>

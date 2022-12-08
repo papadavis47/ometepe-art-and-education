@@ -1,11 +1,11 @@
-import { useAppContext } from "../../Context/appContext.js";
-import { MyLink } from "../../utils/myLink.js";
-import LogoLink from "../LogoLink";
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { classNames } from "../../utils/classnames.js";
-import { navigation, registration, staff, programs } from "../../data/navData.js";
+import { useAppContext } from '../../Context/appContext.jsx';
+import { MyLink } from '../../utils/myLink.js';
+import LogoLink from '../LogoLink';
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { classNames } from '../../utils/classnames.js';
+import { navigation, registration, staff, programs } from '../../data/navData.js';
 
 const NavBar = () => {
   const { spanish, toggleSpanish } = useAppContext();
@@ -29,7 +29,7 @@ const NavBar = () => {
                         <Menu.Button className='flex items-center max-w-xs p-2 pb-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-orange-100'>
                           <span className='sr-only'>Programs</span>
                           <p className='font-serif text-xl border-b-2 border-transparent hover:border-orange-200'>
-                            {spanish ? "Programas" : "Programs"}
+                            {spanish ? 'Programas' : 'Programs'}
                           </p>
                         </Menu.Button>
                       </div>
@@ -49,8 +49,8 @@ const NavBar = () => {
                                 <MyLink
                                   href={item.href}
                                   className={classNames(
-                                    active ? "bg-gray-100" : "",
-                                    "block px-4 font-serif py-2 text-lg text-stone-800"
+                                    active ? 'bg-gray-100' : '',
+                                    'block px-4 font-serif py-2 text-lg text-stone-800'
                                   )}
                                 >
                                   {item.text}
@@ -80,7 +80,7 @@ const NavBar = () => {
                           <Menu.Button className='flex items-center max-w-xs p-2 pb-1 ml-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-100'>
                             <span className='sr-only'>Staff Members</span>
                             <p className='font-serif text-xl border-b-2 border-transparent hover:border-orange-200'>
-                              {spanish ? "Personal" : "Staff"}
+                              {spanish ? 'Personal' : 'Staff'}
                             </p>
                           </Menu.Button>
                         </div>
@@ -100,8 +100,8 @@ const NavBar = () => {
                                   <MyLink
                                     href={item.href}
                                     className={classNames(
-                                      active ? "bg-gray-100" : "",
-                                      "font-serif text-lg block px-4 py-2 text-stone-800"
+                                      active ? 'bg-gray-100' : '',
+                                      'font-serif text-lg block px-4 py-2 text-stone-800'
                                     )}
                                   >
                                     {item.text}
@@ -125,7 +125,7 @@ const NavBar = () => {
                     onClick={toggleSpanish}
                   >
                     <span className='sr-only'>Toggle Spanish</span>
-                    <span className='p-3 text-sm'>{spanish ? "English" : "En Español"}</span>
+                    <span className='p-3 text-sm'>{spanish ? 'English' : 'En Español'}</span>
                   </button>
                 </div>
                 <div className='flex items-center -mr-2 lg:hidden'>
@@ -166,7 +166,7 @@ const NavBar = () => {
                   ))}
                   {/* submenu 1 */}
                   <div className='pt-4 pb-3 border-t border-gray-200'>
-                    <p className='ml-3'>{spanish ? "Programas" : "Programs"}</p>
+                    <p className='ml-3'>{spanish ? 'Programas' : 'Programs'}</p>
                     {programItems.map((item) => (
                       <Disclosure.Button
                         key={item.text}
@@ -181,7 +181,7 @@ const NavBar = () => {
                   {/* end submenu 1 */}
                   {/* submenu 2 */}
                   <div className='pt-4 pb-3 border-t border-gray-200'>
-                    <p className='ml-3'>{spanish ? "Personal" : "Staff"}</p>
+                    <p className='ml-3'>{spanish ? 'Personal' : 'Staff'}</p>
                     {staff.map((link) => (
                       <Disclosure.Button
                         key={link.text}
@@ -200,7 +200,7 @@ const NavBar = () => {
                     onClick={toggleSpanish}
                   >
                     <span className='sr-only'>Toggle Spanish</span>
-                    <span className='p-3 text-lg'>{spanish ? "English" : "En Español"}</span>
+                    <span className='p-3 text-lg'>{spanish ? 'English' : 'En Español'}</span>
                   </button>
                   {/* end language toggle for mobile */}
                 </div>

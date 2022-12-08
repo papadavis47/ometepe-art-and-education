@@ -1,5 +1,5 @@
-import { SiNextdotjs } from "react-icons/si";
-import { useAppContext } from "../../Context/appContext.js";
+import { SiNextdotjs } from 'react-icons/si';
+import { useAppContext } from '../../Context/appContext.js';
 
 const Footer = () => {
   const { spanish } = useAppContext();
@@ -17,7 +17,7 @@ const Footer = () => {
         </h3>
       </div>
       <div className='flex items-center text-xl hover:text-[#d26914]'>
-        <p className='mr-2'>{spanish ? "Construido con " : "Built with "}</p>
+        <p className='mr-2'>{spanish ? 'Construido con ' : 'Built with '}</p>
         <SiNextdotjs />
       </div>
     </footer>

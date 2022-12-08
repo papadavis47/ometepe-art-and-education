@@ -1,5 +1,5 @@
-import { useAppContext } from "../../Context/appContext.js";
-import { MyLink } from "../../utils/myLink.js";
+import { useAppContext } from '../../Context/appContext.jsx';
+import { MyLink } from '../../utils/myLink';
 
 const ComingSoon = ({ title, text }) => {
   const { spanish } = useAppContext();

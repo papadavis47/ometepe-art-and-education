@@ -1,4 +1,4 @@
-import { MyLink } from "../../utils/myLink.js";
+import { MyLink } from '../../utils/myLink';
 // The following is the company SVG with a span - wrapped in a modified next/link
 
 function LogoLink() {

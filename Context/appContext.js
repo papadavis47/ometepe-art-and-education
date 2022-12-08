@@ -1,6 +1,10 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from 'react';
 
-const AppContext = createContext();
+// interface AppContextInterface {
+// spanish: boolean;
+// }
+
+const AppContext = createContext(null);
 
 export function ContextWrapper({ children }) {
   const [spanish, setSpanish] = useState(false);
