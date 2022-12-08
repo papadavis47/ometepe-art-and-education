@@ -10,7 +10,7 @@ const ComingSoon = ({ title, text }) => {
         <h2 className='mt-4 text-2xl italic text-white'>{text}</h2>
       </div>
       <div className='flex justify-center py-8'>
-        <Link href='/'>
+        <Link href='/' passHref>
           <svg
             version='1.0'
             xmlns='http://www.w3.org/2000/svg'

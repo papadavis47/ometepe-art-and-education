@@ -4,7 +4,7 @@ import Link from 'next/link';
 function LogoLink() {
   return (
     <div className='flex items-center'>
-      <Link href='/'>
+      <Link href='/' passHref>
         <div className='flex items-center flex-shrink-0 gap-4 px-4 text-stone-800'>
           <svg
             version='1.0'
