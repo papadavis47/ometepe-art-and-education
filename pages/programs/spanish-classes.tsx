@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import { MyLink } from "../../utils/myLink.js";
-import ScheduleItems from "../../components/ScheduleItems";
-import { schedule } from "../../data/programsData.js";
+import Head from 'next/head';
+import Image from 'next/image';
+import ScheduleItems from '../../components/ScheduleItems';
+import { schedule } from '../../data/programsData.js';
+import Link from 'next/link';
 
 const SpanishClasses = () => {
   return (
@@ -16,14 +16,14 @@ const SpanishClasses = () => {
         <div>
           <h1 className='py-6 font-serif text-4xl sm:text-5xl'>Spanish Classes</h1>
           <p className='py-4 text-xl'>
-            Taught by{" "}
-            <MyLink className='font-bold' href='/staff/inma'>
+            Taught by{' '}
+            <Link className='font-bold' href='/staff/inma'>
               Maestra Inma
-            </MyLink>{" "}
-            and{" "}
-            <MyLink className='font-bold' href='/staff/sandra'>
+            </Link>{' '}
+            and{' '}
+            <Link className='font-bold' href='/staff/sandra'>
               Maestra Sandra
-            </MyLink>
+            </Link>
           </p>
           <p className='pb-2 text-xl font-semibold'>
             Learn spanish with personal and dedicated tutors

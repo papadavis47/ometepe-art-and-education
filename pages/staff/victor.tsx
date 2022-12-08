@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { useAppContext } from "../../Context/appContext.js";
-import StaffTitle from "../../components/StaffTitle";
-import BioParagraph from "../../components/BioParagraph";
-import { englishParagraphs } from "../../data/victorBioData.js";
+import Image from 'next/image';
+import { useAppContext } from '../../Context/appContext';
+import StaffTitle from '../../components/StaffTitle';
+import BioParagraph from '../../components/BioParagraph';
+import { englishParagraphs } from '../../data/victorBioData';
 
 const Victor = () => {
   const { spanish } = useAppContext();
@@ -20,10 +20,10 @@ const Victor = () => {
       </div>
       <div className=''>
         <h1 className='py-2 my-4 font-serif text-3xl text-white sm:my-6 sm:text-4xl'>
-          {spanish ? "Declaración del artista" : "Artist's Statement"}
+          {spanish ? 'Declaración del artista' : "Artist's Statement"}
         </h1>
         {englishParagraphs.map((para) => (
-          <BioParagraph text={para.text} key={para.id} />
+          <BioParagraph text={para.text} key={para.key} />
         ))}
       </div>
     </div>

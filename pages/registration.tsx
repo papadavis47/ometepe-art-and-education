@@ -1,14 +1,13 @@
-import { useAppContext } from "../Context/appContext.js";
-import ComingSoon from "../components/ComingSoon";
-import { MyLink } from "../utils/myLink.js";
+import { useAppContext } from '../Context/appContext';
+import ComingSoon from '../components/ComingSoon';
 
 const Registration = () => {
   const { spanish } = useAppContext();
   return (
     <div className='px-6 page-spacing'>
       <ComingSoon
-        title={spanish ? "Registracion" : "Registration"}
-        text={spanish ? "Formulario disponible pronto!" : "Registration Form Coming Soon!"}
+        title={spanish ? 'Registracion' : 'Registration'}
+        text={spanish ? 'Formulario disponible pronto!' : 'Registration Form Coming Soon!'}
       />
       <div className='max-w-sm mx-auto text-lg text-white'>
         <p className=''>For now, please email:</p>

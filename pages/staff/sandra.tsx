@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { useAppContext } from "../../Context/appContext.js";
-import StaffTitle from "../../components/StaffTitle";
-import { englishParagraphs } from "../../data/sandraBioData.js";
-import BioParagraph from "../../components/BioParagraph";
+import Image from 'next/image';
+import { useAppContext } from '../../Context/appContext';
+import StaffTitle from '../../components/StaffTitle';
+import { englishParagraphs } from '../../data/sandraBioData';
+import BioParagraph from '../../components/BioParagraph';
 
 const Sandra = () => {
   const { spanish } = useAppContext();
@@ -19,7 +19,7 @@ const Sandra = () => {
         />
       </div>
       {englishParagraphs.map((para) => (
-        <BioParagraph text={para.text} key={para.id} />
+        <BioParagraph text={para.text} key={para.key} />
       ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import { useAppContext } from "../../Context/appContext.js";
+import { useAppContext } from '../../Context/appContext';
 
 function StaffTitle({ title, titulo, name }) {
   const { spanish } = useAppContext();

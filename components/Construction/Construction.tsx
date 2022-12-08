@@ -1,4 +1,4 @@
-import { useAppContext } from "../../Context/appContext.js";
+import { useAppContext } from '../../Context/appContext';
 
 const Construction = ({ title }) => {
   const { spanish } = useAppContext();
@@ -7,7 +7,7 @@ const Construction = ({ title }) => {
       <div className='text-center'>
         <h1 className='mt-6 text-4xl text-white'>{title}</h1>
         <h2 className='text-2xl italic text-white'>
-          {spanish ? "En Proceso" : "Under Construction"} 🔨
+          {spanish ? 'En Proceso' : 'Under Construction'} 🔨
         </h2>
       </div>
       <section className=''>

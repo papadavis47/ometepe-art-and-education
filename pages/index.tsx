@@ -1,6 +1,6 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useAppContext } from "../Context/appContext.js";
+import Head from 'next/head';
+import Image from 'next/image';
+import { useAppContext } from '../Context/appContext';
 
 export default function Home() {
   const { spanish } = useAppContext();
@@ -15,15 +15,15 @@ export default function Home() {
         <h1 className='mt-6 font-serif text-4xl sm:text-5xl'>Ometepe Art and Education</h1>
         <h2 className='mt-4 font-serif text-2xl italic sm:text-3xl'>
           {spanish
-            ? "Añadiendo nuestras voces a un mundo maravillosamente diverso"
-            : "Adding Our Voices to a Beautifully Diverse World"}
+            ? 'Añadiendo nuestras voces a un mundo maravillosamente diverso'
+            : 'Adding Our Voices to a Beautifully Diverse World'}
         </h2>
       </div>
       <section className='mx-auto mt-6 md:mt-10 max-w-7xl'>
         <div className='grid-cols-2 md:gap-4 md:grid'>
           <div className=''>
             <h3 className='py-4 mb-4 font-serif text-2xl text-center'>
-              {spanish ? "Lecciones de arte y clases de baile" : "Art Lessons & Dance Lessons"}
+              {spanish ? 'Lecciones de arte y clases de baile' : 'Art Lessons & Dance Lessons'}
             </h3>
             <Image
               width={800}
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className='py-4 mb-4 font-serif text-2xl text-center'>
-              {spanish ? "Celebrando la cultura nicaragüense" : "Celebrating Nicaraguan Culture"}
+              {spanish ? 'Celebrando la cultura nicaragüense' : 'Celebrating Nicaraguan Culture'}
             </h3>
             <Image
               width={800}
@@ -68,7 +68,7 @@ export default function Home() {
       <section className='mx-auto mt-6 md:mt-10 max-w-7xl'>
         <div className='py-4 text-center'>
           <h2 className='mb-6 font-serif text-3xl italic sm:text-4xl'>
-            {spanish ? "Fomentando la creatividad" : "Fostering Creativity"}
+            {spanish ? 'Fomentando la creatividad' : 'Fostering Creativity'}
           </h2>
           <figure>
             <Image
@@ -76,13 +76,13 @@ export default function Home() {
               height={700}
               alt='Ometepe Dancers'
               src='/images/landing-mid/yellow.jpg'
-              className='rounded-md'
+              className='mx-auto rounded-md'
             />
           </figure>
         </div>
         <div className='text-center'>
           <h2 className='py-6 font-serif text-3xl italic sm:text-4xl mb-y'>
-            {spanish ? "Enriqueciendo vidas" : "Enriching Lives"}
+            {spanish ? 'Enriqueciendo vidas' : 'Enriching Lives'}
           </h2>
           <figure>
             <Image
@@ -90,7 +90,7 @@ export default function Home() {
               height={700}
               alt='Child Dancers'
               src='/images/landing-mid/kids.jpg'
-              className='rounded-md'
+              className='mx-auto rounded-md'
             />
           </figure>
         </div>
