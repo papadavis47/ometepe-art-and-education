@@ -5,13 +5,14 @@ import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { classNames } from '../../utils/classnames';
-import { navigation, staff, programs } from '../../data/navData';
+import { navigation, staff, programs, services } from '../../data/navData';
 
 const NavBar = () => {
   const { spanish, toggleSpanish } = useAppContext();
   // Change spanish / english option on data here
   let navItems = spanish ? navigation.spanish : navigation.english;
   let programItems = spanish ? programs.spanish : programs.english;
+  let servicesItems = spanish ? services.spanish : services.english;
   return (
     <div className='sticky top-0 z-50'>
       <Disclosure as='nav' className='bg-white border-b border-stone-200 '>
@@ -76,6 +77,45 @@ const NavBar = () => {
                     {/* End single link nav items */}
 
                     <div className='flex items-center lg:space-x-4 xl:space-x-8'>
+                      {/* begin services menu */}
+                      <Menu as='div' className='relative'>
+                        <div>
+                          <Menu.Button className='flex items-center max-w-xs p-2 pb-1 ml-1 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-100'>
+                            <span className='sr-only'>Services</span>
+                            <p className='font-serif text-xl border-b-2 border-transparent hover:border-orange-200'>
+                              {spanish ? 'Servicios' : 'Services'}
+                            </p>
+                          </Menu.Button>
+                        </div>
+                        <Transition
+                          as={Fragment}
+                          enter='transition ease-out duration-200'
+                          enterFrom='transform opacity-0 scale-95'
+                          enterTo='transform opacity-100 scale-100'
+                          leave='transition ease-in duration-75'
+                          leaveFrom='transform opacity-100 scale-100'
+                          leaveTo='transform opacity-0 scale-95'
+                        >
+                          <Menu.Items className='absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+                            {servicesItems.map((item) => (
+                              <Menu.Item key={item.text}>
+                                {({ active }) => (
+                                  <Link
+                                    href={item.href}
+                                    className={classNames(
+                                      active ? 'bg-gray-100' : '',
+                                      'font-serif text-lg block px-4 py-2 text-stone-800'
+                                    )}
+                                  >
+                                    {item.text}
+                                  </Link>
+                                )}
+                              </Menu.Item>
+                            ))}
+                          </Menu.Items>
+                        </Transition>
+                      </Menu>
+                      {/* end desktop services menu */}
                       {/* begin staff menu */}
                       <Menu as='div' className='relative'>
                         <div>
@@ -155,7 +195,7 @@ const NavBar = () => {
               leaveTo='transform scale-95 opacity-0'
             >
               <Disclosure.Panel className='h-screen lg:hidden'>
-                <div className='pt-2 pb-3 space-y-1'>
+                <div className='pt-2 pb-3 space-y-1 '>
                   {navItems.map((item) => (
                     <Disclosure.Button
                       key={item.name}
@@ -183,6 +223,21 @@ const NavBar = () => {
                   {/* end submenu 1 */}
                   {/* submenu 2 */}
                   <div className='pt-4 pb-3 border-t border-gray-200'>
+                    <p className='ml-3'>{spanish ? 'Servicios' : 'Services'}</p>
+                    {servicesItems.map((link) => (
+                      <Disclosure.Button
+                        key={link.text}
+                        as={Link}
+                        href={link.href}
+                        className='block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100'
+                      >
+                        {link.text}
+                      </Disclosure.Button>
+                    ))}
+                  </div>
+                  {/* end submenu 2 */}
+                  {/* submenu 3 */}
+                  <div className='pt-4 pb-3 border-t border-gray-200'>
                     <p className='ml-3'>{spanish ? 'Personal' : 'Staff'}</p>
                     {staff.map((link) => (
                       <Disclosure.Button
@@ -195,6 +250,7 @@ const NavBar = () => {
                       </Disclosure.Button>
                     ))}
                   </div>
+                  {/* end submenu 3 */}
                   {/* language toggle for mobile */}
                   <button
                     type='button'

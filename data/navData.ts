@@ -17,12 +17,12 @@ export const services = {
   english: [
     { text: 'Camps', href: '/info/summer-camp' },
     { text: 'Children Parties', href: '/info/children-parties' },
-    { name: 'registration', href: '/registration' },
+    { text: 'Registration', href: '/registration' },
   ],
   spanish: [
     { text: 'Campamentos', href: '/info/summer-camp' },
     { text: 'Fiestas para niños', href: '/info/children-parties' },
-    { name: 'Registracion', href: '/registration' },
+    { text: 'Registracion', href: '/registration' },
   ],
 };
 
