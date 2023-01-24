@@ -9,6 +9,7 @@ import { navigation, staff, programs } from '../../data/navData';
 
 const NavBar = () => {
   const { spanish, toggleSpanish } = useAppContext();
+  // Change spanish / english option on data here
   let navItems = spanish ? navigation.spanish : navigation.english;
   let programItems = spanish ? programs.spanish : programs.english;
   return (
@@ -22,6 +23,7 @@ const NavBar = () => {
                 <LogoLink />
 
                 {/* center of bar */}
+                {/* Begin nav links */}
                 <div className='flex items-center'>
                   <div className='hidden flex-shrink-1 lg:flex lg:space-x-4 xl:space-x-8'>
                     <Menu as='div' className='relative'>
@@ -71,8 +73,8 @@ const NavBar = () => {
                         {item.name}
                       </Link>
                     ))}
+                    {/* End single link nav items */}
 
-                    {/* dropdown registration desktop */}
                     <div className='flex items-center lg:space-x-4 xl:space-x-8'>
                       {/* begin staff menu */}
                       <Menu as='div' className='relative'>
