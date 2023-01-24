@@ -45,7 +45,7 @@ const NavBar = () => {
                         leaveFrom='transform opacity-100 scale-100'
                         leaveTo='transform opacity-0 scale-95'
                       >
-                        <Menu.Items className='absolute left-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+                        <Menu.Items className='absolute w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg -right-14 ring-1 ring-black ring-opacity-5 focus:outline-none'>
                           {programItems.map((item) => (
                             <Menu.Item key={item.text}>
                               {({ active }) => (
@@ -96,7 +96,7 @@ const NavBar = () => {
                           leaveFrom='transform opacity-100 scale-100'
                           leaveTo='transform opacity-0 scale-95'
                         >
-                          <Menu.Items className='absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+                          <Menu.Items className='absolute w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg -right-16 ring-1 ring-black ring-opacity-5 focus:outline-none'>
                             {servicesItems.map((item) => (
                               <Menu.Item key={item.text}>
                                 {({ active }) => (
@@ -135,7 +135,7 @@ const NavBar = () => {
                           leaveFrom='transform opacity-100 scale-100'
                           leaveTo='transform opacity-0 scale-95'
                         >
-                          <Menu.Items className='absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+                          <Menu.Items className='absolute w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg -right-20 ring-1 ring-black ring-opacity-5 focus:outline-none'>
                             {staff.map((item) => (
                               <Menu.Item key={item.text}>
                                 {({ active }) => (
