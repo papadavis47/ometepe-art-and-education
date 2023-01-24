@@ -4,14 +4,12 @@ export const navigation = {
     { name: 'events', href: '/info/events' },
     { name: 'contact', href: '/info/contact' },
     { name: 'location', href: '/info/location' },
-    { name: 'registration', href: '/registration' },
   ],
   spanish: [
     { name: 'Misión', href: '/info/mission' },
     { name: 'Eventos', href: '/info/events' },
     { name: 'Contactar', href: '/info/contact' },
     { name: 'Localización', href: '/info/location' },
-    { name: 'Registracion', href: '/registration' },
   ],
 };
 
@@ -19,10 +17,12 @@ export const services = {
   english: [
     { text: 'Camps', href: '/info/summer-camp' },
     { text: 'Children Parties', href: '/info/children-parties' },
+    { name: 'registration', href: '/registration' },
   ],
   spanish: [
     { text: 'Campamentos', href: '/info/summer-camp' },
     { text: 'Fiestas para niños', href: '/info/children-parties' },
+    { name: 'Registracion', href: '/registration' },
   ],
 };
 
