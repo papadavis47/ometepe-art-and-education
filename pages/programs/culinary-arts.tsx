@@ -13,7 +13,7 @@ const CulinaryArts = () => {
         <meta name='description' content='Ometepe Art and Education' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div>
+      <div className='mt-6'>
         <h1 className='py-6 font-serif text-4xl sm:text-5xl'>
           {spanish ? 'Arte Culinario' : 'Culinary Arts'}
         </h1>

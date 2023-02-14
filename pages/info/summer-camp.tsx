@@ -5,7 +5,7 @@ import { useAppContext } from '../../Context/appContext';
 const Camp = () => {
   const { spanish } = useAppContext();
   return (
-    <div className='max-w-5xl px-4 mx-auto text-white page-spacing'>
+    <div className='max-w-4xl px-4 mx-auto text-white page-spacing'>
       <Head>
         <title>Summer Camps 2022</title>
         <meta name='description' content='Ometepe Art and Education' />
