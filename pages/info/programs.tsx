@@ -1,5 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
+
+// This is a scratch page. Saving the content for later.
 
 const Programs = () => {
   return (

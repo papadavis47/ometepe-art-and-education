@@ -1,4 +1,4 @@
-import { useAppContext } from '../../Context/appContext';
+import { useAppContext } from '@context/appContext';
 
 const Location = () => {
   const { spanish } = useAppContext();

@@ -1,5 +1,5 @@
 // import Construction from '../../components/Construction';
-import { useAppContext } from '../../Context/appContext';
+import { useAppContext } from '@context/appContext';
 import Poster1 from '../../public/images/events/central-american-festival.jpg';
 import Poster2 from '../../public/images/events/central-american-festival2.jpg';
 import Advert1 from '../../public/images/events/open-house-oae-spanish.jpg';

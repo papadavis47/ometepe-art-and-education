@@ -1,4 +1,4 @@
-import SmallContactSnippet from "../../components/SmallContactSnippet";
+import SmallContactSnippet from '@components/SmallContactSnippet';
 
 const Contact = () => {
   return (
