@@ -6,10 +6,7 @@ export type BioContent = {
 
 function BioParagraph({ text, key }: BioContent) {
   return (
-    <p
-      className='my-3 font-serif text-xl leading-relaxed text-white md:leading-10 sm:text-2xl'
-      key={key}
-    >
+    <p className='my-3 text-xl text-white' key={key}>
       {text}
     </p>
   );
