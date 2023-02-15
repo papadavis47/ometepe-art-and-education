@@ -1,11 +1,11 @@
 import { createContext, useContext, useState } from 'react';
 
-type AppContextType = {
+type SpanishContextType = {
   spanish: boolean;
   toggleSpanish: () => void;
 };
 
-export const AppContext = createContext({ spanish: false, toggleSpanish: () => {} });
+export const SpanishContext = createContext({ spanish: false, toggleSpanish: () => {} });
 
 export function ContextWrapper({ children }) {
   const [spanish, setSpanish] = useState<boolean>(false);
@@ -19,9 +19,9 @@ export function ContextWrapper({ children }) {
     toggleSpanish,
   };
 
-  return <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>;
+  return <SpanishContext.Provider value={sharedState}>{children}</SpanishContext.Provider>;
 }
 
-export function useAppContext() {
-  return useContext(AppContext);
+export function useSpanishContext() {
+  return useContext(SpanishContext);
 }

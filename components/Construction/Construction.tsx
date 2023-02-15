@@ -1,11 +1,11 @@
-import { useAppContext } from '../../Context/appContext';
+import { useSpanishContext } from '@context/spanishContext';
 
 type pageName = {
   title?: string;
 };
 
 const Construction = ({ title }: pageName) => {
-  const { spanish } = useAppContext();
+  const { spanish } = useSpanishContext();
   return (
     <>
       <div className='text-center'>

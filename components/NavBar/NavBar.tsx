@@ -1,14 +1,14 @@
 import Link from 'next/link';
-import { useAppContext } from '../../Context/appContext';
+import { useSpanishContext } from '@context/spanishContext';
 import LogoLink from '../LogoLink';
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { classNames } from '../../utils/classnames';
-import { navigation, staff, programs, services } from '../../data/navData';
+import { classNames } from '@utils/classnames';
+import { navigation, staff, programs, services } from '@data/navData';
 
 const NavBar = () => {
-  const { spanish, toggleSpanish } = useAppContext();
+  const { spanish, toggleSpanish } = useSpanishContext();
   // Change spanish / english option on data here
   let navItems = spanish ? navigation.spanish : navigation.english;
   let programItems = spanish ? programs.spanish : programs.english;

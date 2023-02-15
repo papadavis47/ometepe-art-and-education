@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import ScheduleItems from '../../components/ScheduleItems';
-import { schedule } from '../../data/programsData';
+import ScheduleItems from '@components/ScheduleItems';
+import { schedule } from '@data/programsData';
 
 const ArtClasses = () => {
   return (

@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useAppContext } from '../Context/appContext';
+import { useSpanishContext } from '@context/spanishContext';
 
 export default function Home() {
-  const { spanish } = useAppContext();
+  const { spanish } = useSpanishContext();
   return (
     <div className='px-4 text-white page-spacing'>
       <Head>

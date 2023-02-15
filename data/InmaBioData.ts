@@ -1,4 +1,4 @@
-import { BioContent } from '../components/BioParagraph';
+import { BioContent } from '@components/BioParagraph';
 
 export const englishParagraphs: BioContent[] = [
   { key: 1, text: 'Inma has more than eighteen years of experience working as an educator.' },

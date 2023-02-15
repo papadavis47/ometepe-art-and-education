@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useAppContext } from '@context/appContext';
+import { useSpanishContext } from '@context/spanishContext';
 import { englishMissionStatement, spanishMissionStatement } from '@data/missionStatementData';
 
 const Mission = () => {
-  const { spanish } = useAppContext();
+  const { spanish } = useSpanishContext();
   return (
     <div className='max-w-4xl px-4 mx-auto mt-4 text-white page-spacing'>
       <div className='py-6 font-serif'>

@@ -1,7 +1,7 @@
-import { useAppContext } from '../../Context/appContext';
+import { useSpanishContext } from '@context/spanishContext';
 
 function SmallContactSnippet() {
-  const { spanish } = useAppContext();
+  const { spanish } = useSpanishContext();
   return (
     <div className='mt-6 text-lg sm:text-xl'>
       <h2 className=''>

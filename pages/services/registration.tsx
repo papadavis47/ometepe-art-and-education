@@ -1,8 +1,8 @@
-import { useAppContext } from '../Context/appContext';
-import ComingSoon from '../components/ComingSoon';
+import { useSpanishContext } from '@context/spanishContext';
+import ComingSoon from '@components/ComingSoon';
 
 const Registration = () => {
-  const { spanish } = useAppContext();
+  const { spanish } = useSpanishContext();
   return (
     <div className='px-6 page-spacing'>
       <ComingSoon

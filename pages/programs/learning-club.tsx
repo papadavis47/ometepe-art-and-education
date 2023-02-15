@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { schedule } from '../../data/programsData';
-import ScheduleItems from '../../components/ScheduleItems';
+import { schedule } from '@data/programsData';
+import ScheduleItems from '@components/ScheduleItems';
 
 const LearningClub = () => {
   return (

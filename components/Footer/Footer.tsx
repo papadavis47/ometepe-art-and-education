@@ -1,8 +1,8 @@
 import { SiNextdotjs } from 'react-icons/si';
-import { useAppContext } from '../../Context/appContext';
+import { useSpanishContext } from '@context/spanishContext';
 
 const Footer = () => {
-  const { spanish } = useAppContext();
+  const { spanish } = useSpanishContext();
   const year = new Date().getFullYear();
   return (
     <footer className='flex flex-col items-center justify-center w-full py-12 mt-12 font-serif bg-white border-t-2 text-stone-800 border-stone-400'>

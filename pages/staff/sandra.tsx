@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import { useAppContext } from '../../Context/appContext';
-import StaffTitle from '../../components/StaffTitle';
-import { englishParagraphs } from '../../data/sandraBioData';
-import BioParagraph from '../../components/BioParagraph';
+import { useSpanishContext } from '@context/spanishContext';
+import StaffTitle from '@components/StaffTitle';
+import { englishParagraphs } from '@data/sandraBioData';
+import BioParagraph from '@components/BioParagraph';
 
 const Sandra = () => {
-  const { spanish } = useAppContext();
+  const { spanish } = useSpanishContext();
   return (
     <div className='max-w-4xl px-4 mx-auto page-spacing'>
       <StaffTitle name='Sandra Gutierrez' titulo='Maestra' title='Teacher' />

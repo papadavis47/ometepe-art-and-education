@@ -1,8 +1,8 @@
-import { useAppContext } from '../../Context/appContext';
+import { useSpanishContext } from '@context/spanishContext';
 import Link from 'next/link';
 
 const ComingSoon = ({ title, text }) => {
-  const { spanish } = useAppContext();
+  const { spanish } = useSpanishContext();
   return (
     <>
       <div className='p-6 mt-6 text-center'>

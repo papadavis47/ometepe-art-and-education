@@ -15,14 +15,14 @@ export const navigation = {
 
 export const services = {
   english: [
-    { text: 'Camps', href: '/info/summer-camp' },
-    { text: 'Children Parties', href: '/info/children-parties' },
-    { text: 'Registration', href: '/registration' },
+    { text: 'Camps', href: '/services/summer-camp' },
+    { text: 'Children Parties', href: '/services/children-parties' },
+    { text: 'Registration', href: '/services/registration' },
   ],
   spanish: [
-    { text: 'Campamentos', href: '/info/summer-camp' },
-    { text: 'Fiestas para niños', href: '/info/children-parties' },
-    { text: 'Registracion', href: '/registration' },
+    { text: 'Campamentos', href: '/services/summer-camp' },
+    { text: 'Fiestas para niños', href: '/services/children-parties' },
+    { text: 'Registracion', href: '/services/registration' },
   ],
 };
 

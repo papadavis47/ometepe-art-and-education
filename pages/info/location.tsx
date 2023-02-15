@@ -1,7 +1,7 @@
-import { useAppContext } from '@context/appContext';
+import { useSpanishContext } from '@context/spanishContext';
 
 const Location = () => {
-  const { spanish } = useAppContext();
+  const { spanish } = useSpanishContext();
   return (
     <div className='px-2 text-white page-spacing'>
       <div className='flex flex-col items-center'>
