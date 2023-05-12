@@ -19,10 +19,10 @@ const Camp = () => {
         </p>
         <div className='my-4'>
           <Image
-            src='/images/camp/group-summer-camp.jpg'
+            src='/images/camps/group-summer-camp2022.jpg'
             width={1200}
             height={700}
-            alt='Flyer for summer camp information'
+            alt='Inma with children at summer camp 2022'
             className='rounded-md'
           />
         </div>
