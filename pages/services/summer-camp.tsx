@@ -7,10 +7,29 @@ const Camp = () => {
   return (
     <div className='max-w-4xl px-4 mx-auto text-white page-spacing'>
       <Head>
-        <title>Summer Camps 2022</title>
+        <title>OAE - Summer Camps</title>
         <meta name='description' content='Ometepe Art and Education' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <div className='py-4 my-2'>
+        <h1 className='my-4 font-serif text-3xl sm:text-5xl'>Summer Camps 2023</h1>
+        <p className='py-4 text-lg font-bold'>
+          {spanish
+            ? 'Haga clic en el volante a continuación para registrarse:'
+            : 'Click on flyer image below to register:'}
+        </p>
+        <div className='py-2 my-4'>
+          <a href='https://form.jotform.com/221290155777156' target='_blank' rel='noreferrer'>
+            <Image
+              src='/images/camps/campflyer2023.jpg'
+              width={700}
+              height={800}
+              alt='Flyer for summer camp information'
+            />
+          </a>
+        </div>
+        <p className='py-4 text-xl'>Summer Camps are open to students from ages 5-12 years old. </p>
+      </div>
       <div className='py-4 my-2'>
         <h1 className='my-4 font-serif text-3xl sm:text-5xl'>Summer Camps 2022</h1>
         <p className='py-6 text-xl'>
