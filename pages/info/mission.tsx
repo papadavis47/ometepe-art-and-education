@@ -30,7 +30,9 @@ const Mission = () => {
       <section className='mt-10'>
         <div>
           <h2 className='font-serif text-3xl sm:text-4xl'>
-            {spanish ? 'La Isla Ometepe' : 'The Island of Ometepe'}
+            {spanish
+              ? 'Nuestra inspiración - La Isla Ometepe'
+              : 'Our Inspiration - The Island of Ometepe'}
           </h2>
           <p className='my-4 text-xl'>
             The inspiration for our organization has come from the beautiful island of Ometepe in
