@@ -44,7 +44,7 @@ export const programs = {
 };
 
 export const staff = [
-  { text: 'Maestra Inma', href: '/staff/inma' },
+  { text: 'Maestra Maria Inma', href: '/staff/maria-inma' },
   { text: 'Maestra Sandra', href: '/staff/sandra' },
   { text: 'Victor Fuentes', href: '/staff/victor' },
   { text: 'Inmaculada Cruz', href: '/staff/inmaculada' },
